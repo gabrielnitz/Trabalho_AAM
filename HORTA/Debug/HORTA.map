@@ -1,0 +1,1003 @@
+Archive member included to satisfy reference by file (symbol)
+
+d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                              Driver/Pwm.o (__divmodhi4)
+d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                              D:/Programas/Atmel/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o (exit)
+d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                              System/Servo.o (__tablejump2__)
+d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                              Driver/Adc.o (__do_copy_data)
+d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                              Appl/Appl.o (__do_clear_bss)
+d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                              d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o) (__udivmodhi4)
+
+Allocating common symbols
+Common symbol       size              file
+
+Hms_1sec_Counter    0x2               System/Timer.o
+AD_Channel          0x1               Hal/Hal.o
+ADC_Buffer          0xc               Driver/Adc.o
+Adc_Step            0x1               Driver/Adc.o
+MoveServo           0x1               System/Servo.o
+Hal_Leds_Buffer     0x5               Hal/Hal.o
+Current_Level       0x1               Appl/GardenLumControl.o
+End_Cycle_Servo_Step
+                    0x1               System/Servo.o
+Key_Press_Servo_Step_Planta3
+                    0x1               System/Servo.o
+status_move         0x1               Appl/Appl.o
+Display_Keys_Map    0x1               System/Display.o
+PowerON_Servo_Step  0x1               System/Servo.o
+Garden_Display_State
+                    0x1               System/Display.o
+AD_Sample           0xc               Hal/Hal.o
+Key_Press_Servo_Step_Off
+                    0x1               System/Servo.o
+Hal_Analog_Inputs   0xc               Hal/Hal.o
+status_botao        0x1               Appl/Appl.o
+AD_Mux_State        0x1               Hal/Hal.o
+User_Action         0x1               Appl/Appl.o
+AD_Counter          0x6               Hal/Hal.o
+Hal_Keys_Buffer     0x1               Hal/Hal.o
+luminosidade_planta_OFF
+                    0x2               Appl/Appl.o
+Garden_LumControl_State
+                    0x1               Appl/GardenLumControl.o
+Key_Press_Servo_Step_Planta1
+                    0x1               System/Servo.o
+Sampling_Time       0x1               Driver/Adc.o
+Trigger             0x1               Appl/Appl.o
+Luminosidade        0x4               System/LumSensor.o
+luminosidade_planta_ON
+                    0x2               Appl/Appl.o
+Slot                0x1               Appl/main.o
+Adc_Channel         0x1               Driver/Adc.o
+tempo_planta_x      0x2               Appl/Appl.o
+Ms_Timers           0xf               System/Timer.o
+Hms_Timers          0x1c              System/Timer.o
+Key_Press_Servo_Step_Planta2
+                    0x1               System/Servo.o
+AD_Accumulator      0xc               Hal/Hal.o
+
+Discarded input sections
+
+ .data          0x00000000        0x0 D:/Programas/Atmel/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .bss           0x00000000        0x0 D:/Programas/Atmel/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .text          0x00000000        0x0 Appl/Appl.o
+ .data          0x00000000        0x0 Appl/Appl.o
+ .bss           0x00000000        0x0 Appl/Appl.o
+ .text          0x00000000        0x0 Appl/main.o
+ .data          0x00000000        0x0 Appl/main.o
+ .bss           0x00000000        0x0 Appl/main.o
+ .text          0x00000000        0x0 Appl/GardenLumControl.o
+ .data          0x00000000        0x0 Appl/GardenLumControl.o
+ .bss           0x00000000        0x0 Appl/GardenLumControl.o
+ .text.Garden_Lum_Control__GetState
+                0x00000000        0x6 Appl/GardenLumControl.o
+ .text          0x00000000        0x0 Driver/Adc.o
+ .data          0x00000000        0x0 Driver/Adc.o
+ .bss           0x00000000        0x0 Driver/Adc.o
+ .rodata.ADC_BIT_CLR_MASK
+                0x00000000        0x6 Driver/Adc.o
+ .text          0x00000000        0x0 Driver/Pwm.o
+ .data          0x00000000        0x0 Driver/Pwm.o
+ .bss           0x00000000        0x0 Driver/Pwm.o
+ .text          0x00000000        0x0 Driver/Gpio.o
+ .data          0x00000000        0x0 Driver/Gpio.o
+ .bss           0x00000000        0x0 Driver/Gpio.o
+ .text          0x00000000        0x0 Hal/Hal.o
+ .data          0x00000000        0x0 Hal/Hal.o
+ .bss           0x00000000        0x0 Hal/Hal.o
+ .text          0x00000000        0x0 Hal/SevenSeg.o
+ .data          0x00000000        0x0 Hal/SevenSeg.o
+ .bss           0x00000000        0x0 Hal/SevenSeg.o
+ .rodata.SEGMENT_MAP_DIGIT
+                0x00000000        0xa Hal/SevenSeg.o
+ .text          0x00000000        0x0 System/Timer.o
+ .data          0x00000000        0x0 System/Timer.o
+ .bss           0x00000000        0x0 System/Timer.o
+ .text.Timer__MsHandler
+                0x00000000       0x28 System/Timer.o
+ .text.Timer__MsSet
+                0x00000000       0x3c System/Timer.o
+ .text.Timer__MsExpire
+                0x00000000       0x1e System/Timer.o
+ .text.Timer__MsGetStatus
+                0x00000000       0x16 System/Timer.o
+ .text.Timer__HMSExpire
+                0x00000000       0x1e System/Timer.o
+ .text.Timer__HMSGetTime
+                0x00000000       0x12 System/Timer.o
+ .rodata.Hms_1sec_TimeBase
+                0x00000000        0x2 System/Timer.o
+ .text          0x00000000        0x0 System/Display.o
+ .data          0x00000000        0x0 System/Display.o
+ .bss           0x00000000        0x0 System/Display.o
+ .text          0x00000000        0x0 System/Servo.o
+ .data          0x00000000        0x0 System/Servo.o
+ .bss           0x00000000        0x0 System/Servo.o
+ .text.Servo__GetMoves
+                0x00000000        0x6 System/Servo.o
+ .bss.EndCycleServo_Counter
+                0x00000000        0x1 System/Servo.o
+ .text          0x00000000        0x0 System/LumSensor.o
+ .data          0x00000000        0x0 System/LumSensor.o
+ .bss           0x00000000        0x0 System/LumSensor.o
+ .rodata.LumSensor_Enable_Table
+                0x00000000        0x2 System/LumSensor.o
+ .rodata.LumSensorTable
+                0x00000000        0x2 System/LumSensor.o
+ .text          0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .data          0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .bss           0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc   0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text          0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text          0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000003         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD D:/Programas/Atmel/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+LOAD Appl/Appl.o
+LOAD Appl/main.o
+LOAD Appl/GardenLumControl.o
+LOAD Driver/Adc.o
+LOAD Driver/Pwm.o
+LOAD Driver/Gpio.o
+LOAD Hal/Hal.o
+LOAD Hal/SevenSeg.o
+LOAD System/Timer.o
+LOAD System/Display.o
+LOAD System/Servo.o
+LOAD System/LumSensor.o
+START GROUP
+LOAD d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+END GROUP
+START GROUP
+LOAD d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a
+LOAD d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+LOAD d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a
+LOAD D:/Programas/Atmel/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5\libatmega328p.a
+END GROUP
+                0x00000000                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                0x00800060                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                0x00020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x0000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x120e
+ *(.vectors)
+ .vectors       0x00000000       0x68 D:/Programas/Atmel/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table.Servo__Background
+                0x00000068       0x10 System/Servo.o
+                0x00000078                . = ALIGN (0x2)
+                0x00000078                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000078        0x0 linker stubs
+ *(.trampolines*)
+                0x00000078                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x00000078                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000078                __ctors_start = .
+ *(.ctors)
+                0x00000078                __ctors_end = .
+                0x00000078                __dtors_start = .
+ *(.dtors)
+                0x00000078                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000078        0x0 D:/Programas/Atmel/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x00000078                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000078        0xc D:/Programas/Atmel/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000084       0x16 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x00000084                __do_copy_data
+ .init4         0x0000009a       0x10 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000009a                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000aa        0x8 D:/Programas/Atmel/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x000000b2        0x4 D:/Programas/Atmel/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x000000b2                __vector_22
+                0x000000b2                __vector_1
+                0x000000b2                __vector_24
+                0x000000b2                __vector_12
+                0x000000b2                __bad_interrupt
+                0x000000b2                __vector_6
+                0x000000b2                __vector_3
+                0x000000b2                __vector_23
+                0x000000b2                __vector_25
+                0x000000b2                __vector_11
+                0x000000b2                __vector_17
+                0x000000b2                __vector_19
+                0x000000b2                __vector_7
+                0x000000b2                __vector_5
+                0x000000b2                __vector_4
+                0x000000b2                __vector_9
+                0x000000b2                __vector_2
+                0x000000b2                __vector_21
+                0x000000b2                __vector_15
+                0x000000b2                __vector_8
+                0x000000b2                __vector_14
+                0x000000b2                __vector_10
+                0x000000b2                __vector_16
+                0x000000b2                __vector_18
+                0x000000b2                __vector_20
+                0x000000b6                . = ALIGN (0x2)
+ *(.text.*)
+ .text.Appl__Initialize
+                0x000000b6       0x12 Appl/Appl.o
+                0x000000b6                Appl__Initialize
+ .text.Appl__Handler
+                0x000000c8       0x92 Appl/Appl.o
+                0x000000c8                Appl__Handler
+ .text.main     0x0000015a       0xb6 Appl/main.o
+                0x0000015a                main
+ .text.Garden_Lum_Control__Initialize
+                0x00000210        0xc Appl/GardenLumControl.o
+                0x00000210                Garden_Lum_Control__Initialize
+ .text.Garden_Lum_Control__Handler
+                0x0000021c       0x6a Appl/GardenLumControl.o
+                0x0000021c                Garden_Lum_Control__Handler
+ .text.Garden_Lum_Control__SetLevel
+                0x00000286        0x6 Appl/GardenLumControl.o
+                0x00000286                Garden_Lum_Control__SetLevel
+ .text.ADC__Initialize
+                0x0000028c       0x52 Driver/Adc.o
+                0x0000028c                ADC__Initialize
+ .text.ADC__Handler
+                0x000002de       0xd8 Driver/Adc.o
+                0x000002de                ADC__Handler
+ .text.ADC__ConfigModes
+                0x000003b6       0x52 Driver/Adc.o
+                0x000003b6                ADC__ConfigModes
+ .text.ADC__GetValue
+                0x00000408       0x1c Driver/Adc.o
+                0x00000408                ADC__GetValue
+ .text.Pwm__Initialize
+                0x00000424        0xe Driver/Pwm.o
+                0x00000424                Pwm__Initialize
+ .text.Pwm__SetTCFrequency
+                0x00000432       0x2c Driver/Pwm.o
+                0x00000432                Pwm__SetTCFrequency
+ .text.Pwm__SetDutyCycle
+                0x0000045e       0xa2 Driver/Pwm.o
+                0x0000045e                Pwm__SetDutyCycle
+ .text.Gpio__PinConfig
+                0x00000500       0x6c Driver/Gpio.o
+                0x00000500                Gpio__PinConfig
+ .text.Gpio__PinWrite
+                0x0000056c       0x54 Driver/Gpio.o
+                0x0000056c                Gpio__PinWrite
+ .text.Gpio__PinRead
+                0x000005c0       0x28 Driver/Gpio.o
+                0x000005c0                Gpio__PinRead
+ .text.Hal__SetDigitalOutput
+                0x000005e8       0x1c Hal/Hal.o
+                0x000005e8                Hal__SetDigitalOutput
+ .text.Hal__SetAllDigitalOutputs
+                0x00000604       0x1e Hal/Hal.o
+                0x00000604                Hal__SetAllDigitalOutputs
+ .text.Hal__Initialize
+                0x00000622       0x9a Hal/Hal.o
+                0x00000622                Hal__Initialize
+ .text.Hal__ReadKey
+                0x000006bc       0x26 Hal/Hal.o
+                0x000006bc                Hal__ReadKey
+ .text.Hal__WriteValtoSegment
+                0x000006e2        0x6 Hal/Hal.o
+                0x000006e2                Hal__WriteValtoSegment
+ .text.Hal__GetAnalogInput
+                0x000006e8       0x18 Hal/Hal.o
+                0x000006e8                Hal__GetAnalogInput
+ .text.Hal__SetServo
+                0x00000700       0x18 Hal/Hal.o
+                0x00000700                Hal__SetServo
+ .text.Hal__SetServoFreq
+                0x00000718       0x10 Hal/Hal.o
+                0x00000718                Hal__SetServoFreq
+ .text.LEDsUpdate
+                0x00000728       0x7c Hal/Hal.o
+                0x00000728                LEDsUpdate
+ .text.KeysRead
+                0x000007a4       0xae Hal/Hal.o
+                0x000007a4                KeysRead
+ .text.Hal__FastHandler
+                0x00000852        0xa Hal/Hal.o
+                0x00000852                Hal__FastHandler
+ .text.ADProcess
+                0x0000085c       0xe8 Hal/Hal.o
+                0x0000085c                ADProcess
+ .text.Hal__BackgroundHandler
+                0x00000944        0x6 Hal/Hal.o
+                0x00000944                Hal__BackgroundHandler
+ .text.SevenSeg_WriteValueToSegment
+                0x0000094a       0x62 Hal/SevenSeg.o
+                0x0000094a                SevenSeg_WriteValueToSegment
+ .text.Timer__Initialize
+                0x000009ac       0x30 System/Timer.o
+                0x000009ac                Timer__Initialize
+ .text.Timer__HMSHandler
+                0x000009dc       0x5a System/Timer.o
+                0x000009dc                Timer__HMSHandler
+ .text.Timer__HMSSet
+                0x00000a36       0x36 System/Timer.o
+                0x00000a36                Timer__HMSSet
+ .text.Timer__HMSGetStatus
+                0x00000a6c       0x12 System/Timer.o
+                0x00000a6c                Timer__HMSGetStatus
+ .text.__vector_13
+                0x00000a7e       0x36 System/Timer.o
+                0x00000a7e                __vector_13
+ .text.Display__Initialize
+                0x00000ab4       0x24 System/Display.o
+                0x00000ab4                Display__Initialize
+ .text.Display__SetState
+                0x00000ad8        0xa System/Display.o
+                0x00000ad8                Display__SetState
+ .text.UpdateDisplaySaidas
+                0x00000ae2       0xee System/Display.o
+                0x00000ae2                UpdateDisplaySaidas
+ .text.ReadDisplayKeys
+                0x00000bd0       0x44 System/Display.o
+                0x00000bd0                ReadDisplayKeys
+ .text.Display__GetEvent
+                0x00000c14        0xa System/Display.o
+                0x00000c14                Display__GetEvent
+ .text.UpdateDisplaySevenSeg
+                0x00000c1e       0xf4 System/Display.o
+                0x00000c1e                UpdateDisplaySevenSeg
+ .text.Display__Handler
+                0x00000d12        0xe System/Display.o
+                0x00000d12                Display__Handler
+ .text.Servo__Initialize
+                0x00000d20       0x28 System/Servo.o
+                0x00000d20                Servo__Initialize
+ .text.Servo__MoveServo
+                0x00000d48       0x12 System/Servo.o
+                0x00000d48                Servo__MoveServo
+ .text.PowerOnServoHandler
+                0x00000d5a       0xac System/Servo.o
+                0x00000d5a                PowerOnServoHandler
+ .text.KeyPressServoHandler
+                0x00000e06      0x27e System/Servo.o
+                0x00000e06                KeyPressServoHandler
+ .text.EndCycleServoHandler
+                0x00001084       0x5a System/Servo.o
+                0x00001084                EndCycleServoHandler
+ .text.Servo__Background
+                0x000010de       0x88 System/Servo.o
+                0x000010de                Servo__Background
+ .text.IlumSensor__Initialize
+                0x00001166        0xe System/LumSensor.o
+                0x00001166                IlumSensor__Initialize
+ .text.IlumSensor__ConversionHandler
+                0x00001174       0x1e System/LumSensor.o
+                0x00001174                IlumSensor__ConversionHandler
+ .text.LumSensor__Interface
+                0x00001192       0x1c System/LumSensor.o
+                0x00001192                LumSensor__Interface
+ .text.libgcc.div
+                0x000011ae       0x28 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                0x000011ae                _div
+                0x000011ae                __divmodhi4
+ .text.libgcc   0x000011d6        0xc d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x000011d6                __tablejump2__
+ .text.libgcc.div
+                0x000011e2       0x28 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x000011e2                __udivmodhi4
+                0x0000120a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000120a        0x0 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x0000120a                _exit
+                0x0000120a                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000120a        0x4 d:/programas/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000120e                _etext = .
+
+.data           0x00800100       0x5e load address 0x0000120e
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ .data.GPIO_DATA_LIST
+                0x00800100        0x6 Driver/Gpio.o
+                0x00800100                GPIO_DATA_LIST
+ .data.KEYS_GPIO
+                0x00800106        0x8 Hal/Hal.o
+                0x00800106                KEYS_GPIO
+ .data.LED_GPIO
+                0x0080010e        0xa Hal/Hal.o
+                0x0080010e                LED_GPIO
+ .data.MAXIMO_DIGITO
+                0x00800118        0x4 System/Display.o
+                0x00800118                MAXIMO_DIGITO
+ .data.MEDIO_DIGITO
+                0x0080011c        0x4 System/Display.o
+                0x0080011c                MEDIO_DIGITO
+ .data.MINIMO_DIGITO
+                0x00800120        0x4 System/Display.o
+                0x00800120                MINIMO_DIGITO
+ .data.ZERADO_DIGITO
+                0x00800124        0x4 System/Display.o
+                0x00800124                ZERADO_DIGITO
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.ADC_BIT_SET_MASK
+                0x00800128        0x6 Driver/Adc.o
+                0x00800128                ADC_BIT_SET_MASK
+ .rodata.Adc_Enable_Table
+                0x0080012e        0x6 Driver/Adc.o
+                0x0080012e                Adc_Enable_Table
+ .rodata.GPIO_PIN_CLR_MASK
+                0x00800134        0x8 Driver/Gpio.o
+                0x00800134                GPIO_PIN_CLR_MASK
+ .rodata.GPIO_PIN_SET_MASK
+                0x0080013c        0x8 Driver/Gpio.o
+                0x0080013c                GPIO_PIN_SET_MASK
+ .rodata.AD_Channel_Table
+                0x00800144        0x6 Hal/Hal.o
+                0x00800144                AD_Channel_Table
+ .rodata.AD_Enable_Table
+                0x0080014a        0x6 Hal/Hal.o
+                0x0080014a                AD_Enable_Table
+ .rodata.Keys_Enable_Table
+                0x00800150        0x4 Hal/Hal.o
+                0x00800150                Keys_Enable_Table
+ .rodata.Leds_Enable_Table
+                0x00800154        0x5 Hal/Hal.o
+                0x00800154                Leds_Enable_Table
+ .rodata.SEGMENT_SELECT
+                0x00800159        0x4 Hal/SevenSeg.o
+                0x00800159                SEGMENT_SELECT
+ *(.gnu.linkonce.r*)
+                0x0080015e                . = ALIGN (0x2)
+ *fill*         0x0080015d        0x1 
+                0x0080015e                _edata = .
+                0x0080015e                PROVIDE (__data_end, .)
+
+.bss            0x0080015e       0x89
+                0x0080015e                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.flag_seg  0x0080015e        0x1 System/Timer.o
+                0x0080015e                flag_seg
+ *(COMMON)
+ COMMON         0x0080015f        0xa Appl/Appl.o
+                0x0080015f                status_move
+                0x00800160                status_botao
+                0x00800161                User_Action
+                0x00800162                luminosidade_planta_OFF
+                0x00800164                Trigger
+                0x00800165                luminosidade_planta_ON
+                0x00800167                tempo_planta_x
+ COMMON         0x00800169        0x1 Appl/main.o
+                0x00800169                Slot
+ COMMON         0x0080016a        0x2 Appl/GardenLumControl.o
+                0x0080016a                Current_Level
+                0x0080016b                Garden_LumControl_State
+ COMMON         0x0080016c        0xf Driver/Adc.o
+                0x0080016c                ADC_Buffer
+                0x00800178                Adc_Step
+                0x00800179                Sampling_Time
+                0x0080017a                Adc_Channel
+ COMMON         0x0080017b       0x32 Hal/Hal.o
+                0x0080017b                AD_Channel
+                0x0080017c                Hal_Leds_Buffer
+                0x00800181                AD_Sample
+                0x0080018d                Hal_Analog_Inputs
+                0x00800199                AD_Mux_State
+                0x0080019a                AD_Counter
+                0x008001a0                Hal_Keys_Buffer
+                0x008001a1                AD_Accumulator
+ COMMON         0x008001ad       0x2d System/Timer.o
+                0x008001ad                Hms_1sec_Counter
+                0x008001af                Ms_Timers
+                0x008001be                Hms_Timers
+ COMMON         0x008001da        0x2 System/Display.o
+                0x008001da                Display_Keys_Map
+                0x008001db                Garden_Display_State
+ COMMON         0x008001dc        0x7 System/Servo.o
+                0x008001dc                MoveServo
+                0x008001dd                End_Cycle_Servo_Step
+                0x008001de                Key_Press_Servo_Step_Planta3
+                0x008001df                PowerON_Servo_Step
+                0x008001e0                Key_Press_Servo_Step_Off
+                0x008001e1                Key_Press_Servo_Step_Planta1
+                0x008001e2                Key_Press_Servo_Step_Planta2
+ COMMON         0x008001e3        0x4 System/LumSensor.o
+                0x008001e3                Luminosidade
+                0x008001e7                PROVIDE (__bss_end, .)
+                0x0000120e                __data_load_start = LOADADDR (.data)
+                0x0000126c                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008001e7        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x008001e7                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 Appl/Appl.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000030       0x31 Appl/main.o
+ .comment       0x00000030       0x31 Appl/GardenLumControl.o
+ .comment       0x00000030       0x31 Driver/Adc.o
+ .comment       0x00000030       0x31 Driver/Pwm.o
+ .comment       0x00000030       0x31 Driver/Gpio.o
+ .comment       0x00000030       0x31 Hal/Hal.o
+ .comment       0x00000030       0x31 Hal/SevenSeg.o
+ .comment       0x00000030       0x31 System/Timer.o
+ .comment       0x00000030       0x31 System/Display.o
+ .comment       0x00000030       0x31 System/Servo.o
+ .comment       0x00000030       0x31 System/LumSensor.o
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 D:/Programas/Atmel/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x2f8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 Appl/Appl.o
+ .debug_aranges
+                0x00000028       0x20 Appl/main.o
+ .debug_aranges
+                0x00000048       0x38 Appl/GardenLumControl.o
+ .debug_aranges
+                0x00000080       0x38 Driver/Adc.o
+ .debug_aranges
+                0x000000b8       0x30 Driver/Pwm.o
+ .debug_aranges
+                0x000000e8       0x30 Driver/Gpio.o
+ .debug_aranges
+                0x00000118       0x80 Hal/Hal.o
+ .debug_aranges
+                0x00000198       0x20 Hal/SevenSeg.o
+ .debug_aranges
+                0x000001b8       0x70 System/Timer.o
+ .debug_aranges
+                0x00000228       0x50 System/Display.o
+ .debug_aranges
+                0x00000278       0x50 System/Servo.o
+ .debug_aranges
+                0x000002c8       0x30 System/LumSensor.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x3d24
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x5f4 D:/Programas/Atmel/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_info    0x000005f4      0x376 Appl/Appl.o
+ .debug_info    0x0000096a      0x2da Appl/main.o
+ .debug_info    0x00000c44      0x22e Appl/GardenLumControl.o
+ .debug_info    0x00000e72      0x4e9 Driver/Adc.o
+ .debug_info    0x0000135b      0x60c Driver/Pwm.o
+ .debug_info    0x00001967      0x356 Driver/Gpio.o
+ .debug_info    0x00001cbd      0x875 Hal/Hal.o
+ .debug_info    0x00002532      0x142 Hal/SevenSeg.o
+ .debug_info    0x00002674      0x43f System/Timer.o
+ .debug_info    0x00002ab3      0x766 System/Display.o
+ .debug_info    0x00003219      0x959 System/Servo.o
+ .debug_info    0x00003b72      0x1b2 System/LumSensor.o
+
+.debug_abbrev   0x00000000     0x1420
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x5a2 D:/Programas/Atmel/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_abbrev  0x000005a2       0xd5 Appl/Appl.o
+ .debug_abbrev  0x00000677       0x9c Appl/main.o
+ .debug_abbrev  0x00000713      0x11e Appl/GardenLumControl.o
+ .debug_abbrev  0x00000831      0x16f Driver/Adc.o
+ .debug_abbrev  0x000009a0      0x17a Driver/Pwm.o
+ .debug_abbrev  0x00000b1a      0x164 Driver/Gpio.o
+ .debug_abbrev  0x00000c7e      0x1db Hal/Hal.o
+ .debug_abbrev  0x00000e59       0xc7 Hal/SevenSeg.o
+ .debug_abbrev  0x00000f20      0x159 System/Timer.o
+ .debug_abbrev  0x00001079      0x14a System/Display.o
+ .debug_abbrev  0x000011c3      0x170 System/Servo.o
+ .debug_abbrev  0x00001333       0xed System/LumSensor.o
+
+.debug_line     0x00000000     0x1ab1
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x133 D:/Programas/Atmel/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_line    0x00000133      0x18d Appl/Appl.o
+ .debug_line    0x000002c0      0x1ff Appl/main.o
+ .debug_line    0x000004bf      0x147 Appl/GardenLumControl.o
+ .debug_line    0x00000606      0x204 Driver/Adc.o
+ .debug_line    0x0000080a      0x1c8 Driver/Pwm.o
+ .debug_line    0x000009d2      0x16f Driver/Gpio.o
+ .debug_line    0x00000b41      0x3e4 Hal/Hal.o
+ .debug_line    0x00000f25       0xfc Hal/SevenSeg.o
+ .debug_line    0x00001021      0x323 System/Timer.o
+ .debug_line    0x00001344      0x226 System/Display.o
+ .debug_line    0x0000156a      0x488 System/Servo.o
+ .debug_line    0x000019f2       0xbf System/LumSensor.o
+
+.debug_frame    0x00000000      0x560
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x34 Appl/Appl.o
+ .debug_frame   0x00000034       0x24 Appl/main.o
+ .debug_frame   0x00000058       0x60 Appl/GardenLumControl.o
+ .debug_frame   0x000000b8       0x60 Driver/Adc.o
+ .debug_frame   0x00000118       0x44 Driver/Pwm.o
+ .debug_frame   0x0000015c       0x44 Driver/Gpio.o
+ .debug_frame   0x000001a0      0x170 Hal/Hal.o
+ .debug_frame   0x00000310       0x24 Hal/SevenSeg.o
+ .debug_frame   0x00000334       0xd8 System/Timer.o
+ .debug_frame   0x0000040c       0x84 System/Display.o
+ .debug_frame   0x00000490       0x8c System/Servo.o
+ .debug_frame   0x0000051c       0x44 System/LumSensor.o
+
+.debug_str      0x00000000     0x1963
+ *(.debug_str)
+ .debug_str     0x00000000      0x208 D:/Programas/Atmel/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_str     0x00000208      0x4ab Appl/Appl.o
+                                0x4df (size before relaxing)
+ .debug_str     0x000006b3      0x1fd Appl/main.o
+                                0x39d (size before relaxing)
+ .debug_str     0x000008b0      0x17a Appl/GardenLumControl.o
+                                0x335 (size before relaxing)
+ .debug_str     0x00000a2a      0x2dd Driver/Adc.o
+                                0x472 (size before relaxing)
+ .debug_str     0x00000d07      0x1ee Driver/Pwm.o
+                                0x42f (size before relaxing)
+ .debug_str     0x00000ef5      0x116 Driver/Gpio.o
+                                0x2ee (size before relaxing)
+ .debug_str     0x0000100b      0x2be Hal/Hal.o
+                                0x6ea (size before relaxing)
+ .debug_str     0x000012c9       0x33 Hal/SevenSeg.o
+                                0x1d3 (size before relaxing)
+ .debug_str     0x000012fc      0x184 System/Timer.o
+                                0x43a (size before relaxing)
+ .debug_str     0x00001480       0xe3 System/Display.o
+                                0x3ea (size before relaxing)
+ .debug_str     0x00001563      0x39d System/Servo.o
+                                0x7e9 (size before relaxing)
+ .debug_str     0x00001900       0x63 System/LumSensor.o
+                                0x278 (size before relaxing)
+
+.debug_loc      0x00000000      0xf5c
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x57 Appl/GardenLumControl.o
+ .debug_loc     0x00000057      0x114 Driver/Adc.o
+ .debug_loc     0x0000016b      0x1bb Driver/Pwm.o
+ .debug_loc     0x00000326      0x130 Driver/Gpio.o
+ .debug_loc     0x00000456      0x42f Hal/Hal.o
+ .debug_loc     0x00000885       0x97 Hal/SevenSeg.o
+ .debug_loc     0x0000091c      0x1ff System/Timer.o
+ .debug_loc     0x00000b1b      0x260 System/Display.o
+ .debug_loc     0x00000d7b      0x118 System/Servo.o
+ .debug_loc     0x00000e93       0xc9 System/LumSensor.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x238
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x18 Appl/Appl.o
+ .debug_ranges  0x00000018       0x10 Appl/main.o
+ .debug_ranges  0x00000028       0x28 Appl/GardenLumControl.o
+ .debug_ranges  0x00000050       0x28 Driver/Adc.o
+ .debug_ranges  0x00000078       0x20 Driver/Pwm.o
+ .debug_ranges  0x00000098       0x20 Driver/Gpio.o
+ .debug_ranges  0x000000b8       0x70 Hal/Hal.o
+ .debug_ranges  0x00000128       0x10 Hal/SevenSeg.o
+ .debug_ranges  0x00000138       0x60 System/Timer.o
+ .debug_ranges  0x00000198       0x40 System/Display.o
+ .debug_ranges  0x000001d8       0x40 System/Servo.o
+ .debug_ranges  0x00000218       0x20 System/LumSensor.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(HORTA.elf elf32-avr)
+LOAD linker stubs

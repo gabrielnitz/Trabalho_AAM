@@ -1,0 +1,3444 @@
+
+LAB4_TIMER.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         0000005e  00800100  0000120e  000012a2  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000120e  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000089  0080015e  0080015e  00001300  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00001300  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00001330  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 000002f8  00000000  00000000  00001370  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00003d24  00000000  00000000  00001668  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00001420  00000000  00000000  0000538c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00001ab1  00000000  00000000  000067ac  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000560  00000000  00000000  00008260  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    0000191a  00000000  00000000  000087c0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000f5c  00000000  00000000  0000a0da  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000238  00000000  00000000  0000b036  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+       0:	0c 94 3c 00 	jmp	0x78	; 0x78 <__ctors_end>
+       4:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+       8:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+       c:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      10:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      14:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      18:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      1c:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      20:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      24:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      28:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      2c:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      30:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      34:	0c 94 3f 05 	jmp	0xa7e	; 0xa7e <__vector_13>
+      38:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      3c:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      40:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      44:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      48:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      4c:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      50:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      54:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      58:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      5c:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      60:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      64:	0c 94 59 00 	jmp	0xb2	; 0xb2 <__bad_interrupt>
+      68:	7b 08       	sbc	r7, r11
+      6a:	b2 08       	sbc	r11, r2
+      6c:	83 08       	sbc	r8, r3
+      6e:	8c 08       	sbc	r8, r12
+      70:	95 08       	sbc	r9, r5
+      72:	9e 08       	sbc	r9, r14
+      74:	a7 08       	sbc	r10, r7
+      76:	af 08       	sbc	r10, r15
+
+00000078 <__ctors_end>:
+      78:	11 24       	eor	r1, r1
+      7a:	1f be       	out	0x3f, r1	; 63
+      7c:	cf ef       	ldi	r28, 0xFF	; 255
+      7e:	d8 e0       	ldi	r29, 0x08	; 8
+      80:	de bf       	out	0x3e, r29	; 62
+      82:	cd bf       	out	0x3d, r28	; 61
+
+00000084 <__do_copy_data>:
+      84:	11 e0       	ldi	r17, 0x01	; 1
+      86:	a0 e0       	ldi	r26, 0x00	; 0
+      88:	b1 e0       	ldi	r27, 0x01	; 1
+      8a:	ee e0       	ldi	r30, 0x0E	; 14
+      8c:	f2 e1       	ldi	r31, 0x12	; 18
+      8e:	02 c0       	rjmp	.+4      	; 0x94 <__do_copy_data+0x10>
+      90:	05 90       	lpm	r0, Z+
+      92:	0d 92       	st	X+, r0
+      94:	ae 35       	cpi	r26, 0x5E	; 94
+      96:	b1 07       	cpc	r27, r17
+      98:	d9 f7       	brne	.-10     	; 0x90 <__do_copy_data+0xc>
+
+0000009a <__do_clear_bss>:
+      9a:	21 e0       	ldi	r18, 0x01	; 1
+      9c:	ae e5       	ldi	r26, 0x5E	; 94
+      9e:	b1 e0       	ldi	r27, 0x01	; 1
+      a0:	01 c0       	rjmp	.+2      	; 0xa4 <.do_clear_bss_start>
+
+000000a2 <.do_clear_bss_loop>:
+      a2:	1d 92       	st	X+, r1
+
+000000a4 <.do_clear_bss_start>:
+      a4:	a7 3e       	cpi	r26, 0xE7	; 231
+      a6:	b2 07       	cpc	r27, r18
+      a8:	e1 f7       	brne	.-8      	; 0xa2 <.do_clear_bss_loop>
+      aa:	0e 94 ad 00 	call	0x15a	; 0x15a <main>
+      ae:	0c 94 05 09 	jmp	0x120a	; 0x120a <_exit>
+
+000000b2 <__bad_interrupt>:
+      b2:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000b6 <Appl__Initialize>:
+//=====================================================================================================================
+
+
+void Appl__Initialize(void)
+{
+	User_Action = EVENTS_NO_EVENT;
+      b6:	8f ef       	ldi	r24, 0xFF	; 255
+      b8:	80 93 61 01 	sts	0x0161, r24	; 0x800161 <User_Action>
+	status_botao = SERVO_KEY_PRESS_PLANTA1; // Por padrão inicia com a Planta 01 selecionada
+      bc:	82 e0       	ldi	r24, 0x02	; 2
+      be:	80 93 60 01 	sts	0x0160, r24	; 0x800160 <status_botao>
+	Trigger = FALSE;
+      c2:	10 92 64 01 	sts	0x0164, r1	; 0x800164 <Trigger>
+      c6:	08 95       	ret
+
+000000c8 <Appl__Handler>:
+
+void Appl__Handler(void)
+{
+	
+#if (EXP_GARDEN == ENABLED)
+          User_Action = Display__GetEvent();
+      c8:	0e 94 0a 06 	call	0xc14	; 0xc14 <Display__GetEvent>
+      cc:	80 93 61 01 	sts	0x0161, r24	; 0x800161 <User_Action>
+		   if (User_Action != EVENTS_NO_EVENT)
+      d0:	8f 3f       	cpi	r24, 0xFF	; 255
+      d2:	89 f1       	breq	.+98     	; 0x136 <Appl__Handler+0x6e>
+		    {
+			switch(User_Action)
+      d4:	81 30       	cpi	r24, 0x01	; 1
+      d6:	d9 f0       	breq	.+54     	; 0x10e <Appl__Handler+0x46>
+      d8:	28 f0       	brcs	.+10     	; 0xe4 <Appl__Handler+0x1c>
+      da:	82 30       	cpi	r24, 0x02	; 2
+      dc:	f9 f0       	breq	.+62     	; 0x11c <Appl__Handler+0x54>
+      de:	83 30       	cpi	r24, 0x03	; 3
+      e0:	21 f1       	breq	.+72     	; 0x12a <Appl__Handler+0x62>
+      e2:	29 c0       	rjmp	.+82     	; 0x136 <Appl__Handler+0x6e>
+			    {
+			    case KEY_INIT_EVENT: // Botão de iniciar o processo
+				   Display__SetState(GARD_INIT);
+      e4:	80 e0       	ldi	r24, 0x00	; 0
+      e6:	0e 94 6c 05 	call	0xad8	; 0xad8 <Display__SetState>
+				   
+					
+				   Garden_Lum_Control__SetLevel(LUM_ON); // QUALQUER PARAMETRO FUNCIONA, ARRUMAR ISSO, MENOS O OFF
+      ea:	80 e0       	ldi	r24, 0x00	; 0
+      ec:	0e 94 43 01 	call	0x286	; 0x286 <Garden_Lum_Control__SetLevel>
+				   Servo__MoveServo(status_botao);    //buzzer de key press
+      f0:	80 91 60 01 	lds	r24, 0x0160	; 0x800160 <status_botao>
+      f4:	0e 94 a4 06 	call	0xd48	; 0xd48 <Servo__MoveServo>
+				   Timer__HMSSet(TIMER_HMS_CYCLE_DURATION, 0,0,tempo_planta_x);
+      f8:	20 91 67 01 	lds	r18, 0x0167	; 0x800167 <tempo_planta_x>
+      fc:	40 e0       	ldi	r20, 0x00	; 0
+      fe:	60 e0       	ldi	r22, 0x00	; 0
+     100:	85 e0       	ldi	r24, 0x05	; 5
+     102:	0e 94 1b 05 	call	0xa36	; 0xa36 <Timer__HMSSet>
+					
+					Trigger = TRUE;
+     106:	81 e0       	ldi	r24, 0x01	; 1
+     108:	80 93 64 01 	sts	0x0164, r24	; 0x800164 <Trigger>
+     10c:	18 c0       	rjmp	.+48     	; 0x13e <Appl__Handler+0x76>
+	
+				   break;
+				
+			    case KEY_PLANT1_EVENT: // PLANTA 1
+			          Display__SetState(GARD_P1);
+     10e:	81 e0       	ldi	r24, 0x01	; 1
+     110:	0e 94 6c 05 	call	0xad8	; 0xad8 <Display__SetState>
+					  status_botao = SERVO_KEY_PRESS_PLANTA1;
+     114:	82 e0       	ldi	r24, 0x02	; 2
+     116:	80 93 60 01 	sts	0x0160, r24	; 0x800160 <status_botao>
+				      break;
+     11a:	0d c0       	rjmp	.+26     	; 0x136 <Appl__Handler+0x6e>
+							
+				 case KEY_PLANT2_EVENT: // PLANTA 2
+					  Display__SetState(GARD_P2);
+     11c:	82 e0       	ldi	r24, 0x02	; 2
+     11e:	0e 94 6c 05 	call	0xad8	; 0xad8 <Display__SetState>
+					  status_botao = SERVO_KEY_PRESS_PLANTA2;
+     122:	83 e0       	ldi	r24, 0x03	; 3
+     124:	80 93 60 01 	sts	0x0160, r24	; 0x800160 <status_botao>
+					  break;
+     128:	06 c0       	rjmp	.+12     	; 0x136 <Appl__Handler+0x6e>
+				
+			     case KEY_PLANT3_EVENT: // PLANTA 3
+				      Display__SetState(GARD_P3);
+     12a:	83 e0       	ldi	r24, 0x03	; 3
+     12c:	0e 94 6c 05 	call	0xad8	; 0xad8 <Display__SetState>
+					  status_botao = SERVO_KEY_PRESS_PLANTA3;
+     130:	84 e0       	ldi	r24, 0x04	; 4
+     132:	80 93 60 01 	sts	0x0160, r24	; 0x800160 <status_botao>
+				    break;
+			}  //fim switch
+		} // fim do if(USER_ACTION...
+
+
+if( (Trigger == TRUE ) && (Timer__HMSGetStatus(TIMER_HMS_CYCLE_DURATION) == TIMER_EXPIRED) )
+     136:	80 91 64 01 	lds	r24, 0x0164	; 0x800164 <Trigger>
+     13a:	81 30       	cpi	r24, 0x01	; 1
+     13c:	69 f4       	brne	.+26     	; 0x158 <Appl__Handler+0x90>
+     13e:	85 e0       	ldi	r24, 0x05	; 5
+     140:	0e 94 36 05 	call	0xa6c	; 0xa6c <Timer__HMSGetStatus>
+     144:	81 11       	cpse	r24, r1
+     146:	08 c0       	rjmp	.+16     	; 0x158 <Appl__Handler+0x90>
+	{
+	 	Display__SetState(GARD_TIMEOUT);
+     148:	85 e0       	ldi	r24, 0x05	; 5
+     14a:	0e 94 6c 05 	call	0xad8	; 0xad8 <Display__SetState>
+	 	Garden_Lum_Control__SetLevel(LUM_OFF);
+     14e:	81 e0       	ldi	r24, 0x01	; 1
+     150:	0e 94 43 01 	call	0x286	; 0x286 <Garden_Lum_Control__SetLevel>
+	 	Trigger = FALSE;
+     154:	10 92 64 01 	sts	0x0164, r1	; 0x800164 <Trigger>
+     158:	08 95       	ret
+
+0000015a <main>:
+//-------------------------------------- Public Functions -------------------------------------------------------------
+//=====================================================================================================================
+
+void main(void)
+{
+	Slot = SLOT_1;
+     15a:	10 92 69 01 	sts	0x0169, r1	; 0x800169 <Slot>
+	
+	TCCR1A = 0;                        // confira timer para operação normal pinos OC1A e OC1B desconectados
+     15e:	10 92 80 00 	sts	0x0080, r1	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+	TCCR1B = 0;                        // limpa registrador
+     162:	e1 e8       	ldi	r30, 0x81	; 129
+     164:	f0 e0       	ldi	r31, 0x00	; 0
+     166:	10 82       	st	Z, r1
+	TCCR1B |= (1<<CS10)|(1 << CS12);   // configura prescaler para 1024: CS12 = 1 e CS10 = 1
+     168:	80 81       	ld	r24, Z
+     16a:	85 60       	ori	r24, 0x05	; 5
+     16c:	80 83       	st	Z, r24
+	
+	TCNT1 = 61630;      //para contar a cada 250ms
+     16e:	8e eb       	ldi	r24, 0xBE	; 190
+     170:	90 ef       	ldi	r25, 0xF0	; 240
+     172:	90 93 85 00 	sts	0x0085, r25	; 0x800085 <__DATA_REGION_ORIGIN__+0x25>
+     176:	80 93 84 00 	sts	0x0084, r24	; 0x800084 <__DATA_REGION_ORIGIN__+0x24>
+	
+	TIMSK1 |= (1 << TOIE1);
+     17a:	ef e6       	ldi	r30, 0x6F	; 111
+     17c:	f0 e0       	ldi	r31, 0x00	; 0
+     17e:	80 81       	ld	r24, Z
+     180:	81 60       	ori	r24, 0x01	; 1
+     182:	80 83       	st	Z, r24
+	sei();
+     184:	78 94       	sei
+	
+	// Functions Initialization
+	INITIALIZE_TASKS();
+     186:	0e 94 46 01 	call	0x28c	; 0x28c <ADC__Initialize>
+     18a:	0e 94 12 02 	call	0x424	; 0x424 <Pwm__Initialize>
+     18e:	0e 94 11 03 	call	0x622	; 0x622 <Hal__Initialize>
+     192:	0e 94 5a 05 	call	0xab4	; 0xab4 <Display__Initialize>
+     196:	0e 94 d6 04 	call	0x9ac	; 0x9ac <Timer__Initialize>
+     19a:	0e 94 90 06 	call	0xd20	; 0xd20 <Servo__Initialize>
+     19e:	0e 94 b3 08 	call	0x1166	; 0x1166 <IlumSensor__Initialize>
+     1a2:	0e 94 08 01 	call	0x210	; 0x210 <Garden_Lum_Control__Initialize>
+     1a6:	0e 94 5b 00 	call	0xb6	; 0xb6 <Appl__Initialize>
+
+			default:
+			  Slot = SLOT_1;
+			  break;
+	       }
+	Slot++;
+     1aa:	c1 e0       	ldi	r28, 0x01	; 1
+	INITIALIZE_TASKS();
+		
+	// Main Loop
+	for(;;)
+	{
+		ALL_SLOTS_TASKS();
+     1ac:	0e 94 6f 01 	call	0x2de	; 0x2de <ADC__Handler>
+     1b0:	0e 94 ee 04 	call	0x9dc	; 0x9dc <Timer__HMSHandler>
+     1b4:	0e 94 29 04 	call	0x852	; 0x852 <Hal__FastHandler>
+		switch(Slot)
+     1b8:	80 91 69 01 	lds	r24, 0x0169	; 0x800169 <Slot>
+     1bc:	82 30       	cpi	r24, 0x02	; 2
+     1be:	a9 f0       	breq	.+42     	; 0x1ea <main+0x90>
+     1c0:	28 f4       	brcc	.+10     	; 0x1cc <main+0x72>
+     1c2:	88 23       	and	r24, r24
+     1c4:	41 f0       	breq	.+16     	; 0x1d6 <main+0x7c>
+     1c6:	81 30       	cpi	r24, 0x01	; 1
+     1c8:	59 f0       	breq	.+22     	; 0x1e0 <main+0x86>
+     1ca:	15 c0       	rjmp	.+42     	; 0x1f6 <main+0x9c>
+     1cc:	83 30       	cpi	r24, 0x03	; 3
+     1ce:	81 f0       	breq	.+32     	; 0x1f0 <main+0x96>
+     1d0:	84 30       	cpi	r24, 0x04	; 4
+     1d2:	a1 f0       	breq	.+40     	; 0x1fc <main+0xa2>
+     1d4:	10 c0       	rjmp	.+32     	; 0x1f6 <main+0x9c>
+		   {
+			case SLOT_1:
+			   SLOT_1_TASKS();
+     1d6:	0e 94 6f 08 	call	0x10de	; 0x10de <Servo__Background>
+     1da:	0e 94 a2 04 	call	0x944	; 0x944 <Hal__BackgroundHandler>
+			   break;
+     1de:	0e c0       	rjmp	.+28     	; 0x1fc <main+0xa2>
+
+			case SLOT_2:
+			   SLOT_2_TASKS();
+     1e0:	0e 94 64 00 	call	0xc8	; 0xc8 <Appl__Handler>
+     1e4:	0e 94 89 06 	call	0xd12	; 0xd12 <Display__Handler>
+			   break;
+     1e8:	09 c0       	rjmp	.+18     	; 0x1fc <main+0xa2>
+
+			case SLOT_3:
+			  SLOT_3_TASKS();
+     1ea:	0e 94 ba 08 	call	0x1174	; 0x1174 <IlumSensor__ConversionHandler>
+			  break;
+     1ee:	06 c0       	rjmp	.+12     	; 0x1fc <main+0xa2>
+
+			case SLOT_4:
+			  SLOT_4_TASKS();
+     1f0:	0e 94 0e 01 	call	0x21c	; 0x21c <Garden_Lum_Control__Handler>
+			  break;
+     1f4:	03 c0       	rjmp	.+6      	; 0x1fc <main+0xa2>
+
+			default:
+			  Slot = SLOT_1;
+			  break;
+	       }
+	Slot++;
+     1f6:	c0 93 69 01 	sts	0x0169, r28	; 0x800169 <Slot>
+     1fa:	d8 cf       	rjmp	.-80     	; 0x1ac <main+0x52>
+     1fc:	80 91 69 01 	lds	r24, 0x0169	; 0x800169 <Slot>
+     200:	8f 5f       	subi	r24, 0xFF	; 255
+     202:	80 93 69 01 	sts	0x0169, r24	; 0x800169 <Slot>
+	if(Slot >= NUM_OF_MAIN_SLOTS)
+     206:	85 30       	cpi	r24, 0x05	; 5
+     208:	88 f2       	brcs	.-94     	; 0x1ac <main+0x52>
+		Slot = SLOT_1;
+     20a:	10 92 69 01 	sts	0x0169, r1	; 0x800169 <Slot>
+     20e:	ce cf       	rjmp	.-100    	; 0x1ac <main+0x52>
+
+00000210 <Garden_Lum_Control__Initialize>:
+
+
+//---------------------------------------------------------------------------------------------------------------------
+void Garden_Lum_Control__Initialize(void)
+{
+	Garden_LumControl_State = LUM_INSIDE_RANGE;   
+     210:	10 92 6b 01 	sts	0x016B, r1	; 0x80016b <Garden_LumControl_State>
+	Current_Level = LUM_OFF;
+     214:	81 e0       	ldi	r24, 0x01	; 1
+     216:	80 93 6a 01 	sts	0x016A, r24	; 0x80016a <Current_Level>
+     21a:	08 95       	ret
+
+0000021c <Garden_Lum_Control__Handler>:
+
+
+
+
+void Garden_Lum_Control__Handler(void)
+{
+     21c:	cf 93       	push	r28
+     21e:	df 93       	push	r29
+	unsigned short int temp_on;
+	unsigned short int temp_off;
+	unsigned short int current_ilum;
+
+	current_ilum = LumSensor__Interface(GARDEN_RELATED_SENSOR);
+     220:	81 e0       	ldi	r24, 0x01	; 1
+     222:	0e 94 c9 08 	call	0x1192	; 0x1192 <LumSensor__Interface>
+     226:	ec 01       	movw	r28, r24
+
+	if(Current_Level == LUM_OFF)
+     228:	80 91 6a 01 	lds	r24, 0x016A	; 0x80016a <Current_Level>
+     22c:	81 30       	cpi	r24, 0x01	; 1
+     22e:	29 f4       	brne	.+10     	; 0x23a <Garden_Lum_Control__Handler+0x1e>
+	{
+		TURN_LAMP_OFF();
+     230:	61 e0       	ldi	r22, 0x01	; 1
+     232:	84 e0       	ldi	r24, 0x04	; 4
+     234:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+     238:	23 c0       	rjmp	.+70     	; 0x280 <Garden_Lum_Control__Handler+0x64>
+	}
+	else
+	{
+		switch(Garden_LumControl_State)
+     23a:	80 91 6b 01 	lds	r24, 0x016B	; 0x80016b <Garden_LumControl_State>
+     23e:	88 23       	and	r24, r24
+     240:	19 f0       	breq	.+6      	; 0x248 <Garden_Lum_Control__Handler+0x2c>
+     242:	81 30       	cpi	r24, 0x01	; 1
+     244:	81 f0       	breq	.+32     	; 0x266 <Garden_Lum_Control__Handler+0x4a>
+     246:	1c c0       	rjmp	.+56     	; 0x280 <Garden_Lum_Control__Handler+0x64>
+		{
+		case LUM_INSIDE_RANGE:
+			TURN_LAMP_OFF(); // desliga o rele
+     248:	61 e0       	ldi	r22, 0x01	; 1
+     24a:	84 e0       	ldi	r24, 0x04	; 4
+     24c:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+			if(current_ilum <= luminosidade_planta_ON)
+     250:	80 91 65 01 	lds	r24, 0x0165	; 0x800165 <luminosidade_planta_ON>
+     254:	90 91 66 01 	lds	r25, 0x0166	; 0x800166 <luminosidade_planta_ON+0x1>
+     258:	8c 17       	cp	r24, r28
+     25a:	9d 07       	cpc	r25, r29
+     25c:	88 f0       	brcs	.+34     	; 0x280 <Garden_Lum_Control__Handler+0x64>
+			{
+				Garden_LumControl_State = LUM_OUTSIDE_RANGE;
+     25e:	81 e0       	ldi	r24, 0x01	; 1
+     260:	80 93 6b 01 	sts	0x016B, r24	; 0x80016b <Garden_LumControl_State>
+     264:	0d c0       	rjmp	.+26     	; 0x280 <Garden_Lum_Control__Handler+0x64>
+			}
+			break;
+
+		case LUM_OUTSIDE_RANGE:
+			TURN_LAMP_ON(); // liga o rele
+     266:	60 e0       	ldi	r22, 0x00	; 0
+     268:	84 e0       	ldi	r24, 0x04	; 4
+     26a:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+			if(current_ilum >= luminosidade_planta_OFF)
+     26e:	80 91 62 01 	lds	r24, 0x0162	; 0x800162 <luminosidade_planta_OFF>
+     272:	90 91 63 01 	lds	r25, 0x0163	; 0x800163 <luminosidade_planta_OFF+0x1>
+     276:	c8 17       	cp	r28, r24
+     278:	d9 07       	cpc	r29, r25
+     27a:	10 f0       	brcs	.+4      	; 0x280 <Garden_Lum_Control__Handler+0x64>
+			{
+				Garden_LumControl_State = LUM_INSIDE_RANGE;
+     27c:	10 92 6b 01 	sts	0x016B, r1	; 0x80016b <Garden_LumControl_State>
+			}
+
+			break;
+		}
+	}
+}
+     280:	df 91       	pop	r29
+     282:	cf 91       	pop	r28
+     284:	08 95       	ret
+
+00000286 <Garden_Lum_Control__SetLevel>:
+
+
+void Garden_Lum_Control__SetLevel(HORTA_LUM_CONTROL_LEVELS_TYPE level)
+{
+	Current_Level = level;
+     286:	80 93 6a 01 	sts	0x016A, r24	; 0x80016a <Current_Level>
+     28a:	08 95       	ret
+
+0000028c <ADC__Initialize>:
+//=====================================================================================================================
+//-------------------------------------- Public Functions -------------------------------------------------------------
+//=====================================================================================================================
+ 
+void ADC__Initialize(void)
+{
+     28c:	cf 93       	push	r28
+     28e:	df 93       	push	r29
+	volatile ADC_REG_TYPE *adc_pt;   // tipo definido no micro.h
+	adc_pt = ADC_REGISTERS;          // adc_pt aponta par ao inicio dos regs do ADC ($000078)
+	
+	
+
+	Adc_Step = ADC_STEP_INIT;   // inicializa o Adc_Step em INIT
+     290:	10 92 78 01 	sts	0x0178, r1	; 0x800178 <Adc_Step>
+	Sampling_Time = 0;
+     294:	10 92 79 01 	sts	0x0179, r1	; 0x800179 <Sampling_Time>
+	adc_pt->DIDR0_REG.byte =0x00;  //  nenhuma entrada analógica habilitada
+     298:	10 92 7e 00 	sts	0x007E, r1	; 0x80007e <__DATA_REGION_ORIGIN__+0x1e>
+     29c:	cc e6       	ldi	r28, 0x6C	; 108
+     29e:	d1 e0       	ldi	r29, 0x01	; 1
+     2a0:	6e e2       	ldi	r22, 0x2E	; 46
+     2a2:	71 e0       	ldi	r23, 0x01	; 1
+     2a4:	e8 e2       	ldi	r30, 0x28	; 40
+     2a6:	f1 e0       	ldi	r31, 0x01	; 1
+	
+	for(channel = 0; channel <NUM_OF_AD_CHANNELS ; channel++)
+     2a8:	80 e0       	ldi	r24, 0x00	; 0
+		if(Adc_Enable_Table[channel] == ENABLED)      // se o canal é habilitado, então deixa analógico
+		{
+			// Configures relative input as analog input
+			if(channel < NUM_OF_AD_CHANNELS) 
+			   {							// CH0 to CH5 are configured in DIDR0
+			   adc_pt->DIDR0_REG.byte |= ADC_BIT_SET_MASK[channel];	// configura como analógico conforme o canal enabled
+     2aa:	28 e7       	ldi	r18, 0x78	; 120
+     2ac:	30 e0       	ldi	r19, 0x00	; 0
+	Sampling_Time = 0;
+	adc_pt->DIDR0_REG.byte =0x00;  //  nenhuma entrada analógica habilitada
+	
+	for(channel = 0; channel <NUM_OF_AD_CHANNELS ; channel++)
+	 {
+		ADC_Buffer[channel] = 0;
+     2ae:	19 92       	st	Y+, r1
+     2b0:	19 92       	st	Y+, r1
+
+		if(Adc_Enable_Table[channel] == ENABLED)      // se o canal é habilitado, então deixa analógico
+     2b2:	db 01       	movw	r26, r22
+     2b4:	9d 91       	ld	r25, X+
+     2b6:	bd 01       	movw	r22, r26
+     2b8:	91 30       	cpi	r25, 0x01	; 1
+     2ba:	51 f4       	brne	.+20     	; 0x2d0 <ADC__Initialize+0x44>
+		{
+			// Configures relative input as analog input
+			if(channel < NUM_OF_AD_CHANNELS) 
+     2bc:	86 30       	cpi	r24, 0x06	; 6
+     2be:	40 f4       	brcc	.+16     	; 0x2d0 <ADC__Initialize+0x44>
+			   {							// CH0 to CH5 are configured in DIDR0
+			   adc_pt->DIDR0_REG.byte |= ADC_BIT_SET_MASK[channel];	// configura como analógico conforme o canal enabled
+     2c0:	d9 01       	movw	r26, r18
+     2c2:	16 96       	adiw	r26, 0x06	; 6
+     2c4:	4c 91       	ld	r20, X
+     2c6:	16 97       	sbiw	r26, 0x06	; 6
+     2c8:	90 81       	ld	r25, Z
+     2ca:	94 2b       	or	r25, r20
+     2cc:	16 96       	adiw	r26, 0x06	; 6
+     2ce:	9c 93       	st	X, r25
+
+	Adc_Step = ADC_STEP_INIT;   // inicializa o Adc_Step em INIT
+	Sampling_Time = 0;
+	adc_pt->DIDR0_REG.byte =0x00;  //  nenhuma entrada analógica habilitada
+	
+	for(channel = 0; channel <NUM_OF_AD_CHANNELS ; channel++)
+     2d0:	8f 5f       	subi	r24, 0xFF	; 255
+     2d2:	31 96       	adiw	r30, 0x01	; 1
+     2d4:	86 30       	cpi	r24, 0x06	; 6
+     2d6:	59 f7       	brne	.-42     	; 0x2ae <ADC__Initialize+0x22>
+			   {							// CH0 to CH5 are configured in DIDR0
+			   adc_pt->DIDR0_REG.byte |= ADC_BIT_SET_MASK[channel];	// configura como analógico conforme o canal enabled
+			   }
+		}
+	 }  
+}
+     2d8:	df 91       	pop	r29
+     2da:	cf 91       	pop	r28
+     2dc:	08 95       	ret
+
+000002de <ADC__Handler>:
+	unsigned short int value, value_high;
+	volatile ADC_REG_TYPE *adc_pt;
+	adc_pt = ADC_REGISTERS;
+	
+
+	switch(Adc_Step)
+     2de:	80 91 78 01 	lds	r24, 0x0178	; 0x800178 <Adc_Step>
+     2e2:	82 30       	cpi	r24, 0x02	; 2
+     2e4:	81 f1       	breq	.+96     	; 0x346 <ADC__Handler+0x68>
+     2e6:	28 f4       	brcc	.+10     	; 0x2f2 <ADC__Handler+0x14>
+     2e8:	88 23       	and	r24, r24
+     2ea:	41 f0       	breq	.+16     	; 0x2fc <ADC__Handler+0x1e>
+     2ec:	81 30       	cpi	r24, 0x01	; 1
+     2ee:	f9 f0       	breq	.+62     	; 0x32e <ADC__Handler+0x50>
+     2f0:	5f c0       	rjmp	.+190    	; 0x3b0 <ADC__Handler+0xd2>
+     2f2:	83 30       	cpi	r24, 0x03	; 3
+     2f4:	c1 f1       	breq	.+112    	; 0x366 <ADC__Handler+0x88>
+     2f6:	84 30       	cpi	r24, 0x04	; 4
+     2f8:	f1 f1       	breq	.+124    	; 0x376 <ADC__Handler+0x98>
+     2fa:	5a c0       	rjmp	.+180    	; 0x3b0 <ADC__Handler+0xd2>
+	{
+	case ADC_STEP_INIT:
+		Adc_Channel++;											// Selects next channel
+     2fc:	80 91 7a 01 	lds	r24, 0x017A	; 0x80017a <Adc_Channel>
+     300:	8f 5f       	subi	r24, 0xFF	; 255
+		if(Adc_Channel >= NUM_OF_AD_CHANNELS)
+     302:	86 30       	cpi	r24, 0x06	; 6
+     304:	18 f4       	brcc	.+6      	; 0x30c <ADC__Handler+0x2e>
+	
+
+	switch(Adc_Step)
+	{
+	case ADC_STEP_INIT:
+		Adc_Channel++;											// Selects next channel
+     306:	80 93 7a 01 	sts	0x017A, r24	; 0x80017a <Adc_Channel>
+     30a:	02 c0       	rjmp	.+4      	; 0x310 <ADC__Handler+0x32>
+		if(Adc_Channel >= NUM_OF_AD_CHANNELS)
+		{
+			Adc_Channel = AD_CH0;  // varre constantemente todas os canais
+     30c:	10 92 7a 01 	sts	0x017A, r1	; 0x80017a <Adc_Channel>
+		}
+
+		if(Adc_Enable_Table[Adc_Channel] == ENABLED)			// Checks if current channel is enabled
+     310:	e0 91 7a 01 	lds	r30, 0x017A	; 0x80017a <Adc_Channel>
+     314:	f0 e0       	ldi	r31, 0x00	; 0
+     316:	e2 5d       	subi	r30, 0xD2	; 210
+     318:	fe 4f       	sbci	r31, 0xFE	; 254
+     31a:	80 81       	ld	r24, Z
+     31c:	81 30       	cpi	r24, 0x01	; 1
+     31e:	09 f0       	breq	.+2      	; 0x322 <ADC__Handler+0x44>
+     320:	49 c0       	rjmp	.+146    	; 0x3b4 <ADC__Handler+0xd6>
+		{
+			Adc_Step = ADC_STEP_SAMPLING;
+     322:	80 93 78 01 	sts	0x0178, r24	; 0x800178 <Adc_Step>
+			Sampling_Time = ADC_SAMPLING_TIME;
+     326:	82 e3       	ldi	r24, 0x32	; 50
+     328:	80 93 79 01 	sts	0x0179, r24	; 0x800179 <Sampling_Time>
+     32c:	08 95       	ret
+		}
+		break;
+
+	case ADC_STEP_SAMPLING:
+		if(Sampling_Time)
+     32e:	80 91 79 01 	lds	r24, 0x0179	; 0x800179 <Sampling_Time>
+     332:	88 23       	and	r24, r24
+     334:	21 f0       	breq	.+8      	; 0x33e <ADC__Handler+0x60>
+		{
+			Sampling_Time--;
+     336:	81 50       	subi	r24, 0x01	; 1
+     338:	80 93 79 01 	sts	0x0179, r24	; 0x800179 <Sampling_Time>
+     33c:	08 95       	ret
+		}
+		else
+		{
+			Adc_Step = ADC_STEP_CONFIG_CHANNEL;	
+     33e:	82 e0       	ldi	r24, 0x02	; 2
+     340:	80 93 78 01 	sts	0x0178, r24	; 0x800178 <Adc_Step>
+     344:	08 95       	ret
+		}
+		break;
+
+	case ADC_STEP_CONFIG_CHANNEL:
+	    adc_pt->ADMUX_REG.byte |= (unsigned char)Adc_Channel;
+     346:	e8 e7       	ldi	r30, 0x78	; 120
+     348:	f0 e0       	ldi	r31, 0x00	; 0
+     34a:	94 81       	ldd	r25, Z+4	; 0x04
+     34c:	80 91 7a 01 	lds	r24, 0x017A	; 0x80017a <Adc_Channel>
+     350:	89 2b       	or	r24, r25
+     352:	84 83       	std	Z+4, r24	; 0x04
+		adc_pt->ADCSRA_REG.byte =  0x87; 
+     354:	87 e8       	ldi	r24, 0x87	; 135
+     356:	82 83       	std	Z+2, r24	; 0x02
+		adc_pt->ADCSRA_REG.bit.bit6  = 1;    //seta bit 6 (ADSC)
+     358:	82 81       	ldd	r24, Z+2	; 0x02
+     35a:	80 64       	ori	r24, 0x40	; 64
+     35c:	82 83       	std	Z+2, r24	; 0x02
+		Adc_Step = ADC_STEP_WAIT_CONVERSION;					// Set next step
+     35e:	83 e0       	ldi	r24, 0x03	; 3
+     360:	80 93 78 01 	sts	0x0178, r24	; 0x800178 <Adc_Step>
+		break;
+     364:	08 95       	ret
+		
+	case ADC_STEP_WAIT_CONVERSION:
+		if(adc_pt->ADCSRA_REG.bit.bit6 == 0)	// Wait until conversion be completed
+     366:	80 91 7a 00 	lds	r24, 0x007A	; 0x80007a <__DATA_REGION_ORIGIN__+0x1a>
+     36a:	86 fd       	sbrc	r24, 6
+     36c:	23 c0       	rjmp	.+70     	; 0x3b4 <ADC__Handler+0xd6>
+		   	Adc_Step = ADC_STEP_READ_RESULT;
+     36e:	84 e0       	ldi	r24, 0x04	; 4
+     370:	80 93 78 01 	sts	0x0178, r24	; 0x800178 <Adc_Step>
+     374:	08 95       	ret
+		break;
+
+	case ADC_STEP_READ_RESULT:  // AQUI é feita a leitura do ADC físico!!!
+	    if(adc_pt->ADMUX_REG.bit.bit5 == 1)   //8 bits
+     376:	80 91 7c 00 	lds	r24, 0x007C	; 0x80007c <__DATA_REGION_ORIGIN__+0x1c>
+     37a:	85 ff       	sbrs	r24, 5
+     37c:	03 c0       	rjmp	.+6      	; 0x384 <ADC__Handler+0xa6>
+		   {
+			value = (unsigned short int)((adc_pt->ADCH_REG.byte)& LO_BYTE_MASK); // 8 bits   
+     37e:	20 91 79 00 	lds	r18, 0x0079	; 0x800079 <__DATA_REGION_ORIGIN__+0x19>
+     382:	30 e0       	ldi	r19, 0x00	; 0
+		   }
+		if(adc_pt->ADMUX_REG.bit.bit5 == 0)    // 10 bits
+     384:	80 91 7c 00 	lds	r24, 0x007C	; 0x80007c <__DATA_REGION_ORIGIN__+0x1c>
+     388:	85 fd       	sbrc	r24, 5
+     38a:	06 c0       	rjmp	.+12     	; 0x398 <ADC__Handler+0xba>
+		   {
+			value = (unsigned short int)((adc_pt->ADCL_REG.byte)& LO_BYTE_MASK);
+     38c:	e8 e7       	ldi	r30, 0x78	; 120
+     38e:	f0 e0       	ldi	r31, 0x00	; 0
+     390:	20 81       	ld	r18, Z
+			value_high = (unsigned short int)(adc_pt->ADCH_REG.byte <<8); 
+     392:	81 81       	ldd	r24, Z+1	; 0x01
+			value |= value_high;	// Reads the conversion result bytes  
+     394:	30 e0       	ldi	r19, 0x00	; 0
+     396:	38 2b       	or	r19, r24
+		   }
+
+		ADC_Buffer[Adc_Channel] = value;  // A leitura do ADC é colocado no buffer ADC_Buffer do respectivo canal.
+     398:	e0 91 7a 01 	lds	r30, 0x017A	; 0x80017a <Adc_Channel>
+     39c:	f0 e0       	ldi	r31, 0x00	; 0
+     39e:	ee 0f       	add	r30, r30
+     3a0:	ff 1f       	adc	r31, r31
+     3a2:	e4 59       	subi	r30, 0x94	; 148
+     3a4:	fe 4f       	sbci	r31, 0xFE	; 254
+     3a6:	31 83       	std	Z+1, r19	; 0x01
+     3a8:	20 83       	st	Z, r18
+		Adc_Step = ADC_STEP_INIT;
+     3aa:	10 92 78 01 	sts	0x0178, r1	; 0x800178 <Adc_Step>
+
+	 	 break;
+     3ae:	08 95       	ret
+
+	default:
+		Adc_Step = ADC_STEP_INIT;
+     3b0:	10 92 78 01 	sts	0x0178, r1	; 0x800178 <Adc_Step>
+     3b4:	08 95       	ret
+
+000003b6 <ADC__ConfigModes>:
+{
+	volatile ADC_REG_TYPE *adc_pt;
+	adc_pt = ADC_REGISTERS;
+	
+	 	// seleção da tensão de referencia:
+	adc_pt->ADMUX_REG.bit.bit7 = 0;   //tensão de referencia 5V
+     3b6:	e8 e7       	ldi	r30, 0x78	; 120
+     3b8:	f0 e0       	ldi	r31, 0x00	; 0
+     3ba:	94 81       	ldd	r25, Z+4	; 0x04
+     3bc:	9f 77       	andi	r25, 0x7F	; 127
+     3be:	94 83       	std	Z+4, r25	; 0x04
+	adc_pt->ADMUX_REG.bit.bit6 = 1;   //tensão de referencia 5V
+     3c0:	94 81       	ldd	r25, Z+4	; 0x04
+     3c2:	90 64       	ori	r25, 0x40	; 64
+     3c4:	94 83       	std	Z+4, r25	; 0x04
+	
+	if(mode < NUM_OF_MODES)
+     3c6:	82 30       	cpi	r24, 0x02	; 2
+     3c8:	68 f4       	brcc	.+26     	; 0x3e4 <ADC__ConfigModes+0x2e>
+	{
+		if (mode == MODE_8BITS)
+     3ca:	81 11       	cpse	r24, r1
+     3cc:	04 c0       	rjmp	.+8      	; 0x3d6 <ADC__ConfigModes+0x20>
+		   adc_pt->ADMUX_REG.bit.bit5 = 1;  //Micro.h => ADLAR = 1, alinhado a esquerda e a leitura é no ADCH (8 bits)
+     3ce:	84 81       	ldd	r24, Z+4	; 0x04
+     3d0:	80 62       	ori	r24, 0x20	; 32
+     3d2:	84 83       	std	Z+4, r24	; 0x04
+     3d4:	07 c0       	rjmp	.+14     	; 0x3e4 <ADC__ConfigModes+0x2e>
+		if (mode == MODE_10BITS)
+     3d6:	81 30       	cpi	r24, 0x01	; 1
+     3d8:	29 f4       	brne	.+10     	; 0x3e4 <ADC__ConfigModes+0x2e>
+		   adc_pt->ADMUX_REG.bit.bit5 = 0;  //ADLAR = 0, alinhado a direita e a leitura é primeiro no ADCL e depois ADCH (10 bits)
+     3da:	e8 e7       	ldi	r30, 0x78	; 120
+     3dc:	f0 e0       	ldi	r31, 0x00	; 0
+     3de:	84 81       	ldd	r24, Z+4	; 0x04
+     3e0:	8f 7d       	andi	r24, 0xDF	; 223
+     3e2:	84 83       	std	Z+4, r24	; 0x04
+	}
+		
+	if(conv_type < NUM_OF_CONVERSION_TYPES)
+     3e4:	62 30       	cpi	r22, 0x02	; 2
+     3e6:	78 f4       	brcc	.+30     	; 0x406 <__LOCK_REGION_LENGTH__+0x6>
+	{
+		if (conv_type == AD_SINGLE_CONVERSION)
+     3e8:	61 11       	cpse	r22, r1
+     3ea:	06 c0       	rjmp	.+12     	; 0x3f8 <ADC__ConfigModes+0x42>
+		   adc_pt->ADCSRA_REG.bit.bit5 = 0;      //Micro.h => ADATE = 0, uma leitura
+     3ec:	e8 e7       	ldi	r30, 0x78	; 120
+     3ee:	f0 e0       	ldi	r31, 0x00	; 0
+     3f0:	82 81       	ldd	r24, Z+2	; 0x02
+     3f2:	8f 7d       	andi	r24, 0xDF	; 223
+     3f4:	82 83       	std	Z+2, r24	; 0x02
+     3f6:	08 95       	ret
+		if (conv_type == AD_CONTINUOUS_CONVERSION)
+     3f8:	61 30       	cpi	r22, 0x01	; 1
+     3fa:	29 f4       	brne	.+10     	; 0x406 <__LOCK_REGION_LENGTH__+0x6>
+		   adc_pt->ADCSRA_REG.bit.bit5 = 1;      //ADATE = 1, a fonte de disparo pode ser conversão continua, comparador analogico, etc 
+     3fc:	e8 e7       	ldi	r30, 0x78	; 120
+     3fe:	f0 e0       	ldi	r31, 0x00	; 0
+     400:	82 81       	ldd	r24, Z+2	; 0x02
+     402:	80 62       	ori	r24, 0x20	; 32
+     404:	82 83       	std	Z+2, r24	; 0x02
+     406:	08 95       	ret
+
+00000408 <ADC__GetValue>:
+ */
+
+
+unsigned short int ADC__GetValue(AD_CHANNEL_TYPE channel)
+{
+	if(channel < NUM_OF_AD_CHANNELS)
+     408:	86 30       	cpi	r24, 0x06	; 6
+     40a:	48 f4       	brcc	.+18     	; 0x41e <ADC__GetValue+0x16>
+	{
+		return ADC_Buffer[channel];  // retorna valor do ADC lido no ADC_Buffer do canal solcitado!
+     40c:	e8 2f       	mov	r30, r24
+     40e:	f0 e0       	ldi	r31, 0x00	; 0
+     410:	ee 0f       	add	r30, r30
+     412:	ff 1f       	adc	r31, r31
+     414:	e4 59       	subi	r30, 0x94	; 148
+     416:	fe 4f       	sbci	r31, 0xFE	; 254
+     418:	80 81       	ld	r24, Z
+     41a:	91 81       	ldd	r25, Z+1	; 0x01
+     41c:	08 95       	ret
+	}
+	return 0;
+     41e:	80 e0       	ldi	r24, 0x00	; 0
+     420:	90 e0       	ldi	r25, 0x00	; 0
+}
+     422:	08 95       	ret
+
+00000424 <Pwm__Initialize>:
+volatile TC0_REG_TYPE *pwm_pt0;
+
+pwm_pt2 = TC2_REGISTERS;
+pwm_pt0 = TC0_REGISTERS;
+
+bitWrite(DDRD, 5, OUTPUT_DIGITAL);
+     424:	55 9a       	sbi	0x0a, 5	; 10
+
+pwm_pt0->TCCR0A_REG.byte =  0b00110011;
+     426:	83 e3       	ldi	r24, 0x33	; 51
+     428:	84 bd       	out	0x24, r24	; 36
+
+
+if((frequency > 20) && (frequency  < 40) ){
+switch(tc){
+case PWM_TC0:
+   pwm_pt0->TCCR0B_REG.byte = 0x05; //prescaler = 1024 dando frequencia de 30Hz
+     42a:	85 e0       	ldi	r24, 0x05	; 5
+     42c:	85 bd       	out	0x25, r24	; 37
+switch (pwm){
+case PWM0:
+	pwm_pt0->OCR0A_REG.byte = (unsigned char)(255*duty/100); //considerando TOP = 255
+	break;
+case PWM1:
+	pwm_pt0->OCR0B_REG.byte = (unsigned char)(255*duty/100); //considerando TOP = 255
+     42e:	18 bc       	out	0x28, r1	; 40
+     430:	08 95       	ret
+
+00000432 <Pwm__SetTCFrequency>:
+pwm_pt1 = TC1_REGISTERS;
+pwm_pt2 = TC2_REGISTERS;
+
+
+
+if((frequency > 20) && (frequency  < 40) ){
+     432:	65 51       	subi	r22, 0x15	; 21
+     434:	71 09       	sbc	r23, r1
+     436:	63 31       	cpi	r22, 0x13	; 19
+     438:	71 05       	cpc	r23, r1
+     43a:	80 f4       	brcc	.+32     	; 0x45c <Pwm__SetTCFrequency+0x2a>
+switch(tc){
+     43c:	81 30       	cpi	r24, 0x01	; 1
+     43e:	39 f0       	breq	.+14     	; 0x44e <Pwm__SetTCFrequency+0x1c>
+     440:	18 f0       	brcs	.+6      	; 0x448 <Pwm__SetTCFrequency+0x16>
+     442:	82 30       	cpi	r24, 0x02	; 2
+     444:	41 f0       	breq	.+16     	; 0x456 <Pwm__SetTCFrequency+0x24>
+     446:	08 95       	ret
+case PWM_TC0:
+   pwm_pt0->TCCR0B_REG.byte = 0x05; //prescaler = 1024 dando frequencia de 30Hz
+     448:	85 e0       	ldi	r24, 0x05	; 5
+     44a:	85 bd       	out	0x25, r24	; 37
+   break;   
+     44c:	08 95       	ret
+case PWM_TC1:
+	pwm_pt1->TCCR1B_REG.byte = 0x02; //prescaler = 8 dando frequencia de 4000Hz
+     44e:	82 e0       	ldi	r24, 0x02	; 2
+     450:	80 93 81 00 	sts	0x0081, r24	; 0x800081 <__DATA_REGION_ORIGIN__+0x21>
+	break;
+     454:	08 95       	ret
+case PWM_TC2:
+	pwm_pt2->TCCR2B_REG.byte = 0x05; //prescaler = 8 dando frequencia de 4000Hz   	
+     456:	85 e0       	ldi	r24, 0x05	; 5
+     458:	80 93 b1 00 	sts	0x00B1, r24	; 0x8000b1 <__DATA_REGION_ORIGIN__+0x51>
+     45c:	08 95       	ret
+
+0000045e <Pwm__SetDutyCycle>:
+}
+}
+}  // fim da função
+
+
+void Pwm__SetDutyCycle( PWM_ID_TYPE pwm, unsigned char duty){
+     45e:	65 36       	cpi	r22, 0x65	; 101
+     460:	08 f0       	brcs	.+2      	; 0x464 <Pwm__SetDutyCycle+0x6>
+     462:	64 e6       	ldi	r22, 0x64	; 100
+pwm_pt0 = TC0_REGISTERS;
+pwm_pt1 = TC1_REGISTERS;
+pwm_pt2 = TC2_REGISTERS;
+if (duty >100)
+   duty = 100;
+switch (pwm){
+     464:	82 30       	cpi	r24, 0x02	; 2
+     466:	01 f1       	breq	.+64     	; 0x4a8 <Pwm__SetDutyCycle+0x4a>
+     468:	28 f4       	brcc	.+10     	; 0x474 <Pwm__SetDutyCycle+0x16>
+     46a:	88 23       	and	r24, r24
+     46c:	49 f0       	breq	.+18     	; 0x480 <Pwm__SetDutyCycle+0x22>
+     46e:	81 30       	cpi	r24, 0x01	; 1
+     470:	89 f0       	breq	.+34     	; 0x494 <Pwm__SetDutyCycle+0x36>
+     472:	08 95       	ret
+     474:	84 30       	cpi	r24, 0x04	; 4
+     476:	71 f1       	breq	.+92     	; 0x4d4 <Pwm__SetDutyCycle+0x76>
+     478:	10 f1       	brcs	.+68     	; 0x4be <Pwm__SetDutyCycle+0x60>
+     47a:	85 30       	cpi	r24, 0x05	; 5
+     47c:	b1 f1       	breq	.+108    	; 0x4ea <Pwm__SetDutyCycle+0x8c>
+     47e:	08 95       	ret
+case PWM0:
+	pwm_pt0->OCR0A_REG.byte = (unsigned char)(255*duty/100); //considerando TOP = 255
+     480:	2f ef       	ldi	r18, 0xFF	; 255
+     482:	62 9f       	mul	r22, r18
+     484:	c0 01       	movw	r24, r0
+     486:	11 24       	eor	r1, r1
+     488:	64 e6       	ldi	r22, 0x64	; 100
+     48a:	70 e0       	ldi	r23, 0x00	; 0
+     48c:	0e 94 d7 08 	call	0x11ae	; 0x11ae <__divmodhi4>
+     490:	67 bd       	out	0x27, r22	; 39
+	break;
+     492:	08 95       	ret
+case PWM1:
+	pwm_pt0->OCR0B_REG.byte = (unsigned char)(255*duty/100); //considerando TOP = 255
+     494:	2f ef       	ldi	r18, 0xFF	; 255
+     496:	62 9f       	mul	r22, r18
+     498:	c0 01       	movw	r24, r0
+     49a:	11 24       	eor	r1, r1
+     49c:	64 e6       	ldi	r22, 0x64	; 100
+     49e:	70 e0       	ldi	r23, 0x00	; 0
+     4a0:	0e 94 d7 08 	call	0x11ae	; 0x11ae <__divmodhi4>
+     4a4:	68 bd       	out	0x28, r22	; 40
+	break;
+     4a6:	08 95       	ret
+case PWM2:
+	pwm_pt1->OCR1AH_REG.byte = (unsigned char)(255*duty/100); //considerando TOP = 255
+     4a8:	2f ef       	ldi	r18, 0xFF	; 255
+     4aa:	62 9f       	mul	r22, r18
+     4ac:	c0 01       	movw	r24, r0
+     4ae:	11 24       	eor	r1, r1
+     4b0:	64 e6       	ldi	r22, 0x64	; 100
+     4b2:	70 e0       	ldi	r23, 0x00	; 0
+     4b4:	0e 94 d7 08 	call	0x11ae	; 0x11ae <__divmodhi4>
+     4b8:	60 93 89 00 	sts	0x0089, r22	; 0x800089 <__DATA_REGION_ORIGIN__+0x29>
+ 	break;    // tem que checar para 16 bits
+     4bc:	08 95       	ret
+case PWM3:
+	 pwm_pt1->OCR1BH_REG.byte = (unsigned char)(255*duty/100); //considerando TOP = 255
+     4be:	2f ef       	ldi	r18, 0xFF	; 255
+     4c0:	62 9f       	mul	r22, r18
+     4c2:	c0 01       	movw	r24, r0
+     4c4:	11 24       	eor	r1, r1
+     4c6:	64 e6       	ldi	r22, 0x64	; 100
+     4c8:	70 e0       	ldi	r23, 0x00	; 0
+     4ca:	0e 94 d7 08 	call	0x11ae	; 0x11ae <__divmodhi4>
+     4ce:	60 93 8b 00 	sts	0x008B, r22	; 0x80008b <__DATA_REGION_ORIGIN__+0x2b>
+	 break;    // tem que checar para 16 bits
+     4d2:	08 95       	ret
+case PWM4:
+	 pwm_pt2->OCR2A_REG.byte = (unsigned char)(255*duty/100); //considerando TOP = 255
+     4d4:	2f ef       	ldi	r18, 0xFF	; 255
+     4d6:	62 9f       	mul	r22, r18
+     4d8:	c0 01       	movw	r24, r0
+     4da:	11 24       	eor	r1, r1
+     4dc:	64 e6       	ldi	r22, 0x64	; 100
+     4de:	70 e0       	ldi	r23, 0x00	; 0
+     4e0:	0e 94 d7 08 	call	0x11ae	; 0x11ae <__divmodhi4>
+     4e4:	60 93 b3 00 	sts	0x00B3, r22	; 0x8000b3 <__DATA_REGION_ORIGIN__+0x53>
+	 break;    // tem que checar para 16 bits
+     4e8:	08 95       	ret
+case PWM5:
+	pwm_pt2->OCR2B_REG.byte = (unsigned char)(255*duty/100); //considerando TOP = 255
+     4ea:	2f ef       	ldi	r18, 0xFF	; 255
+     4ec:	62 9f       	mul	r22, r18
+     4ee:	c0 01       	movw	r24, r0
+     4f0:	11 24       	eor	r1, r1
+     4f2:	64 e6       	ldi	r22, 0x64	; 100
+     4f4:	70 e0       	ldi	r23, 0x00	; 0
+     4f6:	0e 94 d7 08 	call	0x11ae	; 0x11ae <__divmodhi4>
+     4fa:	60 93 b4 00 	sts	0x00B4, r22	; 0x8000b4 <__DATA_REGION_ORIGIN__+0x54>
+     4fe:	08 95       	ret
+
+00000500 <Gpio__PinConfig>:
+{
+	volatile GPIO_DATA_TYPE *pt_data;
+	unsigned char set_bit_mask;
+	unsigned char clr_bit_mask;
+	
+	set_bit_mask = GPIO_PIN_SET_MASK[pin];
+     500:	70 e0       	ldi	r23, 0x00	; 0
+     502:	fb 01       	movw	r30, r22
+     504:	e4 5c       	subi	r30, 0xC4	; 196
+     506:	fe 4f       	sbci	r31, 0xFE	; 254
+     508:	20 81       	ld	r18, Z
+	clr_bit_mask = GPIO_PIN_CLR_MASK[pin];
+	
+	
+	switch(port)
+     50a:	81 30       	cpi	r24, 0x01	; 1
+     50c:	31 f0       	breq	.+12     	; 0x51a <Gpio__PinConfig+0x1a>
+     50e:	18 f0       	brcs	.+6      	; 0x516 <Gpio__PinConfig+0x16>
+     510:	82 30       	cpi	r24, 0x02	; 2
+     512:	29 f0       	breq	.+10     	; 0x51e <Gpio__PinConfig+0x1e>
+     514:	05 c0       	rjmp	.+10     	; 0x520 <Gpio__PinConfig+0x20>
+	{
+	case	PORT_B:
+		pt_data = PORTB;   // Está no Micro.h: #define PORTA &GPIOA_DATA   => endereço 0x0000 00000
+     516:	95 b1       	in	r25, 0x05	; 5
+		break;
+     518:	03 c0       	rjmp	.+6      	; 0x520 <Gpio__PinConfig+0x20>
+	case	PORT_C:
+		pt_data = PORTC;
+     51a:	98 b1       	in	r25, 0x08	; 8
+		break;
+     51c:	01 c0       	rjmp	.+2      	; 0x520 <Gpio__PinConfig+0x20>
+	case	PORT_D:
+		pt_data = PORTD;
+     51e:	9b b1       	in	r25, 0x0b	; 11
+		break;
+	default:
+		break;
+	}
+if(type == OUTPUT_DIGITAL)    // setar 1 para saída
+     520:	41 30       	cpi	r20, 0x01	; 1
+     522:	69 f4       	brne	.+26     	; 0x53e <Gpio__PinConfig+0x3e>
+{
+	pt_data = GPIO_DATA_LIST[port];		 	
+     524:	e8 2f       	mov	r30, r24
+     526:	f0 e0       	ldi	r31, 0x00	; 0
+     528:	ee 0f       	add	r30, r30
+     52a:	ff 1f       	adc	r31, r31
+     52c:	e0 50       	subi	r30, 0x00	; 0
+     52e:	ff 4f       	sbci	r31, 0xFF	; 255
+     530:	01 90       	ld	r0, Z+
+     532:	f0 81       	ld	r31, Z
+     534:	e0 2d       	mov	r30, r0
+	pt_data->DIRECION_REG.byte |= set_bit_mask;	// Config Output
+     536:	81 81       	ldd	r24, Z+1	; 0x01
+     538:	82 2b       	or	r24, r18
+     53a:	81 83       	std	Z+1, r24	; 0x01
+     53c:	08 95       	ret
+}
+
+if(type == INPUT_DIGITAL_PULLUP)
+     53e:	41 11       	cpse	r20, r1
+     540:	14 c0       	rjmp	.+40     	; 0x56a <Gpio__PinConfig+0x6a>
+{
+	pt_data = GPIO_DATA_LIST[port];		 	
+     542:	e8 2f       	mov	r30, r24
+     544:	f0 e0       	ldi	r31, 0x00	; 0
+     546:	ee 0f       	add	r30, r30
+     548:	ff 1f       	adc	r31, r31
+     54a:	e0 50       	subi	r30, 0x00	; 0
+     54c:	ff 4f       	sbci	r31, 0xFF	; 255
+     54e:	01 90       	ld	r0, Z+
+     550:	f0 81       	ld	r31, Z
+     552:	e0 2d       	mov	r30, r0
+	pt_data->DIRECION_REG.byte &= clr_bit_mask; 	// Config Input
+     554:	81 81       	ldd	r24, Z+1	; 0x01
+	volatile GPIO_DATA_TYPE *pt_data;
+	unsigned char set_bit_mask;
+	unsigned char clr_bit_mask;
+	
+	set_bit_mask = GPIO_PIN_SET_MASK[pin];
+	clr_bit_mask = GPIO_PIN_CLR_MASK[pin];
+     556:	db 01       	movw	r26, r22
+     558:	ac 5c       	subi	r26, 0xCC	; 204
+     55a:	be 4f       	sbci	r27, 0xFE	; 254
+}
+
+if(type == INPUT_DIGITAL_PULLUP)
+{
+	pt_data = GPIO_DATA_LIST[port];		 	
+	pt_data->DIRECION_REG.byte &= clr_bit_mask; 	// Config Input
+     55c:	9c 91       	ld	r25, X
+     55e:	98 23       	and	r25, r24
+     560:	91 83       	std	Z+1, r25	; 0x01
+	
+	pt_data->DATA_OUT_PULL_REG.byte |= set_bit_mask;   // Config Input Pull up
+     562:	92 81       	ldd	r25, Z+2	; 0x02
+     564:	82 2f       	mov	r24, r18
+     566:	89 2b       	or	r24, r25
+     568:	82 83       	std	Z+2, r24	; 0x02
+     56a:	08 95       	ret
+
+0000056c <Gpio__PinWrite>:
+	
+void Gpio__PinWrite(GPIO_PORT port,unsigned char pin,unsigned char value)
+{
+	volatile GPIO_DATA_TYPE *pt_data;
+	
+	  if (value == 0)
+     56c:	41 11       	cpse	r20, r1
+     56e:	14 c0       	rjmp	.+40     	; 0x598 <Gpio__PinWrite+0x2c>
+        {
+        	pt_data = GPIO_DATA_LIST[port];		 	
+     570:	e8 2f       	mov	r30, r24
+     572:	f0 e0       	ldi	r31, 0x00	; 0
+     574:	ee 0f       	add	r30, r30
+     576:	ff 1f       	adc	r31, r31
+     578:	e0 50       	subi	r30, 0x00	; 0
+     57a:	ff 4f       	sbci	r31, 0xFF	; 255
+     57c:	a0 81       	ld	r26, Z
+     57e:	b1 81       	ldd	r27, Z+1	; 0x01
+        	pt_data->DATA_OUT_PULL_REG.byte &= GPIO_PIN_CLR_MASK[pin];
+     580:	12 96       	adiw	r26, 0x02	; 2
+     582:	9c 91       	ld	r25, X
+     584:	12 97       	sbiw	r26, 0x02	; 2
+     586:	e6 2f       	mov	r30, r22
+     588:	f0 e0       	ldi	r31, 0x00	; 0
+     58a:	ec 5c       	subi	r30, 0xCC	; 204
+     58c:	fe 4f       	sbci	r31, 0xFE	; 254
+     58e:	80 81       	ld	r24, Z
+     590:	89 23       	and	r24, r25
+     592:	12 96       	adiw	r26, 0x02	; 2
+     594:	8c 93       	st	X, r24
+     596:	08 95       	ret
+        }
+        else
+        {
+        	pt_data = GPIO_DATA_LIST[port];
+     598:	e8 2f       	mov	r30, r24
+     59a:	f0 e0       	ldi	r31, 0x00	; 0
+     59c:	ee 0f       	add	r30, r30
+     59e:	ff 1f       	adc	r31, r31
+     5a0:	e0 50       	subi	r30, 0x00	; 0
+     5a2:	ff 4f       	sbci	r31, 0xFF	; 255
+     5a4:	a0 81       	ld	r26, Z
+     5a6:	b1 81       	ldd	r27, Z+1	; 0x01
+        	pt_data->DATA_OUT_PULL_REG.byte |= GPIO_PIN_SET_MASK[pin];
+     5a8:	12 96       	adiw	r26, 0x02	; 2
+     5aa:	9c 91       	ld	r25, X
+     5ac:	12 97       	sbiw	r26, 0x02	; 2
+     5ae:	e6 2f       	mov	r30, r22
+     5b0:	f0 e0       	ldi	r31, 0x00	; 0
+     5b2:	e4 5c       	subi	r30, 0xC4	; 196
+     5b4:	fe 4f       	sbci	r31, 0xFE	; 254
+     5b6:	80 81       	ld	r24, Z
+     5b8:	89 2b       	or	r24, r25
+     5ba:	12 96       	adiw	r26, 0x02	; 2
+     5bc:	8c 93       	st	X, r24
+     5be:	08 95       	ret
+
+000005c0 <Gpio__PinRead>:
+unsigned char Gpio__PinRead(GPIO_PORT port,unsigned char pin)
+{
+	volatile GPIO_DATA_TYPE *pt_data;
+	unsigned char pin_state = SW_OFF;       // pin_state = OFF  não pressionado  
+	
+		pt_data = GPIO_DATA_LIST[port];
+     5c0:	e8 2f       	mov	r30, r24
+     5c2:	f0 e0       	ldi	r31, 0x00	; 0
+     5c4:	ee 0f       	add	r30, r30
+     5c6:	ff 1f       	adc	r31, r31
+     5c8:	e0 50       	subi	r30, 0x00	; 0
+     5ca:	ff 4f       	sbci	r31, 0xFF	; 255
+     5cc:	01 90       	ld	r0, Z+
+     5ce:	f0 81       	ld	r31, Z
+     5d0:	e0 2d       	mov	r30, r0
+    	if (pt_data->DATA_IN_REG.byte & GPIO_PIN_SET_MASK[pin])     // if(leitura != 0)   ou if(leitura)
+     5d2:	90 81       	ld	r25, Z
+     5d4:	e6 2f       	mov	r30, r22
+     5d6:	f0 e0       	ldi	r31, 0x00	; 0
+     5d8:	e4 5c       	subi	r30, 0xC4	; 196
+     5da:	fe 4f       	sbci	r31, 0xFE	; 254
+           pin_state = SW_OFF;     // pin_state = SW_OFF   não acionado
+        else
+		   pin_state = SW_ON;
+   
+    return (pin_state);
+     5dc:	80 81       	ld	r24, Z
+     5de:	98 23       	and	r25, r24
+     5e0:	81 e0       	ldi	r24, 0x01	; 1
+     5e2:	09 f4       	brne	.+2      	; 0x5e6 <Gpio__PinRead+0x26>
+     5e4:	80 e0       	ldi	r24, 0x00	; 0
+    
+}
+     5e6:	08 95       	ret
+
+000005e8 <Hal__SetDigitalOutput>:
+ *  output: Respective LED
+ *  value: ON/OFF
+ */
+void Hal__SetDigitalOutput(OUTPUT_TYPE output,unsigned char value)
+{
+	Hal_Leds_Buffer[output] = SAIDA_OFF;
+     5e8:	90 e0       	ldi	r25, 0x00	; 0
+	if (value == LIGA_SAIDA)
+     5ea:	66 23       	and	r22, r22
+     5ec:	31 f0       	breq	.+12     	; 0x5fa <Hal__SetDigitalOutput+0x12>
+ *  output: Respective LED
+ *  value: ON/OFF
+ */
+void Hal__SetDigitalOutput(OUTPUT_TYPE output,unsigned char value)
+{
+	Hal_Leds_Buffer[output] = SAIDA_OFF;
+     5ee:	fc 01       	movw	r30, r24
+     5f0:	e4 58       	subi	r30, 0x84	; 132
+     5f2:	fe 4f       	sbci	r31, 0xFE	; 254
+     5f4:	21 e0       	ldi	r18, 0x01	; 1
+     5f6:	20 83       	st	Z, r18
+     5f8:	08 95       	ret
+	if (value == LIGA_SAIDA)
+	   Hal_Leds_Buffer[output] = SAIDA_ON;
+     5fa:	fc 01       	movw	r30, r24
+     5fc:	e4 58       	subi	r30, 0x84	; 132
+     5fe:	fe 4f       	sbci	r31, 0xFE	; 254
+     600:	10 82       	st	Z, r1
+     602:	08 95       	ret
+
+00000604 <Hal__SetAllDigitalOutputs>:
+ *  value ON/OFF
+ *  ON: To turn All LEDs ON 
+ *  OFF: To turn All LEDs OFF
+ */
+void Hal__SetAllDigitalOutputs(unsigned char value)
+{
+     604:	ec e7       	ldi	r30, 0x7C	; 124
+     606:	f1 e0       	ldi	r31, 0x01	; 1
+     608:	21 e8       	ldi	r18, 0x81	; 129
+     60a:	31 e0       	ldi	r19, 0x01	; 1
+	OUTPUT_TYPE index;
+
+	for(index = 0; index < NUM_OF_OUTPUTS; index++)
+		{
+		Hal_Leds_Buffer[index] = SAIDA_OFF;
+     60c:	91 e0       	ldi	r25, 0x01	; 1
+		if (value == LIGA_SAIDA)
+     60e:	88 23       	and	r24, r24
+     610:	11 f0       	breq	.+4      	; 0x616 <Hal__SetAllDigitalOutputs+0x12>
+{
+	OUTPUT_TYPE index;
+
+	for(index = 0; index < NUM_OF_OUTPUTS; index++)
+		{
+		Hal_Leds_Buffer[index] = SAIDA_OFF;
+     612:	90 83       	st	Z, r25
+     614:	01 c0       	rjmp	.+2      	; 0x618 <Hal__SetAllDigitalOutputs+0x14>
+		if (value == LIGA_SAIDA)
+			Hal_Leds_Buffer[index] = SAIDA_ON;
+     616:	10 82       	st	Z, r1
+     618:	31 96       	adiw	r30, 0x01	; 1
+ */
+void Hal__SetAllDigitalOutputs(unsigned char value)
+{
+	OUTPUT_TYPE index;
+
+	for(index = 0; index < NUM_OF_OUTPUTS; index++)
+     61a:	e2 17       	cp	r30, r18
+     61c:	f3 07       	cpc	r31, r19
+     61e:	b9 f7       	brne	.-18     	; 0x60e <Hal__SetAllDigitalOutputs+0xa>
+		{
+		Hal_Leds_Buffer[index] = SAIDA_OFF;
+		if (value == LIGA_SAIDA)
+			Hal_Leds_Buffer[index] = SAIDA_ON;
+		}
+}
+     620:	08 95       	ret
+
+00000622 <Hal__Initialize>:
+/*
+ * Call this function on initialize tasks before use any function of this module
+ * This function will properly configure all pins before use it
+ */
+void Hal__Initialize(void)
+{
+     622:	0f 93       	push	r16
+     624:	1f 93       	push	r17
+     626:	cf 93       	push	r28
+     628:	df 93       	push	r29
+     62a:	ce e0       	ldi	r28, 0x0E	; 14
+     62c:	d1 e0       	ldi	r29, 0x01	; 1
+     62e:	08 e1       	ldi	r16, 0x18	; 24
+     630:	11 e0       	ldi	r17, 0x01	; 1
+	
+	
+	// LEDs Configuration
+	for(led_index = 0; led_index < NUM_OF_OUTPUTS; led_index++)
+	{
+	Gpio__PinConfig(LED_GPIO[led_index].port, LED_GPIO[led_index].pin, OUTPUT_DIGITAL);
+     632:	41 e0       	ldi	r20, 0x01	; 1
+     634:	69 81       	ldd	r22, Y+1	; 0x01
+     636:	88 81       	ld	r24, Y
+     638:	0e 94 80 02 	call	0x500	; 0x500 <Gpio__PinConfig>
+     63c:	22 96       	adiw	r28, 0x02	; 2
+	KEY_INPUT_TYPE key_index;
+	ANALOG_INPUT_TYPE analog_index;
+	
+	
+	// LEDs Configuration
+	for(led_index = 0; led_index < NUM_OF_OUTPUTS; led_index++)
+     63e:	c0 17       	cp	r28, r16
+     640:	d1 07       	cpc	r29, r17
+     642:	b9 f7       	brne	.-18     	; 0x632 <Hal__Initialize+0x10>
+     644:	c6 e0       	ldi	r28, 0x06	; 6
+     646:	d1 e0       	ldi	r29, 0x01	; 1
+     648:	0e e0       	ldi	r16, 0x0E	; 14
+     64a:	11 e0       	ldi	r17, 0x01	; 1
+	
+	
+	// Keys Configuration
+	for(key_index = 0; key_index < NUM_OF_KEYS; key_index++)
+	{
+	Gpio__PinConfig(KEYS_GPIO[key_index].port, KEYS_GPIO[key_index].pin, INPUT_DIGITAL_PULLUP);
+     64c:	40 e0       	ldi	r20, 0x00	; 0
+     64e:	69 81       	ldd	r22, Y+1	; 0x01
+     650:	88 81       	ld	r24, Y
+     652:	0e 94 80 02 	call	0x500	; 0x500 <Gpio__PinConfig>
+     656:	22 96       	adiw	r28, 0x02	; 2
+	Gpio__PinConfig(LED_GPIO[led_index].port, LED_GPIO[led_index].pin, OUTPUT_DIGITAL);
+	}
+	
+	
+	// Keys Configuration
+	for(key_index = 0; key_index < NUM_OF_KEYS; key_index++)
+     658:	c0 17       	cp	r28, r16
+     65a:	d1 07       	cpc	r29, r17
+     65c:	b9 f7       	brne	.-18     	; 0x64c <Hal__Initialize+0x2a>
+	{
+	Gpio__PinConfig(KEYS_GPIO[key_index].port, KEYS_GPIO[key_index].pin, INPUT_DIGITAL_PULLUP);
+	}
+	
+	// Apaga todos os leds
+	Hal__SetAllDigitalOutputs(SAIDA_OFF);   //apaga todos leds
+     65e:	81 e0       	ldi	r24, 0x01	; 1
+     660:	0e 94 02 03 	call	0x604	; 0x604 <Hal__SetAllDigitalOutputs>
+	
+	
+	// Configuração do 7 segmentos
+	
+	bitWrite(DDRD, 4, OUTPUT_DIGITAL);
+     664:	54 9a       	sbi	0x0a, 4	; 10
+	bitWrite(DDRD, 7, OUTPUT_DIGITAL);
+     666:	57 9a       	sbi	0x0a, 7	; 10
+	bitWrite(DDRB, 0, OUTPUT_DIGITAL);
+     668:	20 9a       	sbi	0x04, 0	; 4
+	
+	
+	// Analog Inputs Configuration - modo de conversão e resolução e inicializa os buffers de várias leitura do ADC
+	ADC__ConfigModes(MODE_10BITS,AD_SINGLE_CONVERSION);
+     66a:	60 e0       	ldi	r22, 0x00	; 0
+     66c:	81 e0       	ldi	r24, 0x01	; 1
+     66e:	0e 94 db 01 	call	0x3b6	; 0x3b6 <ADC__ConfigModes>
+	AD_Mux_State = MUX_INIT;
+     672:	10 92 99 01 	sts	0x0199, r1	; 0x800199 <AD_Mux_State>
+	AD_Channel = POT_EXT;  // eqivalente ao canal AD5 do arduino
+     676:	85 e0       	ldi	r24, 0x05	; 5
+     678:	80 93 7b 01 	sts	0x017B, r24	; 0x80017b <AD_Channel>
+     67c:	ea e4       	ldi	r30, 0x4A	; 74
+     67e:	f1 e0       	ldi	r31, 0x01	; 1
+     680:	8d e8       	ldi	r24, 0x8D	; 141
+     682:	91 e0       	ldi	r25, 0x01	; 1
+     684:	c1 ea       	ldi	r28, 0xA1	; 161
+     686:	d1 e0       	ldi	r29, 0x01	; 1
+     688:	6a e9       	ldi	r22, 0x9A	; 154
+     68a:	71 e0       	ldi	r23, 0x01	; 1
+     68c:	40 e5       	ldi	r20, 0x50	; 80
+     68e:	51 e0       	ldi	r21, 0x01	; 1
+
+	for(analog_index = 0; analog_index < NUM_OF_ANALOG_INPUT; analog_index++)
+	{
+		if(AD_Enable_Table[analog_index] == ENABLED)
+     690:	21 91       	ld	r18, Z+
+     692:	21 30       	cpi	r18, 0x01	; 1
+     694:	39 f4       	brne	.+14     	; 0x6a4 <Hal__Initialize+0x82>
+		{
+			Hal_Analog_Inputs[analog_index] = 0;   // zera o buffer de valor de cada canal
+     696:	dc 01       	movw	r26, r24
+     698:	1d 92       	st	X+, r1
+     69a:	1c 92       	st	X, r1
+			AD_Accumulator[analog_index] = 0;
+     69c:	19 82       	std	Y+1, r1	; 0x01
+     69e:	18 82       	st	Y, r1
+			AD_Counter[analog_index] = 0;
+     6a0:	db 01       	movw	r26, r22
+     6a2:	1c 92       	st	X, r1
+     6a4:	02 96       	adiw	r24, 0x02	; 2
+     6a6:	22 96       	adiw	r28, 0x02	; 2
+     6a8:	6f 5f       	subi	r22, 0xFF	; 255
+     6aa:	7f 4f       	sbci	r23, 0xFF	; 255
+	// Analog Inputs Configuration - modo de conversão e resolução e inicializa os buffers de várias leitura do ADC
+	ADC__ConfigModes(MODE_10BITS,AD_SINGLE_CONVERSION);
+	AD_Mux_State = MUX_INIT;
+	AD_Channel = POT_EXT;  // eqivalente ao canal AD5 do arduino
+
+	for(analog_index = 0; analog_index < NUM_OF_ANALOG_INPUT; analog_index++)
+     6ac:	e4 17       	cp	r30, r20
+     6ae:	f5 07       	cpc	r31, r21
+     6b0:	79 f7       	brne	.-34     	; 0x690 <Hal__Initialize+0x6e>
+	//#if (USE_BUZZER == ENABLED)
+
+	//Pwm__SetTCFrequency(PWM_TC2, BUZZER_DEFAULT_FREQ);
+	//Pwm__SetDutyCycle(PWM5,BUZZER_DEFAULT_ON_DUTY);
+	//#endif	//(USE_BUZZER == ENABLED)
+	}
+     6b2:	df 91       	pop	r29
+     6b4:	cf 91       	pop	r28
+     6b6:	1f 91       	pop	r17
+     6b8:	0f 91       	pop	r16
+     6ba:	08 95       	ret
+
+000006bc <Hal__ReadKey>:
+ *  Use this function to read the status of a specific key
+ *  key: desired key to be read
+ *  return: TRUE if key is pressed otherwise FALSE
+ */
+unsigned char Hal__ReadKey(KEY_INPUT_TYPE key)
+{
+     6bc:	28 2f       	mov	r18, r24
+	if (key < NUM_OF_KEYS)
+     6be:	84 30       	cpi	r24, 0x04	; 4
+     6c0:	70 f4       	brcc	.+28     	; 0x6de <Hal__ReadKey+0x22>
+	   {
+	   if (BIT_TEST(Hal_Keys_Buffer, key) > 0)
+	      return (TRUE);
+     6c2:	80 91 a0 01 	lds	r24, 0x01A0	; 0x8001a0 <Hal_Keys_Buffer>
+     6c6:	90 e0       	ldi	r25, 0x00	; 0
+     6c8:	a0 e0       	ldi	r26, 0x00	; 0
+     6ca:	b0 e0       	ldi	r27, 0x00	; 0
+     6cc:	04 c0       	rjmp	.+8      	; 0x6d6 <Hal__ReadKey+0x1a>
+     6ce:	b6 95       	lsr	r27
+     6d0:	a7 95       	ror	r26
+     6d2:	97 95       	ror	r25
+     6d4:	87 95       	ror	r24
+     6d6:	2a 95       	dec	r18
+     6d8:	d2 f7       	brpl	.-12     	; 0x6ce <Hal__ReadKey+0x12>
+     6da:	81 70       	andi	r24, 0x01	; 1
+     6dc:	08 95       	ret
+	   }
+	 return (FALSE);
+     6de:	80 e0       	ldi	r24, 0x00	; 0
+}
+     6e0:	08 95       	ret
+
+000006e2 <Hal__WriteValtoSegment>:
+ *  
+ */
+void Hal__WriteValtoSegment(char Segment, char *Value)
+{
+
+SevenSeg_WriteValueToSegment(Segment, Value);
+     6e2:	0e 94 a5 04 	call	0x94a	; 0x94a <SevenSeg_WriteValueToSegment>
+     6e6:	08 95       	ret
+
+000006e8 <Hal__GetAnalogInput>:
+ *  Use this function to read a value ADC in the selected channel
+ *  
+ */
+unsigned short int Hal__GetAnalogInput(ANALOG_INPUT_TYPE input)
+{
+if(input < NUM_OF_ANALOG_INPUT)
+     6e8:	86 30       	cpi	r24, 0x06	; 6
+     6ea:	48 f4       	brcc	.+18     	; 0x6fe <Hal__GetAnalogInput+0x16>
+   return Hal_Analog_Inputs[input];  // retorna o valor no buffer HAL_AnalogInputs do canal solicitado
+     6ec:	e8 2f       	mov	r30, r24
+     6ee:	f0 e0       	ldi	r31, 0x00	; 0
+     6f0:	ee 0f       	add	r30, r30
+     6f2:	ff 1f       	adc	r31, r31
+     6f4:	e3 57       	subi	r30, 0x73	; 115
+     6f6:	fe 4f       	sbci	r31, 0xFE	; 254
+     6f8:	80 81       	ld	r24, Z
+     6fa:	91 81       	ldd	r25, Z+1	; 0x01
+     6fc:	08 95       	ret
+}
+     6fe:	08 95       	ret
+
+00000700 <Hal__SetServo>:
+ */
+void Hal__SetServo(unsigned char state)
+{
+#if (USE_SERVO == ENABLED)
+
+	if(state > 0)
+     700:	88 23       	and	r24, r24
+     702:	29 f0       	breq	.+10     	; 0x70e <Hal__SetServo+0xe>
+		{
+		//BuzzerRequest = ON;
+		//Pwm__SetDutyCycle(PWM5,BUZZER_DEFAULT_ON_DUTY);
+		Pwm__SetDutyCycle(PWM1,SERVO_DEFAULT_ON_DUTY);
+     704:	63 e6       	ldi	r22, 0x63	; 99
+     706:	81 e0       	ldi	r24, 0x01	; 1
+     708:	0e 94 2f 02 	call	0x45e	; 0x45e <Pwm__SetDutyCycle>
+     70c:	08 95       	ret
+		}
+	else
+		{
+		//Pwm__SetDutyCycle(PWM5,BUZZER_OFF_DUTY);
+		Pwm__SetDutyCycle(PWM1,SERVO_OFF_DUTY);
+     70e:	60 e0       	ldi	r22, 0x00	; 0
+     710:	81 e0       	ldi	r24, 0x01	; 1
+     712:	0e 94 2f 02 	call	0x45e	; 0x45e <Pwm__SetDutyCycle>
+     716:	08 95       	ret
+
+00000718 <Hal__SetServoFreq>:
+ */
+void Hal__SetServoFreq(unsigned short int frequency)
+{
+#if (USE_SERVO == ENABLED)
+	
+	if(frequency >= 10)
+     718:	8a 30       	cpi	r24, 0x0A	; 10
+     71a:	91 05       	cpc	r25, r1
+     71c:	20 f0       	brcs	.+8      	; 0x726 <Hal__SetServoFreq+0xe>
+     71e:	bc 01       	movw	r22, r24
+		{
+		//Pwm__SetTCFrequency(PWM_TC2, frequency);
+		Pwm__SetTCFrequency(PWM_TC0, frequency);
+     720:	80 e0       	ldi	r24, 0x00	; 0
+     722:	0e 94 19 02 	call	0x432	; 0x432 <Pwm__SetTCFrequency>
+     726:	08 95       	ret
+
+00000728 <LEDsUpdate>:
+//---------------------------------------------------------------------------------------------------------------------
+/**
+ *  This local function update the LEDs status
+ */
+void LEDsUpdate(void)
+{
+     728:	af 92       	push	r10
+     72a:	bf 92       	push	r11
+     72c:	cf 92       	push	r12
+     72e:	df 92       	push	r13
+     730:	ef 92       	push	r14
+     732:	ff 92       	push	r15
+     734:	0f 93       	push	r16
+     736:	1f 93       	push	r17
+     738:	cf 93       	push	r28
+     73a:	df 93       	push	r29
+     73c:	c4 e5       	ldi	r28, 0x54	; 84
+     73e:	d1 e0       	ldi	r29, 0x01	; 1
+     740:	0f 2e       	mov	r0, r31
+     742:	fc e7       	ldi	r31, 0x7C	; 124
+     744:	ef 2e       	mov	r14, r31
+     746:	f1 e0       	ldi	r31, 0x01	; 1
+     748:	ff 2e       	mov	r15, r31
+     74a:	f0 2d       	mov	r31, r0
+     74c:	0e e0       	ldi	r16, 0x0E	; 14
+     74e:	11 e0       	ldi	r17, 0x01	; 1
+     750:	0f 2e       	mov	r0, r31
+     752:	f9 e5       	ldi	r31, 0x59	; 89
+     754:	cf 2e       	mov	r12, r31
+     756:	f1 e0       	ldi	r31, 0x01	; 1
+     758:	df 2e       	mov	r13, r31
+     75a:	f0 2d       	mov	r31, r0
+			value = SAIDA_ON;
+			if(Hal_Leds_Buffer[index] > 0)
+			{
+				value = SAIDA_OFF;
+			}
+			Gpio__PinWrite(LED_GPIO[index].port, LED_GPIO[index].pin, value);
+     75c:	bb 24       	eor	r11, r11
+     75e:	b3 94       	inc	r11
+     760:	a1 2c       	mov	r10, r1
+	unsigned char value;
+	
+	//LEDs Update
+	for(index = 0; index < NUM_OF_OUTPUTS; index++)
+	{
+		if(Leds_Enable_Table[index] == ENABLED) // Update GPIO only if current LED is configured to be used
+     762:	89 91       	ld	r24, Y+
+     764:	81 30       	cpi	r24, 0x01	; 1
+     766:	59 f4       	brne	.+22     	; 0x77e <LEDsUpdate+0x56>
+     768:	f8 01       	movw	r30, r16
+			value = SAIDA_ON;
+			if(Hal_Leds_Buffer[index] > 0)
+			{
+				value = SAIDA_OFF;
+			}
+			Gpio__PinWrite(LED_GPIO[index].port, LED_GPIO[index].pin, value);
+     76a:	4b 2d       	mov	r20, r11
+     76c:	d7 01       	movw	r26, r14
+     76e:	8c 91       	ld	r24, X
+     770:	81 11       	cpse	r24, r1
+     772:	01 c0       	rjmp	.+2      	; 0x776 <LEDsUpdate+0x4e>
+     774:	4a 2d       	mov	r20, r10
+     776:	61 81       	ldd	r22, Z+1	; 0x01
+     778:	80 81       	ld	r24, Z
+     77a:	0e 94 b6 02 	call	0x56c	; 0x56c <Gpio__PinWrite>
+     77e:	bf ef       	ldi	r27, 0xFF	; 255
+     780:	eb 1a       	sub	r14, r27
+     782:	fb 0a       	sbc	r15, r27
+     784:	0e 5f       	subi	r16, 0xFE	; 254
+     786:	1f 4f       	sbci	r17, 0xFF	; 255
+{
+	unsigned char index;
+	unsigned char value;
+	
+	//LEDs Update
+	for(index = 0; index < NUM_OF_OUTPUTS; index++)
+     788:	cc 15       	cp	r28, r12
+     78a:	dd 05       	cpc	r29, r13
+     78c:	51 f7       	brne	.-44     	; 0x762 <LEDsUpdate+0x3a>
+				value = SAIDA_OFF;
+			}
+			Gpio__PinWrite(LED_GPIO[index].port, LED_GPIO[index].pin, value);
+		}
+	}
+}
+     78e:	df 91       	pop	r29
+     790:	cf 91       	pop	r28
+     792:	1f 91       	pop	r17
+     794:	0f 91       	pop	r16
+     796:	ff 90       	pop	r15
+     798:	ef 90       	pop	r14
+     79a:	df 90       	pop	r13
+     79c:	cf 90       	pop	r12
+     79e:	bf 90       	pop	r11
+     7a0:	af 90       	pop	r10
+     7a2:	08 95       	ret
+
+000007a4 <KeysRead>:
+/**
+ *  This local function reads the keys input and update the Hal_Keys_Buffer
+ */
+
+void KeysRead(void)
+{
+     7a4:	8f 92       	push	r8
+     7a6:	9f 92       	push	r9
+     7a8:	af 92       	push	r10
+     7aa:	bf 92       	push	r11
+     7ac:	df 92       	push	r13
+     7ae:	ef 92       	push	r14
+     7b0:	ff 92       	push	r15
+     7b2:	0f 93       	push	r16
+     7b4:	1f 93       	push	r17
+     7b6:	cf 93       	push	r28
+     7b8:	df 93       	push	r29
+     7ba:	0f 2e       	mov	r0, r31
+     7bc:	f0 e5       	ldi	r31, 0x50	; 80
+     7be:	ef 2e       	mov	r14, r31
+     7c0:	f1 e0       	ldi	r31, 0x01	; 1
+     7c2:	ff 2e       	mov	r15, r31
+     7c4:	f0 2d       	mov	r31, r0
+     7c6:	06 e0       	ldi	r16, 0x06	; 6
+     7c8:	11 e0       	ldi	r17, 0x01	; 1
+     7ca:	c0 e0       	ldi	r28, 0x00	; 0
+     7cc:	d0 e0       	ldi	r29, 0x00	; 0
+			{
+				BIT_SET(Hal_Keys_Buffer,key_index);
+			}
+			else
+			{
+				BIT_CLR(Hal_Keys_Buffer,key_index);
+     7ce:	81 2c       	mov	r8, r1
+     7d0:	91 2c       	mov	r9, r1
+     7d2:	54 01       	movw	r10, r8
+     7d4:	83 94       	inc	r8
+	KEY_INPUT_TYPE key_index;
+	unsigned char value;
+	
+	for(key_index = KEY_0; key_index < NUM_OF_KEYS; key_index++)
+	{
+		if(Keys_Enable_Table[key_index] == ENABLED)
+     7d6:	f7 01       	movw	r30, r14
+     7d8:	81 91       	ld	r24, Z+
+     7da:	7f 01       	movw	r14, r30
+     7dc:	81 30       	cpi	r24, 0x01	; 1
+     7de:	39 f5       	brne	.+78     	; 0x82e <KeysRead+0x8a>
+		{
+			value = Gpio__PinRead(KEYS_GPIO[key_index].port, KEYS_GPIO[key_index].pin);
+     7e0:	f8 01       	movw	r30, r16
+     7e2:	61 81       	ldd	r22, Z+1	; 0x01
+     7e4:	80 81       	ld	r24, Z
+     7e6:	0e 94 e0 02 	call	0x5c0	; 0x5c0 <Gpio__PinRead>
+			if(value == KEY_PRESSED)
+     7ea:	81 11       	cpse	r24, r1
+     7ec:	10 c0       	rjmp	.+32     	; 0x80e <KeysRead+0x6a>
+			{
+				BIT_SET(Hal_Keys_Buffer,key_index);
+     7ee:	d5 01       	movw	r26, r10
+     7f0:	c4 01       	movw	r24, r8
+     7f2:	0c 2e       	mov	r0, r28
+     7f4:	04 c0       	rjmp	.+8      	; 0x7fe <KeysRead+0x5a>
+     7f6:	88 0f       	add	r24, r24
+     7f8:	99 1f       	adc	r25, r25
+     7fa:	aa 1f       	adc	r26, r26
+     7fc:	bb 1f       	adc	r27, r27
+     7fe:	0a 94       	dec	r0
+     800:	d2 f7       	brpl	.-12     	; 0x7f6 <KeysRead+0x52>
+     802:	20 91 a0 01 	lds	r18, 0x01A0	; 0x8001a0 <Hal_Keys_Buffer>
+     806:	82 2b       	or	r24, r18
+     808:	80 93 a0 01 	sts	0x01A0, r24	; 0x8001a0 <Hal_Keys_Buffer>
+     80c:	10 c0       	rjmp	.+32     	; 0x82e <KeysRead+0x8a>
+			}
+			else
+			{
+				BIT_CLR(Hal_Keys_Buffer,key_index);
+     80e:	d5 01       	movw	r26, r10
+     810:	c4 01       	movw	r24, r8
+     812:	0c 2e       	mov	r0, r28
+     814:	04 c0       	rjmp	.+8      	; 0x81e <KeysRead+0x7a>
+     816:	88 0f       	add	r24, r24
+     818:	99 1f       	adc	r25, r25
+     81a:	aa 1f       	adc	r26, r26
+     81c:	bb 1f       	adc	r27, r27
+     81e:	0a 94       	dec	r0
+     820:	d2 f7       	brpl	.-12     	; 0x816 <KeysRead+0x72>
+     822:	80 95       	com	r24
+     824:	90 91 a0 01 	lds	r25, 0x01A0	; 0x8001a0 <Hal_Keys_Buffer>
+     828:	89 23       	and	r24, r25
+     82a:	80 93 a0 01 	sts	0x01A0, r24	; 0x8001a0 <Hal_Keys_Buffer>
+     82e:	21 96       	adiw	r28, 0x01	; 1
+     830:	0e 5f       	subi	r16, 0xFE	; 254
+     832:	1f 4f       	sbci	r17, 0xFF	; 255
+{
+	//Keys read
+	KEY_INPUT_TYPE key_index;
+	unsigned char value;
+	
+	for(key_index = KEY_0; key_index < NUM_OF_KEYS; key_index++)
+     834:	c4 30       	cpi	r28, 0x04	; 4
+     836:	d1 05       	cpc	r29, r1
+     838:	71 f6       	brne	.-100    	; 0x7d6 <KeysRead+0x32>
+
+			}
+		}
+	}
+
+}
+     83a:	df 91       	pop	r29
+     83c:	cf 91       	pop	r28
+     83e:	1f 91       	pop	r17
+     840:	0f 91       	pop	r16
+     842:	ff 90       	pop	r15
+     844:	ef 90       	pop	r14
+     846:	df 90       	pop	r13
+     848:	bf 90       	pop	r11
+     84a:	af 90       	pop	r10
+     84c:	9f 90       	pop	r9
+     84e:	8f 90       	pop	r8
+     850:	08 95       	ret
+
+00000852 <Hal__FastHandler>:
+ *  This function shall run in background in the main loop 
+ *  Call rate: 1ms, 5ms, 10ms, ...PARA GPIO
+ */
+void Hal__FastHandler(void)
+{
+	LEDsUpdate();
+     852:	0e 94 94 03 	call	0x728	; 0x728 <LEDsUpdate>
+	KeysRead();
+     856:	0e 94 d2 03 	call	0x7a4	; 0x7a4 <KeysRead>
+     85a:	08 95       	ret
+
+0000085c <ADProcess>:
+ *  This local function reads the analog input and update the buffer Hal_Analog_inputs[]
+    ROTINA ONDE SÃO FEITAS AS VÁRIAS LEITURAS DE AMOSTRAGEM (NUM_AD_SAMPLES) E DEPOIS TIRADO A MÉDIA DOS  VALORES
+****/
+
+void ADProcess(void)
+{
+     85c:	cf 93       	push	r28
+     85e:	df 93       	push	r29
+switch (AD_Mux_State)
+     860:	80 91 99 01 	lds	r24, 0x0199	; 0x800199 <AD_Mux_State>
+     864:	81 30       	cpi	r24, 0x01	; 1
+     866:	19 f0       	breq	.+6      	; 0x86e <ADProcess+0x12>
+     868:	83 30       	cpi	r24, 0x03	; 3
+     86a:	31 f0       	breq	.+12     	; 0x878 <ADProcess+0x1c>
+     86c:	5d c0       	rjmp	.+186    	; 0x928 <__stack+0x29>
+  {
+  case MUX_INIT:
+    break;
+  case MUX_AD_CONFIG:
+    ADC__ConfigModes(MODE_10BITS,AD_SINGLE_CONVERSION);
+     86e:	60 e0       	ldi	r22, 0x00	; 0
+     870:	81 e0       	ldi	r24, 0x01	; 1
+     872:	0e 94 db 01 	call	0x3b6	; 0x3b6 <ADC__ConfigModes>
+    break;
+     876:	58 c0       	rjmp	.+176    	; 0x928 <__stack+0x29>
+  case MUX_DUMMY_STATE_1: //=> This state is placed in order to assure the raising time for ADC reading
+    break;
+  case MUX_AD_READ:
+      if(AD_Enable_Table[AD_Channel] == ENABLED)
+     878:	c0 91 7b 01 	lds	r28, 0x017B	; 0x80017b <AD_Channel>
+     87c:	d0 e0       	ldi	r29, 0x00	; 0
+     87e:	fe 01       	movw	r30, r28
+     880:	e6 5b       	subi	r30, 0xB6	; 182
+     882:	fe 4f       	sbci	r31, 0xFE	; 254
+     884:	80 81       	ld	r24, Z
+     886:	81 30       	cpi	r24, 0x01	; 1
+     888:	09 f0       	breq	.+2      	; 0x88c <ADProcess+0x30>
+     88a:	44 c0       	rjmp	.+136    	; 0x914 <__stack+0x15>
+         {
+         if(AD_Counter[AD_Channel] < NUM_AD_SAMPLES)
+     88c:	fe 01       	movw	r30, r28
+     88e:	e6 56       	subi	r30, 0x66	; 102
+     890:	fe 4f       	sbci	r31, 0xFE	; 254
+     892:	80 81       	ld	r24, Z
+     894:	88 30       	cpi	r24, 0x08	; 8
+     896:	38 f5       	brcc	.+78     	; 0x8e6 <ADProcess+0x8a>
+             {
+             AD_Sample[AD_Channel] = ADC__GetValue(AD_Channel_Table[AD_Channel]);
+     898:	fe 01       	movw	r30, r28
+     89a:	ec 5b       	subi	r30, 0xBC	; 188
+     89c:	fe 4f       	sbci	r31, 0xFE	; 254
+     89e:	80 81       	ld	r24, Z
+     8a0:	0e 94 04 02 	call	0x408	; 0x408 <ADC__GetValue>
+     8a4:	cc 0f       	add	r28, r28
+     8a6:	dd 1f       	adc	r29, r29
+     8a8:	cf 57       	subi	r28, 0x7F	; 127
+     8aa:	de 4f       	sbci	r29, 0xFE	; 254
+     8ac:	99 83       	std	Y+1, r25	; 0x01
+     8ae:	88 83       	st	Y, r24
+             AD_Accumulator[AD_Channel] += AD_Sample[AD_Channel];
+     8b0:	e0 91 7b 01 	lds	r30, 0x017B	; 0x80017b <AD_Channel>
+     8b4:	f0 e0       	ldi	r31, 0x00	; 0
+     8b6:	cf 01       	movw	r24, r30
+     8b8:	88 0f       	add	r24, r24
+     8ba:	99 1f       	adc	r25, r25
+     8bc:	dc 01       	movw	r26, r24
+     8be:	af 55       	subi	r26, 0x5F	; 95
+     8c0:	be 4f       	sbci	r27, 0xFE	; 254
+     8c2:	ec 01       	movw	r28, r24
+     8c4:	cf 57       	subi	r28, 0x7F	; 127
+     8c6:	de 4f       	sbci	r29, 0xFE	; 254
+     8c8:	2d 91       	ld	r18, X+
+     8ca:	3c 91       	ld	r19, X
+     8cc:	11 97       	sbiw	r26, 0x01	; 1
+     8ce:	88 81       	ld	r24, Y
+     8d0:	99 81       	ldd	r25, Y+1	; 0x01
+     8d2:	82 0f       	add	r24, r18
+     8d4:	93 1f       	adc	r25, r19
+     8d6:	8d 93       	st	X+, r24
+     8d8:	9c 93       	st	X, r25
+             AD_Counter[AD_Channel]++;
+     8da:	e6 56       	subi	r30, 0x66	; 102
+     8dc:	fe 4f       	sbci	r31, 0xFE	; 254
+     8de:	80 81       	ld	r24, Z
+     8e0:	8f 5f       	subi	r24, 0xFF	; 255
+     8e2:	80 83       	st	Z, r24
+     8e4:	17 c0       	rjmp	.+46     	; 0x914 <__stack+0x15>
+             }
+         else
+            {  // O Buffer Hal_Analog_Inputs[] é AQUI atualizado!
+            Hal_Analog_Inputs[AD_Channel] = (unsigned short int)(AD_Accumulator[AD_Channel]/NUM_AD_SAMPLES);
+     8e6:	fe 01       	movw	r30, r28
+     8e8:	ee 0f       	add	r30, r30
+     8ea:	ff 1f       	adc	r31, r31
+     8ec:	df 01       	movw	r26, r30
+     8ee:	a3 57       	subi	r26, 0x73	; 115
+     8f0:	be 4f       	sbci	r27, 0xFE	; 254
+     8f2:	ef 55       	subi	r30, 0x5F	; 95
+     8f4:	fe 4f       	sbci	r31, 0xFE	; 254
+     8f6:	80 81       	ld	r24, Z
+     8f8:	91 81       	ldd	r25, Z+1	; 0x01
+     8fa:	96 95       	lsr	r25
+     8fc:	87 95       	ror	r24
+     8fe:	96 95       	lsr	r25
+     900:	87 95       	ror	r24
+     902:	96 95       	lsr	r25
+     904:	87 95       	ror	r24
+     906:	8d 93       	st	X+, r24
+     908:	9c 93       	st	X, r25
+            AD_Accumulator[AD_Channel] = 0;
+     90a:	11 82       	std	Z+1, r1	; 0x01
+     90c:	10 82       	st	Z, r1
+            AD_Counter[AD_Channel] = 0;
+     90e:	c6 56       	subi	r28, 0x66	; 102
+     910:	de 4f       	sbci	r29, 0xFE	; 254
+     912:	18 82       	st	Y, r1
+            }
+          } 
+       AD_Channel++;
+     914:	80 91 7b 01 	lds	r24, 0x017B	; 0x80017b <AD_Channel>
+     918:	8f 5f       	subi	r24, 0xFF	; 255
+       if(AD_Channel >= NUM_OF_ANALOG_INPUT)
+     91a:	86 30       	cpi	r24, 0x06	; 6
+     91c:	18 f4       	brcc	.+6      	; 0x924 <__stack+0x25>
+            Hal_Analog_Inputs[AD_Channel] = (unsigned short int)(AD_Accumulator[AD_Channel]/NUM_AD_SAMPLES);
+            AD_Accumulator[AD_Channel] = 0;
+            AD_Counter[AD_Channel] = 0;
+            }
+          } 
+       AD_Channel++;
+     91e:	80 93 7b 01 	sts	0x017B, r24	; 0x80017b <AD_Channel>
+     922:	02 c0       	rjmp	.+4      	; 0x928 <__stack+0x29>
+       if(AD_Channel >= NUM_OF_ANALOG_INPUT)
+         {
+         AD_Channel = 0;
+     924:	10 92 7b 01 	sts	0x017B, r1	; 0x80017b <AD_Channel>
+       break;
+  default:
+       break;
+  }
+
+AD_Mux_State++;                                // Ticking the state machine.
+     928:	80 91 99 01 	lds	r24, 0x0199	; 0x800199 <AD_Mux_State>
+     92c:	8f 5f       	subi	r24, 0xFF	; 255
+
+if (AD_Mux_State >= NUM_MUX_STEPS)
+     92e:	84 30       	cpi	r24, 0x04	; 4
+     930:	18 f4       	brcc	.+6      	; 0x938 <__stack+0x39>
+       break;
+  default:
+       break;
+  }
+
+AD_Mux_State++;                                // Ticking the state machine.
+     932:	80 93 99 01 	sts	0x0199, r24	; 0x800199 <AD_Mux_State>
+     936:	03 c0       	rjmp	.+6      	; 0x93e <__stack+0x3f>
+
+if (AD_Mux_State >= NUM_MUX_STEPS)
+  {
+  AD_Mux_State = MUX_AD_CONFIG;
+     938:	81 e0       	ldi	r24, 0x01	; 1
+     93a:	80 93 99 01 	sts	0x0199, r24	; 0x800199 <AD_Mux_State>
+  }
+     93e:	df 91       	pop	r29
+     940:	cf 91       	pop	r28
+     942:	08 95       	ret
+
+00000944 <Hal__BackgroundHandler>:
+ *  This function shall run in background in the main loop 
+ *  Call rate: 1ms, 5ms, 10ms, ...PARA ADC
+ */
+void Hal__BackgroundHandler(void)
+{
+ ADProcess();	
+     944:	0e 94 2e 04 	call	0x85c	; 0x85c <ADProcess>
+     948:	08 95       	ret
+
+0000094a <SevenSeg_WriteValueToSegment>:
+const char SEGMENT_SELECT[] = {0xF1,0xF2,0xF4,0xF8};
+
+
+/* Write a value to one of the 4 digits of the display */
+void SevenSeg_WriteValueToSegment(char Segment, char *Value)
+{
+     94a:	fb 01       	movw	r30, r22
+	bitClear(PORTD, 4);
+     94c:	5c 98       	cbi	0x0b, 4	; 11
+     94e:	47 e0       	ldi	r20, 0x07	; 7
+     950:	50 e0       	ldi	r21, 0x00	; 0
+
+	for (uint8_t i = 0; i < 8; i++)  {
+		bitWrite(PORTB, 0, !!((*Value) & (1 << (7 - i))));
+     952:	20 81       	ld	r18, Z
+     954:	30 e0       	ldi	r19, 0x00	; 0
+     956:	04 2e       	mov	r0, r20
+     958:	02 c0       	rjmp	.+4      	; 0x95e <SevenSeg_WriteValueToSegment+0x14>
+     95a:	35 95       	asr	r19
+     95c:	27 95       	ror	r18
+     95e:	0a 94       	dec	r0
+     960:	e2 f7       	brpl	.-8      	; 0x95a <SevenSeg_WriteValueToSegment+0x10>
+     962:	20 ff       	sbrs	r18, 0
+     964:	02 c0       	rjmp	.+4      	; 0x96a <SevenSeg_WriteValueToSegment+0x20>
+     966:	28 9a       	sbi	0x05, 0	; 5
+     968:	01 c0       	rjmp	.+2      	; 0x96c <SevenSeg_WriteValueToSegment+0x22>
+     96a:	28 98       	cbi	0x05, 0	; 5
+		bitSet(PORTD, 7);
+     96c:	5f 9a       	sbi	0x0b, 7	; 11
+		bitClear(PORTD, 7);
+     96e:	5f 98       	cbi	0x0b, 7	; 11
+     970:	41 50       	subi	r20, 0x01	; 1
+     972:	51 09       	sbc	r21, r1
+     974:	70 f7       	brcc	.-36     	; 0x952 <SevenSeg_WriteValueToSegment+0x8>
+     976:	27 e0       	ldi	r18, 0x07	; 7
+     978:	30 e0       	ldi	r19, 0x00	; 0
+	}
+
+	for (uint8_t i = 0; i < 8; i++)  {
+		bitWrite(PORTB, 0, !!(SEGMENT_SELECT[Segment] & (1 << (7 - i))));
+     97a:	e8 2f       	mov	r30, r24
+     97c:	f0 e0       	ldi	r31, 0x00	; 0
+     97e:	e7 5a       	subi	r30, 0xA7	; 167
+     980:	fe 4f       	sbci	r31, 0xFE	; 254
+     982:	40 81       	ld	r20, Z
+     984:	50 e0       	ldi	r21, 0x00	; 0
+     986:	ca 01       	movw	r24, r20
+     988:	02 2e       	mov	r0, r18
+     98a:	02 c0       	rjmp	.+4      	; 0x990 <SevenSeg_WriteValueToSegment+0x46>
+     98c:	95 95       	asr	r25
+     98e:	87 95       	ror	r24
+     990:	0a 94       	dec	r0
+     992:	e2 f7       	brpl	.-8      	; 0x98c <SevenSeg_WriteValueToSegment+0x42>
+     994:	80 ff       	sbrs	r24, 0
+     996:	02 c0       	rjmp	.+4      	; 0x99c <SevenSeg_WriteValueToSegment+0x52>
+     998:	28 9a       	sbi	0x05, 0	; 5
+     99a:	01 c0       	rjmp	.+2      	; 0x99e <SevenSeg_WriteValueToSegment+0x54>
+     99c:	28 98       	cbi	0x05, 0	; 5
+		bitSet(PORTD, 7);
+     99e:	5f 9a       	sbi	0x0b, 7	; 11
+		bitClear(PORTD, 7);
+     9a0:	5f 98       	cbi	0x0b, 7	; 11
+     9a2:	21 50       	subi	r18, 0x01	; 1
+     9a4:	31 09       	sbc	r19, r1
+     9a6:	78 f7       	brcc	.-34     	; 0x986 <SevenSeg_WriteValueToSegment+0x3c>
+	}
+
+	bitSet(PORTD, 4);
+     9a8:	5c 9a       	sbi	0x0b, 4	; 11
+     9aa:	08 95       	ret
+
+000009ac <Timer__Initialize>:
+//-----------------------------------------------------------------------------------------------------------------
+
+unsigned char Timer__HMSGetTime (HMS_TIMER_NAME id)
+{
+    return (Hms_Timers[id].Time.Sec);
+}
+     9ac:	ef ea       	ldi	r30, 0xAF	; 175
+     9ae:	f1 e0       	ldi	r31, 0x01	; 1
+     9b0:	8e eb       	ldi	r24, 0xBE	; 190
+     9b2:	91 e0       	ldi	r25, 0x01	; 1
+     9b4:	10 82       	st	Z, r1
+     9b6:	12 82       	std	Z+2, r1	; 0x02
+     9b8:	11 82       	std	Z+1, r1	; 0x01
+     9ba:	33 96       	adiw	r30, 0x03	; 3
+     9bc:	e8 17       	cp	r30, r24
+     9be:	f9 07       	cpc	r31, r25
+     9c0:	c9 f7       	brne	.-14     	; 0x9b4 <Timer__Initialize+0x8>
+     9c2:	ee eb       	ldi	r30, 0xBE	; 190
+     9c4:	f1 e0       	ldi	r31, 0x01	; 1
+     9c6:	8a ed       	ldi	r24, 0xDA	; 218
+     9c8:	91 e0       	ldi	r25, 0x01	; 1
+     9ca:	10 82       	st	Z, r1
+     9cc:	11 82       	std	Z+1, r1	; 0x01
+     9ce:	12 82       	std	Z+2, r1	; 0x02
+     9d0:	13 82       	std	Z+3, r1	; 0x03
+     9d2:	34 96       	adiw	r30, 0x04	; 4
+     9d4:	e8 17       	cp	r30, r24
+     9d6:	f9 07       	cpc	r31, r25
+     9d8:	c1 f7       	brne	.-16     	; 0x9ca <Timer__Initialize+0x1e>
+     9da:	08 95       	ret
+
+000009dc <Timer__HMSHandler>:
+     9dc:	80 91 5e 01 	lds	r24, 0x015E	; 0x80015e <__data_end>
+     9e0:	81 30       	cpi	r24, 0x01	; 1
+     9e2:	41 f5       	brne	.+80     	; 0xa34 <Timer__HMSHandler+0x58>
+     9e4:	ee eb       	ldi	r30, 0xBE	; 190
+     9e6:	f1 e0       	ldi	r31, 0x01	; 1
+     9e8:	2a ed       	ldi	r18, 0xDA	; 218
+     9ea:	31 e0       	ldi	r19, 0x01	; 1
+     9ec:	4b e3       	ldi	r20, 0x3B	; 59
+     9ee:	80 81       	ld	r24, Z
+     9f0:	81 30       	cpi	r24, 0x01	; 1
+     9f2:	d1 f4       	brne	.+52     	; 0xa28 <Timer__HMSHandler+0x4c>
+     9f4:	83 81       	ldd	r24, Z+3	; 0x03
+     9f6:	88 23       	and	r24, r24
+     9f8:	49 f0       	breq	.+18     	; 0xa0c <Timer__HMSHandler+0x30>
+     9fa:	81 50       	subi	r24, 0x01	; 1
+     9fc:	83 83       	std	Z+3, r24	; 0x03
+     9fe:	52 81       	ldd	r21, Z+2	; 0x02
+     a00:	91 81       	ldd	r25, Z+1	; 0x01
+     a02:	95 2b       	or	r25, r21
+     a04:	89 2b       	or	r24, r25
+     a06:	81 f4       	brne	.+32     	; 0xa28 <Timer__HMSHandler+0x4c>
+     a08:	10 82       	st	Z, r1
+     a0a:	0e c0       	rjmp	.+28     	; 0xa28 <Timer__HMSHandler+0x4c>
+     a0c:	82 81       	ldd	r24, Z+2	; 0x02
+     a0e:	88 23       	and	r24, r24
+     a10:	21 f0       	breq	.+8      	; 0xa1a <Timer__HMSHandler+0x3e>
+     a12:	81 50       	subi	r24, 0x01	; 1
+     a14:	82 83       	std	Z+2, r24	; 0x02
+     a16:	43 83       	std	Z+3, r20	; 0x03
+     a18:	07 c0       	rjmp	.+14     	; 0xa28 <Timer__HMSHandler+0x4c>
+     a1a:	81 81       	ldd	r24, Z+1	; 0x01
+     a1c:	88 23       	and	r24, r24
+     a1e:	21 f0       	breq	.+8      	; 0xa28 <Timer__HMSHandler+0x4c>
+     a20:	81 50       	subi	r24, 0x01	; 1
+     a22:	81 83       	std	Z+1, r24	; 0x01
+     a24:	42 83       	std	Z+2, r20	; 0x02
+     a26:	43 83       	std	Z+3, r20	; 0x03
+     a28:	34 96       	adiw	r30, 0x04	; 4
+     a2a:	e2 17       	cp	r30, r18
+     a2c:	f3 07       	cpc	r31, r19
+     a2e:	f9 f6       	brne	.-66     	; 0x9ee <Timer__HMSHandler+0x12>
+     a30:	10 92 5e 01 	sts	0x015E, r1	; 0x80015e <__data_end>
+     a34:	08 95       	ret
+
+00000a36 <Timer__HMSSet>:
+     a36:	87 30       	cpi	r24, 0x07	; 7
+     a38:	c0 f4       	brcc	.+48     	; 0xa6a <Timer__HMSSet+0x34>
+     a3a:	90 e0       	ldi	r25, 0x00	; 0
+     a3c:	fc 01       	movw	r30, r24
+     a3e:	ee 0f       	add	r30, r30
+     a40:	ff 1f       	adc	r31, r31
+     a42:	ee 0f       	add	r30, r30
+     a44:	ff 1f       	adc	r31, r31
+     a46:	e2 54       	subi	r30, 0x42	; 66
+     a48:	fe 4f       	sbci	r31, 0xFE	; 254
+     a4a:	10 82       	st	Z, r1
+     a4c:	61 83       	std	Z+1, r22	; 0x01
+     a4e:	42 83       	std	Z+2, r20	; 0x02
+     a50:	23 83       	std	Z+3, r18	; 0x03
+     a52:	24 2b       	or	r18, r20
+     a54:	62 2b       	or	r22, r18
+     a56:	49 f0       	breq	.+18     	; 0xa6a <Timer__HMSSet+0x34>
+     a58:	88 0f       	add	r24, r24
+     a5a:	99 1f       	adc	r25, r25
+     a5c:	88 0f       	add	r24, r24
+     a5e:	99 1f       	adc	r25, r25
+     a60:	fc 01       	movw	r30, r24
+     a62:	e2 54       	subi	r30, 0x42	; 66
+     a64:	fe 4f       	sbci	r31, 0xFE	; 254
+     a66:	81 e0       	ldi	r24, 0x01	; 1
+     a68:	80 83       	st	Z, r24
+     a6a:	08 95       	ret
+
+00000a6c <Timer__HMSGetStatus>:
+     a6c:	24 e0       	ldi	r18, 0x04	; 4
+     a6e:	82 9f       	mul	r24, r18
+     a70:	c0 01       	movw	r24, r0
+     a72:	11 24       	eor	r1, r1
+     a74:	fc 01       	movw	r30, r24
+     a76:	e2 54       	subi	r30, 0x42	; 66
+     a78:	fe 4f       	sbci	r31, 0xFE	; 254
+     a7a:	80 81       	ld	r24, Z
+     a7c:	08 95       	ret
+
+00000a7e <__vector_13>:
+
+//=====================================================================================================================
+//-------------------------------------- Interruption  Functions ------------------------------------------------------------
+//=====================================================================================================================
+ISR(TIMER1_OVF_vect)                              //interrupção do TIMER1 (pg.158)
+{   if(flag_seg == 0)
+     a7e:	1f 92       	push	r1
+     a80:	0f 92       	push	r0
+     a82:	0f b6       	in	r0, 0x3f	; 63
+     a84:	0f 92       	push	r0
+     a86:	11 24       	eor	r1, r1
+     a88:	8f 93       	push	r24
+     a8a:	9f 93       	push	r25
+     a8c:	80 91 5e 01 	lds	r24, 0x015E	; 0x80015e <__data_end>
+     a90:	81 11       	cpse	r24, r1
+     a92:	09 c0       	rjmp	.+18     	; 0xaa6 <__vector_13+0x28>
+	    {
+		TCNT1 = 61630;   //para contar a cada 250ms
+     a94:	8e eb       	ldi	r24, 0xBE	; 190
+     a96:	90 ef       	ldi	r25, 0xF0	; 240
+     a98:	90 93 85 00 	sts	0x0085, r25	; 0x800085 <__DATA_REGION_ORIGIN__+0x25>
+     a9c:	80 93 84 00 	sts	0x0084, r24	; 0x800084 <__DATA_REGION_ORIGIN__+0x24>
+		flag_seg =1;    //seta o flag indicando que passou 1 segundo   
+     aa0:	81 e0       	ldi	r24, 0x01	; 1
+     aa2:	80 93 5e 01 	sts	0x015E, r24	; 0x80015e <__data_end>
+	    }
+}
+     aa6:	9f 91       	pop	r25
+     aa8:	8f 91       	pop	r24
+     aaa:	0f 90       	pop	r0
+     aac:	0f be       	out	0x3f, r0	; 63
+     aae:	0f 90       	pop	r0
+     ab0:	1f 90       	pop	r1
+     ab2:	18 95       	reti
+
+00000ab4 <Display__Initialize>:
+/**
+ *  
+ */
+void Display__Initialize(void)
+{
+	Garden_Display_State = GARD_IN;
+     ab4:	84 e0       	ldi	r24, 0x04	; 4
+     ab6:	80 93 db 01 	sts	0x01DB, r24	; 0x8001db <Garden_Display_State>
+	Display_Keys_Map = KEY_INIT_EVENT;
+     aba:	10 92 da 01 	sts	0x01DA, r1	; 0x8001da <Display_Keys_Map>
+	luminosidade_planta_ON = LUMIN_PLANTA_ON_1;
+     abe:	84 eb       	ldi	r24, 0xB4	; 180
+     ac0:	90 e0       	ldi	r25, 0x00	; 0
+     ac2:	90 93 66 01 	sts	0x0166, r25	; 0x800166 <luminosidade_planta_ON+0x1>
+     ac6:	80 93 65 01 	sts	0x0165, r24	; 0x800165 <luminosidade_planta_ON>
+	luminosidade_planta_OFF = LUMIN_PLANTA_OFF_1;
+     aca:	8c ed       	ldi	r24, 0xDC	; 220
+     acc:	90 e0       	ldi	r25, 0x00	; 0
+     ace:	90 93 63 01 	sts	0x0163, r25	; 0x800163 <luminosidade_planta_OFF+0x1>
+     ad2:	80 93 62 01 	sts	0x0162, r24	; 0x800162 <luminosidade_planta_OFF>
+     ad6:	08 95       	ret
+
+00000ad8 <Display__SetState>:
+/**
+ *  
+ */
+void Display__SetState(GARD_DISPLAY_STATE_TYPE state)
+{
+	if(state < NUM_OF_GARD_STATES)
+     ad8:	86 30       	cpi	r24, 0x06	; 6
+     ada:	10 f4       	brcc	.+4      	; 0xae0 <Display__SetState+0x8>
+	{
+		Garden_Display_State = state;
+     adc:	80 93 db 01 	sts	0x01DB, r24	; 0x8001db <Garden_Display_State>
+     ae0:	08 95       	ret
+
+00000ae2 <UpdateDisplaySaidas>:
+
+void UpdateDisplaySaidas(void)
+{
+	unsigned short int ad_value;
+	
+	switch(Garden_Display_State)
+     ae2:	80 91 db 01 	lds	r24, 0x01DB	; 0x8001db <Garden_Display_State>
+     ae6:	82 30       	cpi	r24, 0x02	; 2
+     ae8:	09 f4       	brne	.+2      	; 0xaec <UpdateDisplaySaidas+0xa>
+     aea:	40 c0       	rjmp	.+128    	; 0xb6c <UpdateDisplaySaidas+0x8a>
+     aec:	28 f4       	brcc	.+10     	; 0xaf8 <UpdateDisplaySaidas+0x16>
+     aee:	88 23       	and	r24, r24
+     af0:	71 f0       	breq	.+28     	; 0xb0e <UpdateDisplaySaidas+0x2c>
+     af2:	81 30       	cpi	r24, 0x01	; 1
+     af4:	11 f1       	breq	.+68     	; 0xb3a <UpdateDisplaySaidas+0x58>
+     af6:	08 95       	ret
+     af8:	84 30       	cpi	r24, 0x04	; 4
+     afa:	29 f0       	breq	.+10     	; 0xb06 <UpdateDisplaySaidas+0x24>
+     afc:	08 f4       	brcc	.+2      	; 0xb00 <UpdateDisplaySaidas+0x1e>
+     afe:	4f c0       	rjmp	.+158    	; 0xb9e <UpdateDisplaySaidas+0xbc>
+     b00:	85 30       	cpi	r24, 0x05	; 5
+     b02:	b1 f0       	breq	.+44     	; 0xb30 <UpdateDisplaySaidas+0x4e>
+     b04:	08 95       	ret
+	{
+	case GARD_IN:
+	      Hal__SetAllDigitalOutputs(SAIDA_OFF);
+     b06:	81 e0       	ldi	r24, 0x01	; 1
+     b08:	0e 94 02 03 	call	0x604	; 0x604 <Hal__SetAllDigitalOutputs>
+	      break;
+     b0c:	08 95       	ret
+	case GARD_INIT:
+		  Hal__SetDigitalOutput(LED_0, DESLIGA_SAIDA);
+     b0e:	61 e0       	ldi	r22, 0x01	; 1
+     b10:	80 e0       	ldi	r24, 0x00	; 0
+     b12:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+		  Hal__SetDigitalOutput(LED_1, DESLIGA_SAIDA);
+     b16:	61 e0       	ldi	r22, 0x01	; 1
+     b18:	81 e0       	ldi	r24, 0x01	; 1
+     b1a:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+		  Hal__SetDigitalOutput(LED_2, DESLIGA_SAIDA);
+     b1e:	61 e0       	ldi	r22, 0x01	; 1
+     b20:	82 e0       	ldi	r24, 0x02	; 2
+     b22:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+		  Hal__SetDigitalOutput(LED_3, LIGA_SAIDA);
+     b26:	60 e0       	ldi	r22, 0x00	; 0
+     b28:	83 e0       	ldi	r24, 0x03	; 3
+     b2a:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+	      break;
+     b2e:	08 95       	ret
+	case GARD_TIMEOUT:
+		Hal__SetDigitalOutput(LED_3, DESLIGA_SAIDA);
+     b30:	61 e0       	ldi	r22, 0x01	; 1
+     b32:	83 e0       	ldi	r24, 0x03	; 3
+     b34:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+	      break;
+     b38:	08 95       	ret
+	case GARD_P1: // PLANTA 1
+	    {
+		Hal__SetDigitalOutput(LED_0, LIGA_SAIDA);
+     b3a:	60 e0       	ldi	r22, 0x00	; 0
+     b3c:	80 e0       	ldi	r24, 0x00	; 0
+     b3e:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+		Hal__SetDigitalOutput(LED_1, DESLIGA_SAIDA);
+     b42:	61 e0       	ldi	r22, 0x01	; 1
+     b44:	81 e0       	ldi	r24, 0x01	; 1
+     b46:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+		Hal__SetDigitalOutput(LED_2, DESLIGA_SAIDA);
+     b4a:	61 e0       	ldi	r22, 0x01	; 1
+     b4c:	82 e0       	ldi	r24, 0x02	; 2
+     b4e:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+		
+		luminosidade_planta_ON = LUMIN_PLANTA_ON_1;
+     b52:	84 eb       	ldi	r24, 0xB4	; 180
+     b54:	90 e0       	ldi	r25, 0x00	; 0
+     b56:	90 93 66 01 	sts	0x0166, r25	; 0x800166 <luminosidade_planta_ON+0x1>
+     b5a:	80 93 65 01 	sts	0x0165, r24	; 0x800165 <luminosidade_planta_ON>
+		luminosidade_planta_OFF = LUMIN_PLANTA_OFF_1;
+     b5e:	8c ed       	ldi	r24, 0xDC	; 220
+     b60:	90 e0       	ldi	r25, 0x00	; 0
+     b62:	90 93 63 01 	sts	0x0163, r25	; 0x800163 <luminosidade_planta_OFF+0x1>
+     b66:	80 93 62 01 	sts	0x0162, r24	; 0x800162 <luminosidade_planta_OFF>
+
+		break;
+     b6a:	08 95       	ret
+	    }
+	case GARD_P2: // PLANTA 2
+	{
+		Hal__SetDigitalOutput(LED_0, DESLIGA_SAIDA);
+     b6c:	61 e0       	ldi	r22, 0x01	; 1
+     b6e:	80 e0       	ldi	r24, 0x00	; 0
+     b70:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+		Hal__SetDigitalOutput(LED_1, LIGA_SAIDA);
+     b74:	60 e0       	ldi	r22, 0x00	; 0
+     b76:	81 e0       	ldi	r24, 0x01	; 1
+     b78:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+		Hal__SetDigitalOutput(LED_2, DESLIGA_SAIDA);
+     b7c:	61 e0       	ldi	r22, 0x01	; 1
+     b7e:	82 e0       	ldi	r24, 0x02	; 2
+     b80:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+		
+		luminosidade_planta_ON = LUMIN_PLANTA_ON_2;
+     b84:	8a ef       	ldi	r24, 0xFA	; 250
+     b86:	90 e0       	ldi	r25, 0x00	; 0
+     b88:	90 93 66 01 	sts	0x0166, r25	; 0x800166 <luminosidade_planta_ON+0x1>
+     b8c:	80 93 65 01 	sts	0x0165, r24	; 0x800165 <luminosidade_planta_ON>
+		luminosidade_planta_OFF = LUMIN_PLANTA_OFF_2;
+     b90:	8c e2       	ldi	r24, 0x2C	; 44
+     b92:	91 e0       	ldi	r25, 0x01	; 1
+     b94:	90 93 63 01 	sts	0x0163, r25	; 0x800163 <luminosidade_planta_OFF+0x1>
+     b98:	80 93 62 01 	sts	0x0162, r24	; 0x800162 <luminosidade_planta_OFF>
+		
+		break;
+     b9c:	08 95       	ret
+	}
+	case GARD_P3: // PLANTA 3
+	{
+		Hal__SetDigitalOutput(LED_0, DESLIGA_SAIDA);
+     b9e:	61 e0       	ldi	r22, 0x01	; 1
+     ba0:	80 e0       	ldi	r24, 0x00	; 0
+     ba2:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+		Hal__SetDigitalOutput(LED_1, DESLIGA_SAIDA);
+     ba6:	61 e0       	ldi	r22, 0x01	; 1
+     ba8:	81 e0       	ldi	r24, 0x01	; 1
+     baa:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+		Hal__SetDigitalOutput(LED_2, LIGA_SAIDA);
+     bae:	60 e0       	ldi	r22, 0x00	; 0
+     bb0:	82 e0       	ldi	r24, 0x02	; 2
+     bb2:	0e 94 f4 02 	call	0x5e8	; 0x5e8 <Hal__SetDigitalOutput>
+		
+		luminosidade_planta_ON = LUMIN_PLANTA_ON_3;
+     bb6:	80 e4       	ldi	r24, 0x40	; 64
+     bb8:	91 e0       	ldi	r25, 0x01	; 1
+     bba:	90 93 66 01 	sts	0x0166, r25	; 0x800166 <luminosidade_planta_ON+0x1>
+     bbe:	80 93 65 01 	sts	0x0165, r24	; 0x800165 <luminosidade_planta_ON>
+		luminosidade_planta_OFF = LUMIN_PLANTA_OFF_3;
+     bc2:	8c e7       	ldi	r24, 0x7C	; 124
+     bc4:	91 e0       	ldi	r25, 0x01	; 1
+     bc6:	90 93 63 01 	sts	0x0163, r25	; 0x800163 <luminosidade_planta_OFF+0x1>
+     bca:	80 93 62 01 	sts	0x0162, r24	; 0x800162 <luminosidade_planta_OFF>
+     bce:	08 95       	ret
+
+00000bd0 <ReadDisplayKeys>:
+ */
+void ReadDisplayKeys(void)
+{
+        unsigned char leitura;
+		
+		Display_Keys_Map = KEY_NONE;
+     bd0:	8a ea       	ldi	r24, 0xAA	; 170
+     bd2:	80 93 da 01 	sts	0x01DA, r24	; 0x8001da <Display_Keys_Map>
+       		   	
+		leitura = Hal__ReadKey(KEY_0);
+     bd6:	80 e0       	ldi	r24, 0x00	; 0
+     bd8:	0e 94 5e 03 	call	0x6bc	; 0x6bc <Hal__ReadKey>
+		if(leitura  == TRUE)
+     bdc:	81 30       	cpi	r24, 0x01	; 1
+     bde:	11 f4       	brne	.+4      	; 0xbe4 <ReadDisplayKeys+0x14>
+		     {
+			Display_Keys_Map = KEY_PLANT1_EVENT;
+     be0:	80 93 da 01 	sts	0x01DA, r24	; 0x8001da <Display_Keys_Map>
+			 }
+		leitura = Hal__ReadKey(KEY_1);
+     be4:	81 e0       	ldi	r24, 0x01	; 1
+     be6:	0e 94 5e 03 	call	0x6bc	; 0x6bc <Hal__ReadKey>
+		if(leitura == TRUE)
+     bea:	81 30       	cpi	r24, 0x01	; 1
+     bec:	19 f4       	brne	.+6      	; 0xbf4 <ReadDisplayKeys+0x24>
+		    {
+			Display_Keys_Map = KEY_PLANT2_EVENT;
+     bee:	82 e0       	ldi	r24, 0x02	; 2
+     bf0:	80 93 da 01 	sts	0x01DA, r24	; 0x8001da <Display_Keys_Map>
+			}
+		leitura = Hal__ReadKey(KEY_2);
+     bf4:	82 e0       	ldi	r24, 0x02	; 2
+     bf6:	0e 94 5e 03 	call	0x6bc	; 0x6bc <Hal__ReadKey>
+		if(leitura == TRUE)
+     bfa:	81 30       	cpi	r24, 0x01	; 1
+     bfc:	19 f4       	brne	.+6      	; 0xc04 <ReadDisplayKeys+0x34>
+		    {
+			Display_Keys_Map =  KEY_PLANT3_EVENT;
+     bfe:	83 e0       	ldi	r24, 0x03	; 3
+     c00:	80 93 da 01 	sts	0x01DA, r24	; 0x8001da <Display_Keys_Map>
+			}
+		leitura = Hal__ReadKey(KEY_3);
+     c04:	83 e0       	ldi	r24, 0x03	; 3
+     c06:	0e 94 5e 03 	call	0x6bc	; 0x6bc <Hal__ReadKey>
+		if(leitura == TRUE)
+     c0a:	81 30       	cpi	r24, 0x01	; 1
+     c0c:	11 f4       	brne	.+4      	; 0xc12 <ReadDisplayKeys+0x42>
+			{
+			Display_Keys_Map =  KEY_INIT_EVENT; 
+     c0e:	10 92 da 01 	sts	0x01DA, r1	; 0x8001da <Display_Keys_Map>
+     c12:	08 95       	ret
+
+00000c14 <Display__GetEvent>:
+
+
+KEY_EVENT_TYPE Display__GetEvent(void)
+{
+	KEY_EVENT_TYPE event;
+	ReadDisplayKeys();   
+     c14:	0e 94 e8 05 	call	0xbd0	; 0xbd0 <ReadDisplayKeys>
+	event = Display_Keys_Map;
+	return (event);	
+}
+     c18:	80 91 da 01 	lds	r24, 0x01DA	; 0x8001da <Display_Keys_Map>
+     c1c:	08 95       	ret
+
+00000c1e <UpdateDisplaySevenSeg>:
+
+void UpdateDisplaySevenSeg(void)
+{
+char i;
+char *p_digito;
+switch(Garden_Display_State)
+     c1e:	80 91 db 01 	lds	r24, 0x01DB	; 0x8001db <Garden_Display_State>
+     c22:	82 30       	cpi	r24, 0x02	; 2
+     c24:	09 f4       	brne	.+2      	; 0xc28 <UpdateDisplaySevenSeg+0xa>
+     c26:	4b c0       	rjmp	.+150    	; 0xcbe <UpdateDisplaySevenSeg+0xa0>
+     c28:	28 f4       	brcc	.+10     	; 0xc34 <UpdateDisplaySevenSeg+0x16>
+     c2a:	88 23       	and	r24, r24
+     c2c:	49 f0       	breq	.+18     	; 0xc40 <UpdateDisplaySevenSeg+0x22>
+     c2e:	81 30       	cpi	r24, 0x01	; 1
+     c30:	89 f1       	breq	.+98     	; 0xc94 <UpdateDisplaySevenSeg+0x76>
+     c32:	08 95       	ret
+     c34:	83 30       	cpi	r24, 0x03	; 3
+     c36:	09 f4       	brne	.+2      	; 0xc3a <UpdateDisplaySevenSeg+0x1c>
+     c38:	57 c0       	rjmp	.+174    	; 0xce8 <UpdateDisplaySevenSeg+0xca>
+     c3a:	84 30       	cpi	r24, 0x04	; 4
+     c3c:	b1 f0       	breq	.+44     	; 0xc6a <UpdateDisplaySevenSeg+0x4c>
+     c3e:	08 95       	ret
+	{
+	case GARD_INIT:
+		{
+		p_digito = &ZERADO_DIGITO[0];
+		for (i = 0; i< NUM_OF_SEG; i++, p_digito++)
+		Hal__WriteValtoSegment(i, p_digito);
+     c40:	64 e2       	ldi	r22, 0x24	; 36
+     c42:	71 e0       	ldi	r23, 0x01	; 1
+     c44:	80 e0       	ldi	r24, 0x00	; 0
+     c46:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     c4a:	65 e2       	ldi	r22, 0x25	; 37
+     c4c:	71 e0       	ldi	r23, 0x01	; 1
+     c4e:	81 e0       	ldi	r24, 0x01	; 1
+     c50:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     c54:	66 e2       	ldi	r22, 0x26	; 38
+     c56:	71 e0       	ldi	r23, 0x01	; 1
+     c58:	82 e0       	ldi	r24, 0x02	; 2
+     c5a:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     c5e:	67 e2       	ldi	r22, 0x27	; 39
+     c60:	71 e0       	ldi	r23, 0x01	; 1
+     c62:	83 e0       	ldi	r24, 0x03	; 3
+     c64:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     c68:	08 95       	ret
+		}
+	case GARD_IN:
+		{
+		p_digito = &ZERADO_DIGITO[0];
+		for (i = 0; i< NUM_OF_SEG; i++, p_digito++)
+		Hal__WriteValtoSegment(i, p_digito);
+     c6a:	64 e2       	ldi	r22, 0x24	; 36
+     c6c:	71 e0       	ldi	r23, 0x01	; 1
+     c6e:	80 e0       	ldi	r24, 0x00	; 0
+     c70:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     c74:	65 e2       	ldi	r22, 0x25	; 37
+     c76:	71 e0       	ldi	r23, 0x01	; 1
+     c78:	81 e0       	ldi	r24, 0x01	; 1
+     c7a:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     c7e:	66 e2       	ldi	r22, 0x26	; 38
+     c80:	71 e0       	ldi	r23, 0x01	; 1
+     c82:	82 e0       	ldi	r24, 0x02	; 2
+     c84:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     c88:	67 e2       	ldi	r22, 0x27	; 39
+     c8a:	71 e0       	ldi	r23, 0x01	; 1
+     c8c:	83 e0       	ldi	r24, 0x03	; 3
+     c8e:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     c92:	08 95       	ret
+		break;
+	case GARD_P1:
+		{
+		p_digito = &MINIMO_DIGITO[0];
+		for (i = 0; i< NUM_OF_SEG; i++, p_digito++)
+		Hal__WriteValtoSegment(i, p_digito);
+     c94:	60 e2       	ldi	r22, 0x20	; 32
+     c96:	71 e0       	ldi	r23, 0x01	; 1
+     c98:	80 e0       	ldi	r24, 0x00	; 0
+     c9a:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     c9e:	61 e2       	ldi	r22, 0x21	; 33
+     ca0:	71 e0       	ldi	r23, 0x01	; 1
+     ca2:	81 e0       	ldi	r24, 0x01	; 1
+     ca4:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     ca8:	62 e2       	ldi	r22, 0x22	; 34
+     caa:	71 e0       	ldi	r23, 0x01	; 1
+     cac:	82 e0       	ldi	r24, 0x02	; 2
+     cae:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     cb2:	63 e2       	ldi	r22, 0x23	; 35
+     cb4:	71 e0       	ldi	r23, 0x01	; 1
+     cb6:	83 e0       	ldi	r24, 0x03	; 3
+     cb8:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     cbc:	08 95       	ret
+		}
+	case GARD_P2:
+		{
+		p_digito = &MEDIO_DIGITO[0];
+		for (i = 0; i< NUM_OF_SEG; i++, p_digito++)
+		Hal__WriteValtoSegment(i, p_digito);
+     cbe:	6c e1       	ldi	r22, 0x1C	; 28
+     cc0:	71 e0       	ldi	r23, 0x01	; 1
+     cc2:	80 e0       	ldi	r24, 0x00	; 0
+     cc4:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     cc8:	6d e1       	ldi	r22, 0x1D	; 29
+     cca:	71 e0       	ldi	r23, 0x01	; 1
+     ccc:	81 e0       	ldi	r24, 0x01	; 1
+     cce:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     cd2:	6e e1       	ldi	r22, 0x1E	; 30
+     cd4:	71 e0       	ldi	r23, 0x01	; 1
+     cd6:	82 e0       	ldi	r24, 0x02	; 2
+     cd8:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     cdc:	6f e1       	ldi	r22, 0x1F	; 31
+     cde:	71 e0       	ldi	r23, 0x01	; 1
+     ce0:	83 e0       	ldi	r24, 0x03	; 3
+     ce2:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     ce6:	08 95       	ret
+		}
+	case GARD_P3:
+		{
+		p_digito = &MAXIMO_DIGITO;   // ou p_digito = &MAXIMO_DIGITO[0];
+		for (i = 0; i< NUM_OF_SEG; i++, p_digito++)
+		Hal__WriteValtoSegment(i, p_digito);
+     ce8:	68 e1       	ldi	r22, 0x18	; 24
+     cea:	71 e0       	ldi	r23, 0x01	; 1
+     cec:	80 e0       	ldi	r24, 0x00	; 0
+     cee:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     cf2:	69 e1       	ldi	r22, 0x19	; 25
+     cf4:	71 e0       	ldi	r23, 0x01	; 1
+     cf6:	81 e0       	ldi	r24, 0x01	; 1
+     cf8:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     cfc:	6a e1       	ldi	r22, 0x1A	; 26
+     cfe:	71 e0       	ldi	r23, 0x01	; 1
+     d00:	82 e0       	ldi	r24, 0x02	; 2
+     d02:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     d06:	6b e1       	ldi	r22, 0x1B	; 27
+     d08:	71 e0       	ldi	r23, 0x01	; 1
+     d0a:	83 e0       	ldi	r24, 0x03	; 3
+     d0c:	0e 94 71 03 	call	0x6e2	; 0x6e2 <Hal__WriteValtoSegment>
+     d10:	08 95       	ret
+
+00000d12 <Display__Handler>:
+/**
+ *  
+ */
+void Display__Handler(void)
+{
+ReadDisplayKeys();
+     d12:	0e 94 e8 05 	call	0xbd0	; 0xbd0 <ReadDisplayKeys>
+	
+#if (SAIDA_DISPLAY == ENABLED)	
+	UpdateDisplaySaidas();
+     d16:	0e 94 71 05 	call	0xae2	; 0xae2 <UpdateDisplaySaidas>
+#endif	
+
+#if (SEVEN_SEG_DISPLAY == ENABLED)
+     UpdateDisplaySevenSeg();
+     d1a:	0e 94 0f 06 	call	0xc1e	; 0xc1e <UpdateDisplaySevenSeg>
+     d1e:	08 95       	ret
+
+00000d20 <Servo__Initialize>:
+}
+
+ SERVOS_TYPE Servo__GetMoves( void)
+{
+	return (MoveServo);
+}
+     d20:	87 e0       	ldi	r24, 0x07	; 7
+     d22:	80 93 dc 01 	sts	0x01DC, r24	; 0x8001dc <MoveServo>
+     d26:	10 92 df 01 	sts	0x01DF, r1	; 0x8001df <PowerON_Servo_Step>
+     d2a:	10 92 e1 01 	sts	0x01E1, r1	; 0x8001e1 <Key_Press_Servo_Step_Planta1>
+     d2e:	82 e0       	ldi	r24, 0x02	; 2
+     d30:	80 93 e2 01 	sts	0x01E2, r24	; 0x8001e2 <Key_Press_Servo_Step_Planta2>
+     d34:	86 e0       	ldi	r24, 0x06	; 6
+     d36:	80 93 de 01 	sts	0x01DE, r24	; 0x8001de <Key_Press_Servo_Step_Planta3>
+     d3a:	8c e0       	ldi	r24, 0x0C	; 12
+     d3c:	80 93 e0 01 	sts	0x01E0, r24	; 0x8001e0 <Key_Press_Servo_Step_Off>
+     d40:	81 e0       	ldi	r24, 0x01	; 1
+     d42:	80 93 dd 01 	sts	0x01DD, r24	; 0x8001dd <End_Cycle_Servo_Step>
+     d46:	08 95       	ret
+
+00000d48 <Servo__MoveServo>:
+     d48:	88 30       	cpi	r24, 0x08	; 8
+     d4a:	20 f0       	brcs	.+8      	; 0xd54 <Servo__MoveServo+0xc>
+     d4c:	87 e0       	ldi	r24, 0x07	; 7
+     d4e:	80 93 dc 01 	sts	0x01DC, r24	; 0x8001dc <MoveServo>
+     d52:	08 95       	ret
+     d54:	80 93 dc 01 	sts	0x01DC, r24	; 0x8001dc <MoveServo>
+     d58:	08 95       	ret
+
+00000d5a <PowerOnServoHandler>:
+
+SERVO_STATUS PowerOnServoHandler(void)
+{
+SERVO_STATUS status;
+status = SERVO_MOVING;
+Hal__SetServoFreq(30);
+     d5a:	8e e1       	ldi	r24, 0x1E	; 30
+     d5c:	90 e0       	ldi	r25, 0x00	; 0
+     d5e:	0e 94 8c 03 	call	0x718	; 0x718 <Hal__SetServoFreq>
+
+switch (PowerON_Servo_Step)
+     d62:	80 91 df 01 	lds	r24, 0x01DF	; 0x8001df <PowerON_Servo_Step>
+     d66:	81 30       	cpi	r24, 0x01	; 1
+     d68:	99 f0       	breq	.+38     	; 0xd90 <PowerOnServoHandler+0x36>
+     d6a:	28 f0       	brcs	.+10     	; 0xd76 <PowerOnServoHandler+0x1c>
+     d6c:	82 30       	cpi	r24, 0x02	; 2
+     d6e:	19 f1       	breq	.+70     	; 0xdb6 <PowerOnServoHandler+0x5c>
+     d70:	83 30       	cpi	r24, 0x03	; 3
+     d72:	a1 f1       	breq	.+104    	; 0xddc <PowerOnServoHandler+0x82>
+     d74:	3e c0       	rjmp	.+124    	; 0xdf2 <PowerOnServoHandler+0x98>
+{
+case POWER_ON_SERVO_STEP1:
+	Hal__SetServo(ON); 
+     d76:	81 e0       	ldi	r24, 0x01	; 1
+     d78:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+    Timer__HMSSet(TIMER_HMS_POWER_ON_SERVO, 0,0,2);
+     d7c:	22 e0       	ldi	r18, 0x02	; 2
+     d7e:	40 e0       	ldi	r20, 0x00	; 0
+     d80:	60 e0       	ldi	r22, 0x00	; 0
+     d82:	82 e0       	ldi	r24, 0x02	; 2
+     d84:	0e 94 1b 05 	call	0xa36	; 0xa36 <Timer__HMSSet>
+	PowerON_Servo_Step = POWER_ON_SERVO_STEP2;
+     d88:	81 e0       	ldi	r24, 0x01	; 1
+     d8a:	80 93 df 01 	sts	0x01DF, r24	; 0x8001df <PowerON_Servo_Step>
+	break;
+     d8e:	08 95       	ret
+
+case POWER_ON_SERVO_STEP2:
+	if(Timer__HMSGetStatus(TIMER_HMS_POWER_ON_SERVO) == TIMER_EXPIRED)
+     d90:	82 e0       	ldi	r24, 0x02	; 2
+     d92:	0e 94 36 05 	call	0xa6c	; 0xa6c <Timer__HMSGetStatus>
+     d96:	81 11       	cpse	r24, r1
+     d98:	30 c0       	rjmp	.+96     	; 0xdfa <PowerOnServoHandler+0xa0>
+		{
+		Timer__HMSSet(TIMER_HMS_POWER_ON_SERVO, 0,0,1);	
+     d9a:	21 e0       	ldi	r18, 0x01	; 1
+     d9c:	40 e0       	ldi	r20, 0x00	; 0
+     d9e:	60 e0       	ldi	r22, 0x00	; 0
+     da0:	82 e0       	ldi	r24, 0x02	; 2
+     da2:	0e 94 1b 05 	call	0xa36	; 0xa36 <Timer__HMSSet>
+		PowerON_Servo_Step = POWER_ON_SERVO_STEP3;
+     da6:	82 e0       	ldi	r24, 0x02	; 2
+     da8:	80 93 df 01 	sts	0x01DF, r24	; 0x8001df <PowerON_Servo_Step>
+		Hal__SetServo(OFF);
+     dac:	80 e0       	ldi	r24, 0x00	; 0
+     dae:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+}
+
+SERVO_STATUS PowerOnServoHandler(void)
+{
+SERVO_STATUS status;
+status = SERVO_MOVING;
+     db2:	81 e0       	ldi	r24, 0x01	; 1
+     db4:	08 95       	ret
+		Hal__SetServo(OFF);
+		}
+	break;  
+
+case POWER_ON_SERVO_STEP3:
+	if(Timer__HMSGetStatus(TIMER_HMS_POWER_ON_SERVO) == TIMER_EXPIRED)
+     db6:	82 e0       	ldi	r24, 0x02	; 2
+     db8:	0e 94 36 05 	call	0xa6c	; 0xa6c <Timer__HMSGetStatus>
+     dbc:	81 11       	cpse	r24, r1
+     dbe:	1f c0       	rjmp	.+62     	; 0xdfe <PowerOnServoHandler+0xa4>
+		{
+	    Timer__HMSSet(TIMER_HMS_POWER_ON_SERVO, 0,0,1);
+     dc0:	21 e0       	ldi	r18, 0x01	; 1
+     dc2:	40 e0       	ldi	r20, 0x00	; 0
+     dc4:	60 e0       	ldi	r22, 0x00	; 0
+     dc6:	82 e0       	ldi	r24, 0x02	; 2
+     dc8:	0e 94 1b 05 	call	0xa36	; 0xa36 <Timer__HMSSet>
+		PowerON_Servo_Step = POWER_ON_SERVO_STEP4;
+     dcc:	83 e0       	ldi	r24, 0x03	; 3
+     dce:	80 93 df 01 	sts	0x01DF, r24	; 0x8001df <PowerON_Servo_Step>
+		Hal__SetServo(ON);
+     dd2:	81 e0       	ldi	r24, 0x01	; 1
+     dd4:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+}
+
+SERVO_STATUS PowerOnServoHandler(void)
+{
+SERVO_STATUS status;
+status = SERVO_MOVING;
+     dd8:	81 e0       	ldi	r24, 0x01	; 1
+     dda:	08 95       	ret
+		Hal__SetServo(ON);
+	    }
+	break;
+	
+case POWER_ON_SERVO_STEP4:
+	if(Timer__HMSGetStatus(TIMER_HMS_POWER_ON_SERVO) == TIMER_EXPIRED)
+     ddc:	82 e0       	ldi	r24, 0x02	; 2
+     dde:	0e 94 36 05 	call	0xa6c	; 0xa6c <Timer__HMSGetStatus>
+     de2:	81 11       	cpse	r24, r1
+     de4:	0e c0       	rjmp	.+28     	; 0xe02 <PowerOnServoHandler+0xa8>
+		{
+		PowerON_Servo_Step = POWER_ON_SERVO_STEP1;
+     de6:	10 92 df 01 	sts	0x01DF, r1	; 0x8001df <PowerON_Servo_Step>
+		Hal__SetServo(OFF);
+     dea:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+		status = SERVO_DONE;
+     dee:	80 e0       	ldi	r24, 0x00	; 0
+     df0:	08 95       	ret
+		}
+	break;
+
+default:
+	PowerON_Servo_Step = POWER_ON_SERVO_STEP1;
+     df2:	10 92 df 01 	sts	0x01DF, r1	; 0x8001df <PowerON_Servo_Step>
+	status = SERVO_DONE;
+     df6:	80 e0       	ldi	r24, 0x00	; 0
+	break;
+     df8:	08 95       	ret
+}
+
+SERVO_STATUS PowerOnServoHandler(void)
+{
+SERVO_STATUS status;
+status = SERVO_MOVING;
+     dfa:	81 e0       	ldi	r24, 0x01	; 1
+     dfc:	08 95       	ret
+     dfe:	81 e0       	ldi	r24, 0x01	; 1
+     e00:	08 95       	ret
+     e02:	81 e0       	ldi	r24, 0x01	; 1
+	PowerON_Servo_Step = POWER_ON_SERVO_STEP1;
+	status = SERVO_DONE;
+	break;
+}
+return status;
+}
+     e04:	08 95       	ret
+
+00000e06 <KeyPressServoHandler>:
+
+//---------------------------------------------------------------------------------------------------------------------
+SERVO_STATUS KeyPressServoHandler(SERVO_CLASS servo_class)
+{
+     e06:	cf 93       	push	r28
+     e08:	c8 2f       	mov	r28, r24
+status_move = SERVO_MOVING;
+     e0a:	81 e0       	ldi	r24, 0x01	; 1
+     e0c:	80 93 5f 01 	sts	0x015F, r24	; 0x80015f <status_move>
+Hal__SetServoFreq(30);
+     e10:	8e e1       	ldi	r24, 0x1E	; 30
+     e12:	90 e0       	ldi	r25, 0x00	; 0
+     e14:	0e 94 8c 03 	call	0x718	; 0x718 <Hal__SetServoFreq>
+
+switch (servo_class){
+     e18:	c1 30       	cpi	r28, 0x01	; 1
+     e1a:	99 f1       	breq	.+102    	; 0xe82 <KeyPressServoHandler+0x7c>
+     e1c:	38 f0       	brcs	.+14     	; 0xe2c <KeyPressServoHandler+0x26>
+     e1e:	c2 30       	cpi	r28, 0x02	; 2
+     e20:	09 f4       	brne	.+2      	; 0xe24 <KeyPressServoHandler+0x1e>
+     e22:	86 c0       	rjmp	.+268    	; 0xf30 <KeyPressServoHandler+0x12a>
+     e24:	c3 30       	cpi	r28, 0x03	; 3
+     e26:	09 f4       	brne	.+2      	; 0xe2a <KeyPressServoHandler+0x24>
+     e28:	03 c1       	rjmp	.+518    	; 0x1030 <KeyPressServoHandler+0x22a>
+     e2a:	28 c1       	rjmp	.+592    	; 0x107c <KeyPressServoHandler+0x276>
+	case (S_PLANTA1):
+	tempo_planta_x = 5;
+     e2c:	85 e0       	ldi	r24, 0x05	; 5
+     e2e:	90 e0       	ldi	r25, 0x00	; 0
+     e30:	90 93 68 01 	sts	0x0168, r25	; 0x800168 <tempo_planta_x+0x1>
+     e34:	80 93 67 01 	sts	0x0167, r24	; 0x800167 <tempo_planta_x>
+	switch(Key_Press_Servo_Step_Planta1)
+     e38:	80 91 e1 01 	lds	r24, 0x01E1	; 0x8001e1 <Key_Press_Servo_Step_Planta1>
+     e3c:	88 23       	and	r24, r24
+     e3e:	19 f0       	breq	.+6      	; 0xe46 <KeyPressServoHandler+0x40>
+     e40:	81 30       	cpi	r24, 0x01	; 1
+     e42:	71 f0       	breq	.+28     	; 0xe60 <KeyPressServoHandler+0x5a>
+     e44:	19 c0       	rjmp	.+50     	; 0xe78 <KeyPressServoHandler+0x72>
+	{
+		case KEY_PRESS_SERVO_STEP1_PLANTA1:
+			Timer__HMSSet(TIMER_HMS_KEY_PRESS_Servo, 0,0,5);
+     e46:	25 e0       	ldi	r18, 0x05	; 5
+     e48:	40 e0       	ldi	r20, 0x00	; 0
+     e4a:	60 e0       	ldi	r22, 0x00	; 0
+     e4c:	83 e0       	ldi	r24, 0x03	; 3
+     e4e:	0e 94 1b 05 	call	0xa36	; 0xa36 <Timer__HMSSet>
+			Hal__SetServo(ON);
+     e52:	81 e0       	ldi	r24, 0x01	; 1
+     e54:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+			Key_Press_Servo_Step_Planta1 = KEY_PRESS_SERVO_STEP2_PLANTA1;
+     e58:	81 e0       	ldi	r24, 0x01	; 1
+     e5a:	80 93 e1 01 	sts	0x01E1, r24	; 0x8001e1 <Key_Press_Servo_Step_Planta1>
+		break;
+     e5e:	0e c1       	rjmp	.+540    	; 0x107c <KeyPressServoHandler+0x276>
+
+		case KEY_PRESS_SERVO_STEP2_PLANTA1:
+			if(Timer__HMSGetStatus(TIMER_HMS_KEY_PRESS_Servo) == TIMER_EXPIRED)
+     e60:	83 e0       	ldi	r24, 0x03	; 3
+     e62:	0e 94 36 05 	call	0xa6c	; 0xa6c <Timer__HMSGetStatus>
+     e66:	81 11       	cpse	r24, r1
+     e68:	09 c1       	rjmp	.+530    	; 0x107c <KeyPressServoHandler+0x276>
+			{
+				Hal__SetServo(OFF);
+     e6a:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+				Key_Press_Servo_Step_Planta1 = KEY_PRESS_SERVO_STEP1_PLANTA1;
+     e6e:	10 92 e1 01 	sts	0x01E1, r1	; 0x8001e1 <Key_Press_Servo_Step_Planta1>
+				status_move = SERVO_DONE;
+     e72:	10 92 5f 01 	sts	0x015F, r1	; 0x80015f <status_move>
+     e76:	02 c1       	rjmp	.+516    	; 0x107c <KeyPressServoHandler+0x276>
+			}
+		break;
+		
+		default:
+			Key_Press_Servo_Step_Planta1 = KEY_PRESS_SERVO_STEP1_PLANTA1;
+     e78:	10 92 e1 01 	sts	0x01E1, r1	; 0x8001e1 <Key_Press_Servo_Step_Planta1>
+			status_move = SERVO_DONE;
+     e7c:	10 92 5f 01 	sts	0x015F, r1	; 0x80015f <status_move>
+		break;
+     e80:	fd c0       	rjmp	.+506    	; 0x107c <KeyPressServoHandler+0x276>
+	}
+	break;
+	
+	case (S_PLANTA2):
+	tempo_planta_x = 18;
+     e82:	82 e1       	ldi	r24, 0x12	; 18
+     e84:	90 e0       	ldi	r25, 0x00	; 0
+     e86:	90 93 68 01 	sts	0x0168, r25	; 0x800168 <tempo_planta_x+0x1>
+     e8a:	80 93 67 01 	sts	0x0167, r24	; 0x800167 <tempo_planta_x>
+	switch(Key_Press_Servo_Step_Planta2)
+     e8e:	80 91 e2 01 	lds	r24, 0x01E2	; 0x8001e2 <Key_Press_Servo_Step_Planta2>
+     e92:	83 30       	cpi	r24, 0x03	; 3
+     e94:	b1 f0       	breq	.+44     	; 0xec2 <KeyPressServoHandler+0xbc>
+     e96:	18 f4       	brcc	.+6      	; 0xe9e <KeyPressServoHandler+0x98>
+     e98:	82 30       	cpi	r24, 0x02	; 2
+     e9a:	31 f0       	breq	.+12     	; 0xea8 <KeyPressServoHandler+0xa2>
+     e9c:	43 c0       	rjmp	.+134    	; 0xf24 <KeyPressServoHandler+0x11e>
+     e9e:	84 30       	cpi	r24, 0x04	; 4
+     ea0:	11 f1       	breq	.+68     	; 0xee6 <KeyPressServoHandler+0xe0>
+     ea2:	85 30       	cpi	r24, 0x05	; 5
+     ea4:	91 f1       	breq	.+100    	; 0xf0a <KeyPressServoHandler+0x104>
+     ea6:	3e c0       	rjmp	.+124    	; 0xf24 <KeyPressServoHandler+0x11e>
+	{
+		case KEY_PRESS_SERVO_STEP1_PLANTA2:
+			Timer__HMSSet(TIMER_HMS_KEY_PRESS_Servo, 0,0,5);
+     ea8:	25 e0       	ldi	r18, 0x05	; 5
+     eaa:	40 e0       	ldi	r20, 0x00	; 0
+     eac:	60 e0       	ldi	r22, 0x00	; 0
+     eae:	83 e0       	ldi	r24, 0x03	; 3
+     eb0:	0e 94 1b 05 	call	0xa36	; 0xa36 <Timer__HMSSet>
+			Hal__SetServo(ON);
+     eb4:	81 e0       	ldi	r24, 0x01	; 1
+     eb6:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+			Key_Press_Servo_Step_Planta2 = KEY_PRESS_SERVO_STEP2_PLANTA2;
+     eba:	83 e0       	ldi	r24, 0x03	; 3
+     ebc:	80 93 e2 01 	sts	0x01E2, r24	; 0x8001e2 <Key_Press_Servo_Step_Planta2>
+		break;
+     ec0:	dd c0       	rjmp	.+442    	; 0x107c <KeyPressServoHandler+0x276>
+		
+		case KEY_PRESS_SERVO_STEP2_PLANTA2:
+			if(Timer__HMSGetStatus(TIMER_HMS_KEY_PRESS_Servo) == TIMER_EXPIRED)
+     ec2:	83 e0       	ldi	r24, 0x03	; 3
+     ec4:	0e 94 36 05 	call	0xa6c	; 0xa6c <Timer__HMSGetStatus>
+     ec8:	81 11       	cpse	r24, r1
+     eca:	d8 c0       	rjmp	.+432    	; 0x107c <KeyPressServoHandler+0x276>
+			{
+				Timer__HMSSet(TIMER_HMS_KEY_PRESS_Servo, 0,0,8);
+     ecc:	28 e0       	ldi	r18, 0x08	; 8
+     ece:	40 e0       	ldi	r20, 0x00	; 0
+     ed0:	60 e0       	ldi	r22, 0x00	; 0
+     ed2:	83 e0       	ldi	r24, 0x03	; 3
+     ed4:	0e 94 1b 05 	call	0xa36	; 0xa36 <Timer__HMSSet>
+				Hal__SetServo(OFF);
+     ed8:	80 e0       	ldi	r24, 0x00	; 0
+     eda:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+				Key_Press_Servo_Step_Planta2 = KEY_PRESS_SERVO_STEP3_PLANTA2;
+     ede:	84 e0       	ldi	r24, 0x04	; 4
+     ee0:	80 93 e2 01 	sts	0x01E2, r24	; 0x8001e2 <Key_Press_Servo_Step_Planta2>
+     ee4:	cb c0       	rjmp	.+406    	; 0x107c <KeyPressServoHandler+0x276>
+			}
+		break;
+		
+		case KEY_PRESS_SERVO_STEP3_PLANTA2:
+			if(Timer__HMSGetStatus(TIMER_HMS_KEY_PRESS_Servo) == TIMER_EXPIRED)
+     ee6:	83 e0       	ldi	r24, 0x03	; 3
+     ee8:	0e 94 36 05 	call	0xa6c	; 0xa6c <Timer__HMSGetStatus>
+     eec:	81 11       	cpse	r24, r1
+     eee:	c6 c0       	rjmp	.+396    	; 0x107c <KeyPressServoHandler+0x276>
+			{
+				Timer__HMSSet(TIMER_HMS_KEY_PRESS_Servo, 0,0,5);
+     ef0:	25 e0       	ldi	r18, 0x05	; 5
+     ef2:	40 e0       	ldi	r20, 0x00	; 0
+     ef4:	60 e0       	ldi	r22, 0x00	; 0
+     ef6:	83 e0       	ldi	r24, 0x03	; 3
+     ef8:	0e 94 1b 05 	call	0xa36	; 0xa36 <Timer__HMSSet>
+				Hal__SetServo(ON);
+     efc:	81 e0       	ldi	r24, 0x01	; 1
+     efe:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+				Key_Press_Servo_Step_Planta2 = KEY_PRESS_SERVO_STEP4_PLANTA2;
+     f02:	85 e0       	ldi	r24, 0x05	; 5
+     f04:	80 93 e2 01 	sts	0x01E2, r24	; 0x8001e2 <Key_Press_Servo_Step_Planta2>
+     f08:	b9 c0       	rjmp	.+370    	; 0x107c <KeyPressServoHandler+0x276>
+			}
+		break;
+		
+		case KEY_PRESS_SERVO_STEP4_PLANTA2:
+			if(Timer__HMSGetStatus(TIMER_HMS_KEY_PRESS_Servo) == TIMER_EXPIRED)
+     f0a:	83 e0       	ldi	r24, 0x03	; 3
+     f0c:	0e 94 36 05 	call	0xa6c	; 0xa6c <Timer__HMSGetStatus>
+     f10:	81 11       	cpse	r24, r1
+     f12:	b4 c0       	rjmp	.+360    	; 0x107c <KeyPressServoHandler+0x276>
+			{
+				Hal__SetServo(OFF);
+     f14:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+				Key_Press_Servo_Step_Planta2 = KEY_PRESS_SERVO_STEP1_PLANTA2;
+     f18:	82 e0       	ldi	r24, 0x02	; 2
+     f1a:	80 93 e2 01 	sts	0x01E2, r24	; 0x8001e2 <Key_Press_Servo_Step_Planta2>
+				status_move = SERVO_DONE;
+     f1e:	10 92 5f 01 	sts	0x015F, r1	; 0x80015f <status_move>
+     f22:	ac c0       	rjmp	.+344    	; 0x107c <KeyPressServoHandler+0x276>
+			}
+		break;
+		
+		default:
+			Key_Press_Servo_Step_Planta2 = KEY_PRESS_SERVO_STEP1_PLANTA2;
+     f24:	82 e0       	ldi	r24, 0x02	; 2
+     f26:	80 93 e2 01 	sts	0x01E2, r24	; 0x8001e2 <Key_Press_Servo_Step_Planta2>
+			status_move = SERVO_DONE;
+     f2a:	10 92 5f 01 	sts	0x015F, r1	; 0x80015f <status_move>
+		break;
+     f2e:	a6 c0       	rjmp	.+332    	; 0x107c <KeyPressServoHandler+0x276>
+	}
+	break;
+	
+	case (S_PLANTA3):
+	tempo_planta_x = 31;
+     f30:	8f e1       	ldi	r24, 0x1F	; 31
+     f32:	90 e0       	ldi	r25, 0x00	; 0
+     f34:	90 93 68 01 	sts	0x0168, r25	; 0x800168 <tempo_planta_x+0x1>
+     f38:	80 93 67 01 	sts	0x0167, r24	; 0x800167 <tempo_planta_x>
+	switch(Key_Press_Servo_Step_Planta3)
+     f3c:	80 91 de 01 	lds	r24, 0x01DE	; 0x8001de <Key_Press_Servo_Step_Planta3>
+     f40:	88 30       	cpi	r24, 0x08	; 8
+     f42:	69 f1       	breq	.+90     	; 0xf9e <KeyPressServoHandler+0x198>
+     f44:	28 f4       	brcc	.+10     	; 0xf50 <KeyPressServoHandler+0x14a>
+     f46:	86 30       	cpi	r24, 0x06	; 6
+     f48:	59 f0       	breq	.+22     	; 0xf60 <KeyPressServoHandler+0x15a>
+     f4a:	87 30       	cpi	r24, 0x07	; 7
+     f4c:	b1 f0       	breq	.+44     	; 0xf7a <KeyPressServoHandler+0x174>
+     f4e:	6a c0       	rjmp	.+212    	; 0x1024 <KeyPressServoHandler+0x21e>
+     f50:	8a 30       	cpi	r24, 0x0A	; 10
+     f52:	09 f4       	brne	.+2      	; 0xf56 <KeyPressServoHandler+0x150>
+     f54:	48 c0       	rjmp	.+144    	; 0xfe6 <KeyPressServoHandler+0x1e0>
+     f56:	a8 f1       	brcs	.+106    	; 0xfc2 <KeyPressServoHandler+0x1bc>
+     f58:	8b 30       	cpi	r24, 0x0B	; 11
+     f5a:	09 f4       	brne	.+2      	; 0xf5e <KeyPressServoHandler+0x158>
+     f5c:	56 c0       	rjmp	.+172    	; 0x100a <KeyPressServoHandler+0x204>
+     f5e:	62 c0       	rjmp	.+196    	; 0x1024 <KeyPressServoHandler+0x21e>
+	{
+		case KEY_PRESS_SERVO_STEP1_PLANTA3:
+			Timer__HMSSet(TIMER_HMS_KEY_PRESS_Servo, 0,0,5);
+     f60:	25 e0       	ldi	r18, 0x05	; 5
+     f62:	40 e0       	ldi	r20, 0x00	; 0
+     f64:	60 e0       	ldi	r22, 0x00	; 0
+     f66:	83 e0       	ldi	r24, 0x03	; 3
+     f68:	0e 94 1b 05 	call	0xa36	; 0xa36 <Timer__HMSSet>
+			Hal__SetServo(ON);
+     f6c:	81 e0       	ldi	r24, 0x01	; 1
+     f6e:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+			Key_Press_Servo_Step_Planta3= KEY_PRESS_SERVO_STEP2_PLANTA3;
+     f72:	87 e0       	ldi	r24, 0x07	; 7
+     f74:	80 93 de 01 	sts	0x01DE, r24	; 0x8001de <Key_Press_Servo_Step_Planta3>
+		break;
+     f78:	81 c0       	rjmp	.+258    	; 0x107c <KeyPressServoHandler+0x276>
+	
+		case KEY_PRESS_SERVO_STEP2_PLANTA3:
+			if(Timer__HMSGetStatus(TIMER_HMS_KEY_PRESS_Servo) == TIMER_EXPIRED)
+     f7a:	83 e0       	ldi	r24, 0x03	; 3
+     f7c:	0e 94 36 05 	call	0xa6c	; 0xa6c <Timer__HMSGetStatus>
+     f80:	81 11       	cpse	r24, r1
+     f82:	7c c0       	rjmp	.+248    	; 0x107c <KeyPressServoHandler+0x276>
+			{
+				Timer__HMSSet(TIMER_HMS_KEY_PRESS_Servo, 0,0,8);
+     f84:	28 e0       	ldi	r18, 0x08	; 8
+     f86:	40 e0       	ldi	r20, 0x00	; 0
+     f88:	60 e0       	ldi	r22, 0x00	; 0
+     f8a:	83 e0       	ldi	r24, 0x03	; 3
+     f8c:	0e 94 1b 05 	call	0xa36	; 0xa36 <Timer__HMSSet>
+				Hal__SetServo(OFF);
+     f90:	80 e0       	ldi	r24, 0x00	; 0
+     f92:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+				Key_Press_Servo_Step_Planta3 = KEY_PRESS_SERVO_STEP3_PLANTA3;
+     f96:	88 e0       	ldi	r24, 0x08	; 8
+     f98:	80 93 de 01 	sts	0x01DE, r24	; 0x8001de <Key_Press_Servo_Step_Planta3>
+     f9c:	6f c0       	rjmp	.+222    	; 0x107c <KeyPressServoHandler+0x276>
+			}
+		break;
+	
+		case KEY_PRESS_SERVO_STEP3_PLANTA3:
+			if(Timer__HMSGetStatus(TIMER_HMS_KEY_PRESS_Servo) == TIMER_EXPIRED)
+     f9e:	83 e0       	ldi	r24, 0x03	; 3
+     fa0:	0e 94 36 05 	call	0xa6c	; 0xa6c <Timer__HMSGetStatus>
+     fa4:	81 11       	cpse	r24, r1
+     fa6:	6a c0       	rjmp	.+212    	; 0x107c <KeyPressServoHandler+0x276>
+			{
+				Timer__HMSSet(TIMER_HMS_KEY_PRESS_Servo, 0,0,5);
+     fa8:	25 e0       	ldi	r18, 0x05	; 5
+     faa:	40 e0       	ldi	r20, 0x00	; 0
+     fac:	60 e0       	ldi	r22, 0x00	; 0
+     fae:	83 e0       	ldi	r24, 0x03	; 3
+     fb0:	0e 94 1b 05 	call	0xa36	; 0xa36 <Timer__HMSSet>
+				Hal__SetServo(ON);
+     fb4:	81 e0       	ldi	r24, 0x01	; 1
+     fb6:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+				Key_Press_Servo_Step_Planta3 = KEY_PRESS_SERVO_STEP4_PLANTA3;
+     fba:	89 e0       	ldi	r24, 0x09	; 9
+     fbc:	80 93 de 01 	sts	0x01DE, r24	; 0x8001de <Key_Press_Servo_Step_Planta3>
+     fc0:	5d c0       	rjmp	.+186    	; 0x107c <KeyPressServoHandler+0x276>
+			}
+		break;
+		
+		case KEY_PRESS_SERVO_STEP4_PLANTA3:
+			if(Timer__HMSGetStatus(TIMER_HMS_KEY_PRESS_Servo) == TIMER_EXPIRED)
+     fc2:	83 e0       	ldi	r24, 0x03	; 3
+     fc4:	0e 94 36 05 	call	0xa6c	; 0xa6c <Timer__HMSGetStatus>
+     fc8:	81 11       	cpse	r24, r1
+     fca:	58 c0       	rjmp	.+176    	; 0x107c <KeyPressServoHandler+0x276>
+			{
+				Timer__HMSSet(TIMER_HMS_KEY_PRESS_Servo, 0,0,8);
+     fcc:	28 e0       	ldi	r18, 0x08	; 8
+     fce:	40 e0       	ldi	r20, 0x00	; 0
+     fd0:	60 e0       	ldi	r22, 0x00	; 0
+     fd2:	83 e0       	ldi	r24, 0x03	; 3
+     fd4:	0e 94 1b 05 	call	0xa36	; 0xa36 <Timer__HMSSet>
+				Hal__SetServo(OFF);
+     fd8:	80 e0       	ldi	r24, 0x00	; 0
+     fda:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+				Key_Press_Servo_Step_Planta3 = KEY_PRESS_SERVO_STEP5_PLANTA3;
+     fde:	8a e0       	ldi	r24, 0x0A	; 10
+     fe0:	80 93 de 01 	sts	0x01DE, r24	; 0x8001de <Key_Press_Servo_Step_Planta3>
+     fe4:	4b c0       	rjmp	.+150    	; 0x107c <KeyPressServoHandler+0x276>
+			}
+		break;
+		
+		case KEY_PRESS_SERVO_STEP5_PLANTA3:
+			if(Timer__HMSGetStatus(TIMER_HMS_KEY_PRESS_Servo) == TIMER_EXPIRED)
+     fe6:	83 e0       	ldi	r24, 0x03	; 3
+     fe8:	0e 94 36 05 	call	0xa6c	; 0xa6c <Timer__HMSGetStatus>
+     fec:	81 11       	cpse	r24, r1
+     fee:	46 c0       	rjmp	.+140    	; 0x107c <KeyPressServoHandler+0x276>
+			{
+				Timer__HMSSet(TIMER_HMS_KEY_PRESS_Servo, 0,0,5);
+     ff0:	25 e0       	ldi	r18, 0x05	; 5
+     ff2:	40 e0       	ldi	r20, 0x00	; 0
+     ff4:	60 e0       	ldi	r22, 0x00	; 0
+     ff6:	83 e0       	ldi	r24, 0x03	; 3
+     ff8:	0e 94 1b 05 	call	0xa36	; 0xa36 <Timer__HMSSet>
+				Hal__SetServo(ON);
+     ffc:	81 e0       	ldi	r24, 0x01	; 1
+     ffe:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+				Key_Press_Servo_Step_Planta3 = KEY_PRESS_SERVO_STEP6_PLANTA3;
+    1002:	8b e0       	ldi	r24, 0x0B	; 11
+    1004:	80 93 de 01 	sts	0x01DE, r24	; 0x8001de <Key_Press_Servo_Step_Planta3>
+    1008:	39 c0       	rjmp	.+114    	; 0x107c <KeyPressServoHandler+0x276>
+			}
+		break;
+	
+		case KEY_PRESS_SERVO_STEP6_PLANTA3:
+			if(Timer__HMSGetStatus(TIMER_HMS_KEY_PRESS_Servo) == TIMER_EXPIRED)
+    100a:	83 e0       	ldi	r24, 0x03	; 3
+    100c:	0e 94 36 05 	call	0xa6c	; 0xa6c <Timer__HMSGetStatus>
+    1010:	81 11       	cpse	r24, r1
+    1012:	34 c0       	rjmp	.+104    	; 0x107c <KeyPressServoHandler+0x276>
+			{
+				Hal__SetServo(OFF);
+    1014:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+				Key_Press_Servo_Step_Planta3 = KEY_PRESS_SERVO_STEP1_PLANTA3;
+    1018:	86 e0       	ldi	r24, 0x06	; 6
+    101a:	80 93 de 01 	sts	0x01DE, r24	; 0x8001de <Key_Press_Servo_Step_Planta3>
+				status_move = SERVO_DONE;
+    101e:	10 92 5f 01 	sts	0x015F, r1	; 0x80015f <status_move>
+    1022:	2c c0       	rjmp	.+88     	; 0x107c <KeyPressServoHandler+0x276>
+			}
+		break;
+	
+		default:
+			Key_Press_Servo_Step_Planta3 = KEY_PRESS_SERVO_STEP1_PLANTA3;
+    1024:	86 e0       	ldi	r24, 0x06	; 6
+    1026:	80 93 de 01 	sts	0x01DE, r24	; 0x8001de <Key_Press_Servo_Step_Planta3>
+			status_move = SERVO_DONE;
+    102a:	10 92 5f 01 	sts	0x015F, r1	; 0x80015f <status_move>
+		break;
+    102e:	26 c0       	rjmp	.+76     	; 0x107c <KeyPressServoHandler+0x276>
+	}
+	break;
+	
+	case (OFF_):
+	switch(Key_Press_Servo_Step_Off)
+    1030:	80 91 e0 01 	lds	r24, 0x01E0	; 0x8001e0 <Key_Press_Servo_Step_Off>
+    1034:	8c 30       	cpi	r24, 0x0C	; 12
+    1036:	19 f0       	breq	.+6      	; 0x103e <KeyPressServoHandler+0x238>
+    1038:	8d 30       	cpi	r24, 0x0D	; 13
+    103a:	71 f0       	breq	.+28     	; 0x1058 <KeyPressServoHandler+0x252>
+    103c:	1a c0       	rjmp	.+52     	; 0x1072 <KeyPressServoHandler+0x26c>
+	{
+		case KEY_PRESS_SERVO_STEP1_OFF:
+			Timer__HMSSet(TIMER_HMS_KEY_PRESS_Servo, 0,0,1);
+    103e:	21 e0       	ldi	r18, 0x01	; 1
+    1040:	40 e0       	ldi	r20, 0x00	; 0
+    1042:	60 e0       	ldi	r22, 0x00	; 0
+    1044:	83 e0       	ldi	r24, 0x03	; 3
+    1046:	0e 94 1b 05 	call	0xa36	; 0xa36 <Timer__HMSSet>
+			Hal__SetServo(ON);
+    104a:	81 e0       	ldi	r24, 0x01	; 1
+    104c:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+			Key_Press_Servo_Step_Off = KEY_PRESS_SERVO_STEP2_OFF;
+    1050:	8d e0       	ldi	r24, 0x0D	; 13
+    1052:	80 93 e0 01 	sts	0x01E0, r24	; 0x8001e0 <Key_Press_Servo_Step_Off>
+		break;
+    1056:	12 c0       	rjmp	.+36     	; 0x107c <KeyPressServoHandler+0x276>
+
+		case KEY_PRESS_SERVO_STEP2_OFF:
+			if(Timer__HMSGetStatus(TIMER_HMS_KEY_PRESS_Servo) == TIMER_EXPIRED)
+    1058:	83 e0       	ldi	r24, 0x03	; 3
+    105a:	0e 94 36 05 	call	0xa6c	; 0xa6c <Timer__HMSGetStatus>
+    105e:	81 11       	cpse	r24, r1
+    1060:	0d c0       	rjmp	.+26     	; 0x107c <KeyPressServoHandler+0x276>
+			{
+				Hal__SetServo(OFF);
+    1062:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+				Key_Press_Servo_Step_Off = KEY_PRESS_SERVO_STEP1_OFF;
+    1066:	8c e0       	ldi	r24, 0x0C	; 12
+    1068:	80 93 e0 01 	sts	0x01E0, r24	; 0x8001e0 <Key_Press_Servo_Step_Off>
+				status_move = SERVO_DONE;
+    106c:	10 92 5f 01 	sts	0x015F, r1	; 0x80015f <status_move>
+    1070:	05 c0       	rjmp	.+10     	; 0x107c <KeyPressServoHandler+0x276>
+			}
+		break;
+		
+		default:
+			Key_Press_Servo_Step_Off = KEY_PRESS_SERVO_STEP1_OFF;
+    1072:	8c e0       	ldi	r24, 0x0C	; 12
+    1074:	80 93 e0 01 	sts	0x01E0, r24	; 0x8001e0 <Key_Press_Servo_Step_Off>
+			status_move = SERVO_DONE;
+    1078:	10 92 5f 01 	sts	0x015F, r1	; 0x80015f <status_move>
+	}
+	break;
+
+}
+return status_move;
+}
+    107c:	80 91 5f 01 	lds	r24, 0x015F	; 0x80015f <status_move>
+    1080:	cf 91       	pop	r28
+    1082:	08 95       	ret
+
+00001084 <EndCycleServoHandler>:
+
+SERVO_STATUS EndCycleServoHandler(void)
+{
+SERVO_STATUS status;
+status = SERVO_MOVING;
+Hal__SetServoFreq(30);
+    1084:	8e e1       	ldi	r24, 0x1E	; 30
+    1086:	90 e0       	ldi	r25, 0x00	; 0
+    1088:	0e 94 8c 03 	call	0x718	; 0x718 <Hal__SetServoFreq>
+	
+switch(End_Cycle_Servo_Step)
+    108c:	80 91 dd 01 	lds	r24, 0x01DD	; 0x8001dd <End_Cycle_Servo_Step>
+    1090:	88 23       	and	r24, r24
+    1092:	91 f0       	breq	.+36     	; 0x10b8 <EndCycleServoHandler+0x34>
+    1094:	81 30       	cpi	r24, 0x01	; 1
+    1096:	e1 f4       	brne	.+56     	; 0x10d0 <EndCycleServoHandler+0x4c>
+	{
+	case END_CYCLE_SERVO_STEP_ON:
+		Timer__HMSSet(TIMER_HMS_END_CYCLE_SERVO, 0,0,5);
+    1098:	25 e0       	ldi	r18, 0x05	; 5
+    109a:	40 e0       	ldi	r20, 0x00	; 0
+    109c:	60 e0       	ldi	r22, 0x00	; 0
+    109e:	84 e0       	ldi	r24, 0x04	; 4
+    10a0:	0e 94 1b 05 	call	0xa36	; 0xa36 <Timer__HMSSet>
+		Hal__SetServo(ON);
+    10a4:	81 e0       	ldi	r24, 0x01	; 1
+    10a6:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+		End_Cycle_Servo_Step = END_CYCLE_SERVO_STEP_OFF;
+    10aa:	10 92 dd 01 	sts	0x01DD, r1	; 0x8001dd <End_Cycle_Servo_Step>
+		Display__SetState(GARD_INIT);
+    10ae:	80 e0       	ldi	r24, 0x00	; 0
+    10b0:	0e 94 6c 05 	call	0xad8	; 0xad8 <Display__SetState>
+
+
+SERVO_STATUS EndCycleServoHandler(void)
+{
+SERVO_STATUS status;
+status = SERVO_MOVING;
+    10b4:	81 e0       	ldi	r24, 0x01	; 1
+	case END_CYCLE_SERVO_STEP_ON:
+		Timer__HMSSet(TIMER_HMS_END_CYCLE_SERVO, 0,0,5);
+		Hal__SetServo(ON);
+		End_Cycle_Servo_Step = END_CYCLE_SERVO_STEP_OFF;
+		Display__SetState(GARD_INIT);
+		break;
+    10b6:	08 95       	ret
+
+	case END_CYCLE_SERVO_STEP_OFF:
+		if(Timer__HMSGetStatus(TIMER_HMS_END_CYCLE_SERVO) == TIMER_EXPIRED)
+    10b8:	84 e0       	ldi	r24, 0x04	; 4
+    10ba:	0e 94 36 05 	call	0xa6c	; 0xa6c <Timer__HMSGetStatus>
+    10be:	81 11       	cpse	r24, r1
+    10c0:	0c c0       	rjmp	.+24     	; 0x10da <EndCycleServoHandler+0x56>
+			{
+			Hal__SetServo(OFF);
+    10c2:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+			End_Cycle_Servo_Step = END_CYCLE_SERVO_STEP_ON;
+    10c6:	81 e0       	ldi	r24, 0x01	; 1
+    10c8:	80 93 dd 01 	sts	0x01DD, r24	; 0x8001dd <End_Cycle_Servo_Step>
+			status = SERVO_DONE;
+    10cc:	80 e0       	ldi	r24, 0x00	; 0
+    10ce:	08 95       	ret
+			}
+		break;
+	default:
+		End_Cycle_Servo_Step = END_CYCLE_SERVO_STEP_ON;
+    10d0:	81 e0       	ldi	r24, 0x01	; 1
+    10d2:	80 93 dd 01 	sts	0x01DD, r24	; 0x8001dd <End_Cycle_Servo_Step>
+		status = SERVO_DONE;
+    10d6:	80 e0       	ldi	r24, 0x00	; 0
+		break;
+    10d8:	08 95       	ret
+
+
+SERVO_STATUS EndCycleServoHandler(void)
+{
+SERVO_STATUS status;
+status = SERVO_MOVING;
+    10da:	81 e0       	ldi	r24, 0x01	; 1
+		status = SERVO_DONE;
+		break;
+	}
+	
+return status;
+    10dc:	08 95       	ret
+
+000010de <Servo__Background>:
+}
+
+ 
+void Servo__Background(void)
+{
+switch (MoveServo)
+    10de:	e0 91 dc 01 	lds	r30, 0x01DC	; 0x8001dc <MoveServo>
+    10e2:	8e 2f       	mov	r24, r30
+    10e4:	90 e0       	ldi	r25, 0x00	; 0
+    10e6:	88 30       	cpi	r24, 0x08	; 8
+    10e8:	91 05       	cpc	r25, r1
+    10ea:	e0 f5       	brcc	.+120    	; 0x1164 <Servo__Background+0x86>
+    10ec:	fc 01       	movw	r30, r24
+    10ee:	ec 5c       	subi	r30, 0xCC	; 204
+    10f0:	ff 4f       	sbci	r31, 0xFF	; 255
+    10f2:	0c 94 eb 08 	jmp	0x11d6	; 0x11d6 <__tablejump2__>
+	{
+	case SERVO_POWER_ON:
+	if(PowerOnServoHandler() == SERVO_DONE)
+    10f6:	0e 94 ad 06 	call	0xd5a	; 0xd5a <PowerOnServoHandler>
+    10fa:	81 11       	cpse	r24, r1
+    10fc:	33 c0       	rjmp	.+102    	; 0x1164 <Servo__Background+0x86>
+	{
+		MoveServo = PLAY_NO_MOVE;
+    10fe:	87 e0       	ldi	r24, 0x07	; 7
+    1100:	80 93 dc 01 	sts	0x01DC, r24	; 0x8001dc <MoveServo>
+    1104:	08 95       	ret
+	}
+	break;
+
+	case SERVO_KEY_PRESS_PLANTA1:
+	if(KeyPressServoHandler((SERVO_CLASS)S_PLANTA1) == SERVO_DONE)
+    1106:	80 e0       	ldi	r24, 0x00	; 0
+    1108:	0e 94 03 07 	call	0xe06	; 0xe06 <KeyPressServoHandler>
+    110c:	81 11       	cpse	r24, r1
+    110e:	2a c0       	rjmp	.+84     	; 0x1164 <Servo__Background+0x86>
+	{
+		MoveServo = PLAY_NO_MOVE;
+    1110:	87 e0       	ldi	r24, 0x07	; 7
+    1112:	80 93 dc 01 	sts	0x01DC, r24	; 0x8001dc <MoveServo>
+    1116:	08 95       	ret
+	}
+	break;
+
+	case SERVO_KEY_PRESS_PLANTA2:
+	if(KeyPressServoHandler((SERVO_CLASS)S_PLANTA2) == SERVO_DONE)
+    1118:	81 e0       	ldi	r24, 0x01	; 1
+    111a:	0e 94 03 07 	call	0xe06	; 0xe06 <KeyPressServoHandler>
+    111e:	81 11       	cpse	r24, r1
+    1120:	21 c0       	rjmp	.+66     	; 0x1164 <Servo__Background+0x86>
+	{
+		MoveServo = PLAY_NO_MOVE;
+    1122:	87 e0       	ldi	r24, 0x07	; 7
+    1124:	80 93 dc 01 	sts	0x01DC, r24	; 0x8001dc <MoveServo>
+    1128:	08 95       	ret
+	}
+	break;
+	
+	case SERVO_KEY_PRESS_PLANTA3:
+	if(KeyPressServoHandler((SERVO_CLASS)S_PLANTA3) == SERVO_DONE)
+    112a:	82 e0       	ldi	r24, 0x02	; 2
+    112c:	0e 94 03 07 	call	0xe06	; 0xe06 <KeyPressServoHandler>
+    1130:	81 11       	cpse	r24, r1
+    1132:	18 c0       	rjmp	.+48     	; 0x1164 <Servo__Background+0x86>
+	{
+		MoveServo = PLAY_NO_MOVE;
+    1134:	87 e0       	ldi	r24, 0x07	; 7
+    1136:	80 93 dc 01 	sts	0x01DC, r24	; 0x8001dc <MoveServo>
+    113a:	08 95       	ret
+	}
+	break;
+	
+	case SERVO_KEY_PRESS_OFF:
+	if(KeyPressServoHandler((SERVO_CLASS)OFF_) == SERVO_DONE)
+    113c:	83 e0       	ldi	r24, 0x03	; 3
+    113e:	0e 94 03 07 	call	0xe06	; 0xe06 <KeyPressServoHandler>
+    1142:	81 11       	cpse	r24, r1
+    1144:	0f c0       	rjmp	.+30     	; 0x1164 <Servo__Background+0x86>
+	{
+		MoveServo = PLAY_NO_MOVE;
+    1146:	87 e0       	ldi	r24, 0x07	; 7
+    1148:	80 93 dc 01 	sts	0x01DC, r24	; 0x8001dc <MoveServo>
+    114c:	08 95       	ret
+	}
+	break;
+
+	case SERVO_END_CYCLE:
+	if(EndCycleServoHandler() == SERVO_DONE)
+    114e:	0e 94 42 08 	call	0x1084	; 0x1084 <EndCycleServoHandler>
+    1152:	81 11       	cpse	r24, r1
+    1154:	07 c0       	rjmp	.+14     	; 0x1164 <Servo__Background+0x86>
+	{
+		MoveServo = PLAY_NO_MOVE;
+    1156:	87 e0       	ldi	r24, 0x07	; 7
+    1158:	80 93 dc 01 	sts	0x01DC, r24	; 0x8001dc <MoveServo>
+    115c:	08 95       	ret
+	}
+	break;
+	
+	case PLAY_NO_MOVE:
+	Hal__SetServo(OFF);
+    115e:	80 e0       	ldi	r24, 0x00	; 0
+    1160:	0e 94 80 03 	call	0x700	; 0x700 <Hal__SetServo>
+    1164:	08 95       	ret
+
+00001166 <IlumSensor__Initialize>:
+{
+	LUM_SENSOR_TYPE sensor_id;
+
+	for (sensor_id = 0; sensor_id < NUM_OF_LUM_SENSOR; sensor_id++) 
+	{
+		Luminosidade[sensor_id] = 0;
+    1166:	e3 ee       	ldi	r30, 0xE3	; 227
+    1168:	f1 e0       	ldi	r31, 0x01	; 1
+    116a:	11 82       	std	Z+1, r1	; 0x01
+    116c:	10 82       	st	Z, r1
+    116e:	13 82       	std	Z+3, r1	; 0x03
+    1170:	12 82       	std	Z+2, r1	; 0x02
+    1172:	08 95       	ret
+
+00001174 <IlumSensor__ConversionHandler>:
+	
+	for (sensor_id = 0; sensor_id < NUM_OF_LUM_SENSOR; sensor_id++) 
+	{
+		if(LumSensor_Enable_Table[sensor_id] == ENABLED)
+		{
+			ad_value = Hal__GetAnalogInput(LumSensorTable[sensor_id]);
+    1174:	85 e0       	ldi	r24, 0x05	; 5
+    1176:	0e 94 74 03 	call	0x6e8	; 0x6e8 <Hal__GetAnalogInput>
+			ad_value = (ad_value + 400);
+			ad_value = (ad_value/4) + 50;
+    117a:	80 57       	subi	r24, 0x70	; 112
+    117c:	9e 4f       	sbci	r25, 0xFE	; 254
+    117e:	96 95       	lsr	r25
+    1180:	87 95       	ror	r24
+    1182:	96 95       	lsr	r25
+    1184:	87 95       	ror	r24
+			Luminosidade[sensor_id] = ad_value;
+    1186:	c2 96       	adiw	r24, 0x32	; 50
+    1188:	90 93 e6 01 	sts	0x01E6, r25	; 0x8001e6 <Luminosidade+0x3>
+    118c:	80 93 e5 01 	sts	0x01E5, r24	; 0x8001e5 <Luminosidade+0x2>
+    1190:	08 95       	ret
+
+00001192 <LumSensor__Interface>:
+	}
+}
+//---------------------------------------------------------------------------------------------------------------------
+unsigned short int LumSensor__Interface(LUM_SENSOR_TYPE sensor_id)
+{
+	if (sensor_id < NUM_OF_LUM_SENSOR)
+    1192:	82 30       	cpi	r24, 0x02	; 2
+    1194:	48 f4       	brcc	.+18     	; 0x11a8 <LumSensor__Interface+0x16>
+	{
+		return Luminosidade[sensor_id];
+    1196:	e8 2f       	mov	r30, r24
+    1198:	f0 e0       	ldi	r31, 0x00	; 0
+    119a:	ee 0f       	add	r30, r30
+    119c:	ff 1f       	adc	r31, r31
+    119e:	ed 51       	subi	r30, 0x1D	; 29
+    11a0:	fe 4f       	sbci	r31, 0xFE	; 254
+    11a2:	80 81       	ld	r24, Z
+    11a4:	91 81       	ldd	r25, Z+1	; 0x01
+    11a6:	08 95       	ret
+	}
+	else
+	{
+		return 0;
+    11a8:	80 e0       	ldi	r24, 0x00	; 0
+    11aa:	90 e0       	ldi	r25, 0x00	; 0
+	}
+	
+}
+    11ac:	08 95       	ret
+
+000011ae <__divmodhi4>:
+    11ae:	97 fb       	bst	r25, 7
+    11b0:	07 2e       	mov	r0, r23
+    11b2:	16 f4       	brtc	.+4      	; 0x11b8 <__divmodhi4+0xa>
+    11b4:	00 94       	com	r0
+    11b6:	07 d0       	rcall	.+14     	; 0x11c6 <__divmodhi4_neg1>
+    11b8:	77 fd       	sbrc	r23, 7
+    11ba:	09 d0       	rcall	.+18     	; 0x11ce <__divmodhi4_neg2>
+    11bc:	0e 94 f1 08 	call	0x11e2	; 0x11e2 <__udivmodhi4>
+    11c0:	07 fc       	sbrc	r0, 7
+    11c2:	05 d0       	rcall	.+10     	; 0x11ce <__divmodhi4_neg2>
+    11c4:	3e f4       	brtc	.+14     	; 0x11d4 <__divmodhi4_exit>
+
+000011c6 <__divmodhi4_neg1>:
+    11c6:	90 95       	com	r25
+    11c8:	81 95       	neg	r24
+    11ca:	9f 4f       	sbci	r25, 0xFF	; 255
+    11cc:	08 95       	ret
+
+000011ce <__divmodhi4_neg2>:
+    11ce:	70 95       	com	r23
+    11d0:	61 95       	neg	r22
+    11d2:	7f 4f       	sbci	r23, 0xFF	; 255
+
+000011d4 <__divmodhi4_exit>:
+    11d4:	08 95       	ret
+
+000011d6 <__tablejump2__>:
+    11d6:	ee 0f       	add	r30, r30
+    11d8:	ff 1f       	adc	r31, r31
+    11da:	05 90       	lpm	r0, Z+
+    11dc:	f4 91       	lpm	r31, Z
+    11de:	e0 2d       	mov	r30, r0
+    11e0:	09 94       	ijmp
+
+000011e2 <__udivmodhi4>:
+    11e2:	aa 1b       	sub	r26, r26
+    11e4:	bb 1b       	sub	r27, r27
+    11e6:	51 e1       	ldi	r21, 0x11	; 17
+    11e8:	07 c0       	rjmp	.+14     	; 0x11f8 <__udivmodhi4_ep>
+
+000011ea <__udivmodhi4_loop>:
+    11ea:	aa 1f       	adc	r26, r26
+    11ec:	bb 1f       	adc	r27, r27
+    11ee:	a6 17       	cp	r26, r22
+    11f0:	b7 07       	cpc	r27, r23
+    11f2:	10 f0       	brcs	.+4      	; 0x11f8 <__udivmodhi4_ep>
+    11f4:	a6 1b       	sub	r26, r22
+    11f6:	b7 0b       	sbc	r27, r23
+
+000011f8 <__udivmodhi4_ep>:
+    11f8:	88 1f       	adc	r24, r24
+    11fa:	99 1f       	adc	r25, r25
+    11fc:	5a 95       	dec	r21
+    11fe:	a9 f7       	brne	.-22     	; 0x11ea <__udivmodhi4_loop>
+    1200:	80 95       	com	r24
+    1202:	90 95       	com	r25
+    1204:	bc 01       	movw	r22, r24
+    1206:	cd 01       	movw	r24, r26
+    1208:	08 95       	ret
+
+0000120a <_exit>:
+    120a:	f8 94       	cli
+
+0000120c <__stop_program>:
+    120c:	ff cf       	rjmp	.-2      	; 0x120c <__stop_program>

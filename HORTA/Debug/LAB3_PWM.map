@@ -1,0 +1,904 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                              Driver/Pwm.o (__divmodhi4)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                              C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o (exit)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                              Appl/OvenTempControl.o (__do_copy_data)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                              Appl/Appl.o (__do_clear_bss)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o) (__udivmodhi4)
+
+Allocating common symbols
+Common symbol       size              file
+
+AD_Channel          0x1               Hal/Hal.o
+ADC_Buffer          0xc               Driver/Adc.o
+Adc_Step            0x1               Driver/Adc.o
+Temperature         0x4               System/TempSensor.o
+Hal_Leds_Buffer     0x4               Hal/Hal.o
+Current_Level       0x1               Appl/OvenTempControl.o
+PlaySound           0x1               System/Sounds.o
+Display_Keys_Map    0x1               System/Display.o
+AD_Sample           0xc               Hal/Hal.o
+Hal_Analog_Inputs   0xc               Hal/Hal.o
+AD_Mux_State        0x1               Hal/Hal.o
+User_Action         0x1               Appl/Appl.o
+AD_Counter          0x6               Hal/Hal.o
+Hal_Keys_Buffer     0x1               Hal/Hal.o
+Timer_Counter       0x1               Appl/Appl.o
+Sampling_Time       0x1               Driver/Adc.o
+power_on_sound_step
+                    0x1               System/Sounds.o
+Trigger             0x1               Appl/Appl.o
+Toggle              0x1               Appl/Appl.o
+Oven_TempControl_State
+                    0x1               Appl/OvenTempControl.o
+Slot                0x1               Appl/main.o
+Adc_Channel         0x1               Driver/Adc.o
+Oven_Display_State  0x1               System/Display.o
+AD_Accumulator      0xc               Hal/Hal.o
+
+Discarded input sections
+
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .text          0x00000000        0x0 Appl/Appl.o
+ .data          0x00000000        0x0 Appl/Appl.o
+ .bss           0x00000000        0x0 Appl/Appl.o
+ .text          0x00000000        0x0 Appl/main.o
+ .data          0x00000000        0x0 Appl/main.o
+ .bss           0x00000000        0x0 Appl/main.o
+ .text          0x00000000        0x0 Appl/OvenTempControl.o
+ .data          0x00000000        0x0 Appl/OvenTempControl.o
+ .bss           0x00000000        0x0 Appl/OvenTempControl.o
+ .text.OvenTempControl__GetState
+                0x00000000        0x6 Appl/OvenTempControl.o
+ .text          0x00000000        0x0 Driver/Adc.o
+ .data          0x00000000        0x0 Driver/Adc.o
+ .bss           0x00000000        0x0 Driver/Adc.o
+ .rodata.ADC_BIT_CLR_MASK
+                0x00000000        0x6 Driver/Adc.o
+ .text          0x00000000        0x0 Driver/Pwm.o
+ .data          0x00000000        0x0 Driver/Pwm.o
+ .bss           0x00000000        0x0 Driver/Pwm.o
+ .text          0x00000000        0x0 Driver/Gpio.o
+ .data          0x00000000        0x0 Driver/Gpio.o
+ .bss           0x00000000        0x0 Driver/Gpio.o
+ .text          0x00000000        0x0 Hal/Hal.o
+ .data          0x00000000        0x0 Hal/Hal.o
+ .bss           0x00000000        0x0 Hal/Hal.o
+ .text          0x00000000        0x0 Hal/SevenSeg.o
+ .data          0x00000000        0x0 Hal/SevenSeg.o
+ .bss           0x00000000        0x0 Hal/SevenSeg.o
+ .rodata.SEGMENT_MAP_DIGIT
+                0x00000000        0xa Hal/SevenSeg.o
+ .text          0x00000000        0x0 System/Display.o
+ .data          0x00000000        0x0 System/Display.o
+ .bss           0x00000000        0x0 System/Display.o
+ .text          0x00000000        0x0 System/Sounds.o
+ .data          0x00000000        0x0 System/Sounds.o
+ .bss           0x00000000        0x0 System/Sounds.o
+ .text.EndCycleSoundHandler
+                0x00000000        0xa System/Sounds.o
+ .bss.EndCycleSound_Counter
+                0x00000000        0x1 System/Sounds.o
+ .text          0x00000000        0x0 System/TempSensor.o
+ .data          0x00000000        0x0 System/TempSensor.o
+ .bss           0x00000000        0x0 System/TempSensor.o
+ .rodata.TempSensor_Enable_Table
+                0x00000000        0x2 System/TempSensor.o
+ .rodata.TempSensorTable
+                0x00000000        0x2 System/TempSensor.o
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000003         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+LOAD Appl/Appl.o
+LOAD Appl/main.o
+LOAD Appl/OvenTempControl.o
+LOAD Driver/Adc.o
+LOAD Driver/Pwm.o
+LOAD Driver/Gpio.o
+LOAD Hal/Hal.o
+LOAD Hal/SevenSeg.o
+LOAD System/Display.o
+LOAD System/Sounds.o
+LOAD System/TempSensor.o
+START GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5\libatmega328p.a
+END GROUP
+                0x00020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x0000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xcac
+ *(.vectors)
+ .vectors       0x00000000       0x68 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x00000068                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000068                __ctors_start = .
+ *(.ctors)
+                0x00000068                __ctors_end = .
+                0x00000068                __dtors_start = .
+ *(.dtors)
+                0x00000068                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000068        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x00000068                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000068        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000074       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x00000074                __do_copy_data
+ .init4         0x0000008a       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000008a                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000009a        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x000000a2        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x000000a2                __vector_22
+                0x000000a2                __vector_1
+                0x000000a2                __vector_24
+                0x000000a2                __vector_12
+                0x000000a2                __bad_interrupt
+                0x000000a2                __vector_6
+                0x000000a2                __vector_3
+                0x000000a2                __vector_23
+                0x000000a2                __vector_25
+                0x000000a2                __vector_11
+                0x000000a2                __vector_13
+                0x000000a2                __vector_17
+                0x000000a2                __vector_19
+                0x000000a2                __vector_7
+                0x000000a2                __vector_5
+                0x000000a2                __vector_4
+                0x000000a2                __vector_9
+                0x000000a2                __vector_2
+                0x000000a2                __vector_21
+                0x000000a2                __vector_15
+                0x000000a2                __vector_8
+                0x000000a2                __vector_14
+                0x000000a2                __vector_10
+                0x000000a2                __vector_16
+                0x000000a2                __vector_18
+                0x000000a2                __vector_20
+                0x000000a6                . = ALIGN (0x2)
+ *(.text.*)
+ .text.Appl__Initialize
+                0x000000a6        0xe Appl/Appl.o
+                0x000000a6                Appl__Initialize
+ .text.Appl__Handler
+                0x000000b4       0x88 Appl/Appl.o
+                0x000000b4                Appl__Handler
+ .text.main     0x0000013c       0x82 Appl/main.o
+                0x0000013c                main
+ .text.OvenTempControl__Initialize
+                0x000001be        0xc Appl/OvenTempControl.o
+                0x000001be                OvenTempControl__Initialize
+ .text.OvenTempControl__Handler
+                0x000001ca       0x82 Appl/OvenTempControl.o
+                0x000001ca                OvenTempControl__Handler
+ .text.OvenTempControl__SetLevel
+                0x0000024c        0x6 Appl/OvenTempControl.o
+                0x0000024c                OvenTempControl__SetLevel
+ .text.ADC__Initialize
+                0x00000252       0x52 Driver/Adc.o
+                0x00000252                ADC__Initialize
+ .text.ADC__Handler
+                0x000002a4       0xd8 Driver/Adc.o
+                0x000002a4                ADC__Handler
+ .text.ADC__ConfigModes
+                0x0000037c       0x52 Driver/Adc.o
+                0x0000037c                ADC__ConfigModes
+ .text.ADC__GetValue
+                0x000003ce       0x1c Driver/Adc.o
+                0x000003ce                ADC__GetValue
+ .text.Pwm__Initialize
+                0x000003ea       0x12 Driver/Pwm.o
+                0x000003ea                Pwm__Initialize
+ .text.Pwm__SetTCFrequency
+                0x000003fc       0x2c Driver/Pwm.o
+                0x000003fc                Pwm__SetTCFrequency
+ .text.Pwm__SetDutyCycle
+                0x00000428       0xa2 Driver/Pwm.o
+                0x00000428                Pwm__SetDutyCycle
+ .text.Gpio__PinConfig
+                0x000004ca       0x6c Driver/Gpio.o
+                0x000004ca                Gpio__PinConfig
+ .text.Gpio__PinWrite
+                0x00000536       0x54 Driver/Gpio.o
+                0x00000536                Gpio__PinWrite
+ .text.Gpio__PinRead
+                0x0000058a       0x28 Driver/Gpio.o
+                0x0000058a                Gpio__PinRead
+ .text.Hal__SetLed
+                0x000005b2       0x1c Hal/Hal.o
+                0x000005b2                Hal__SetLed
+ .text.Hal__SetAllLeds
+                0x000005ce       0x1e Hal/Hal.o
+                0x000005ce                Hal__SetAllLeds
+ .text.Hal__Initialize
+                0x000005ec       0x9a Hal/Hal.o
+                0x000005ec                Hal__Initialize
+ .text.Hal__ReadKey
+                0x00000686       0x26 Hal/Hal.o
+                0x00000686                Hal__ReadKey
+ .text.Hal__WriteValtoSegment
+                0x000006ac        0x6 Hal/Hal.o
+                0x000006ac                Hal__WriteValtoSegment
+ .text.Hal__GetAnalogInput
+                0x000006b2       0x18 Hal/Hal.o
+                0x000006b2                Hal__GetAnalogInput
+ .text.Hal__SetBuzzer
+                0x000006ca       0x18 Hal/Hal.o
+                0x000006ca                Hal__SetBuzzer
+ .text.Hal__SetBuzzerFreq
+                0x000006e2       0x12 Hal/Hal.o
+                0x000006e2                Hal__SetBuzzerFreq
+ .text.LEDsUpdate
+                0x000006f4       0x7c Hal/Hal.o
+                0x000006f4                LEDsUpdate
+ .text.KeysRead
+                0x00000770       0xae Hal/Hal.o
+                0x00000770                KeysRead
+ .text.Hal__FastHandler
+                0x0000081e        0xa Hal/Hal.o
+                0x0000081e                Hal__FastHandler
+ .text.ADProcess
+                0x00000828       0xe8 Hal/Hal.o
+                0x00000828                ADProcess
+ .text.Hal__BackgroundHandler
+                0x00000910        0x6 Hal/Hal.o
+                0x00000910                Hal__BackgroundHandler
+ .text.SevenSeg_WriteValueToSegment
+                0x00000916       0x62 Hal/SevenSeg.o
+                0x00000916                SevenSeg_WriteValueToSegment
+ .text.Display__Initialize
+                0x00000978        0xc System/Display.o
+                0x00000978                Display__Initialize
+ .text.Display__SetState
+                0x00000984        0xa System/Display.o
+                0x00000984                Display__SetState
+ .text.UpdateDisplayLeds
+                0x0000098e       0x7a System/Display.o
+                0x0000098e                UpdateDisplayLeds
+ .text.ReadDisplayKeys
+                0x00000a08       0x44 System/Display.o
+                0x00000a08                ReadDisplayKeys
+ .text.Display__GetEvent
+                0x00000a4c        0xa System/Display.o
+                0x00000a4c                Display__GetEvent
+ .text.UpdateDisplaySevenSeg
+                0x00000a56       0xf4 System/Display.o
+                0x00000a56                UpdateDisplaySevenSeg
+ .text.Display__Handler
+                0x00000b4a        0xe System/Display.o
+                0x00000b4a                Display__Handler
+ .text.Sounds__Initialize
+                0x00000b58        0x8 System/Sounds.o
+                0x00000b58                Sounds__Initialize
+ .text.Sounds__PlaySounds
+                0x00000b60       0x12 System/Sounds.o
+                0x00000b60                Sounds__PlaySounds
+ .text.PowerOnSoundHandler
+                0x00000b72       0x2a System/Sounds.o
+                0x00000b72                PowerOnSoundHandler
+ .text.KeyPressSoundHandler
+                0x00000b9c       0x2a System/Sounds.o
+                0x00000b9c                KeyPressSoundHandler
+ .text.Sounds__Background
+                0x00000bc6       0x4a System/Sounds.o
+                0x00000bc6                Sounds__Background
+ .text.TempSensor__Initialize
+                0x00000c10        0xe System/TempSensor.o
+                0x00000c10                TempSensor__Initialize
+ .text.TempSensor__ConversionHandler
+                0x00000c1e       0x1e System/TempSensor.o
+                0x00000c1e                TempSensor__ConversionHandler
+ .text.TempSensor__GetCelsius
+                0x00000c3c       0x1c System/TempSensor.o
+                0x00000c3c                TempSensor__GetCelsius
+ .text.libgcc.div
+                0x00000c58       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                0x00000c58                _div
+                0x00000c58                __divmodhi4
+ .text.libgcc.div
+                0x00000c80       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x00000c80                __udivmodhi4
+                0x00000ca8                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000ca8        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00000ca8                _exit
+                0x00000ca8                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000ca8        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000cac                _etext = .
+
+.data           0x00800100       0x6a load address 0x00000cac
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ .data.GPIO_DATA_LIST
+                0x00800100        0x6 Driver/Gpio.o
+                0x00800100                GPIO_DATA_LIST
+ .data.KEYS_GPIO
+                0x00800106        0x8 Hal/Hal.o
+                0x00800106                KEYS_GPIO
+ .data.LED_GPIO
+                0x0080010e        0x8 Hal/Hal.o
+                0x0080010e                LED_GPIO
+ .data.MAXIMO_DIGITO
+                0x00800116        0x4 System/Display.o
+                0x00800116                MAXIMO_DIGITO
+ .data.MEDIO_DIGITO
+                0x0080011a        0x4 System/Display.o
+                0x0080011a                MEDIO_DIGITO
+ .data.MINIMO_DIGITO
+                0x0080011e        0x4 System/Display.o
+                0x0080011e                MINIMO_DIGITO
+ .data.ZERADO_DIGITO
+                0x00800122        0x4 System/Display.o
+                0x00800122                ZERADO_DIGITO
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.TEMP_CONTROL_PARAMETERS
+                0x00800126       0x10 Appl/OvenTempControl.o
+                0x00800126                TEMP_CONTROL_PARAMETERS
+ .rodata.ADC_BIT_SET_MASK
+                0x00800136        0x6 Driver/Adc.o
+                0x00800136                ADC_BIT_SET_MASK
+ .rodata.Adc_Enable_Table
+                0x0080013c        0x6 Driver/Adc.o
+                0x0080013c                Adc_Enable_Table
+ .rodata.GPIO_PIN_CLR_MASK
+                0x00800142        0x8 Driver/Gpio.o
+                0x00800142                GPIO_PIN_CLR_MASK
+ .rodata.GPIO_PIN_SET_MASK
+                0x0080014a        0x8 Driver/Gpio.o
+                0x0080014a                GPIO_PIN_SET_MASK
+ .rodata.AD_Channel_Table
+                0x00800152        0x6 Hal/Hal.o
+                0x00800152                AD_Channel_Table
+ .rodata.AD_Enable_Table
+                0x00800158        0x6 Hal/Hal.o
+                0x00800158                AD_Enable_Table
+ .rodata.Keys_Enable_Table
+                0x0080015e        0x4 Hal/Hal.o
+                0x0080015e                Keys_Enable_Table
+ .rodata.Leds_Enable_Table
+                0x00800162        0x4 Hal/Hal.o
+                0x00800162                Leds_Enable_Table
+ .rodata.SEGMENT_SELECT
+                0x00800166        0x4 Hal/SevenSeg.o
+                0x00800166                SEGMENT_SELECT
+ *(.gnu.linkonce.r*)
+                0x0080016a                . = ALIGN (0x2)
+                0x0080016a                _edata = .
+                0x0080016a                PROVIDE (__data_end, .)
+
+.bss            0x0080016a       0x4f
+                0x0080016a                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0080016a        0x4 Appl/Appl.o
+                0x0080016a                User_Action
+                0x0080016b                Timer_Counter
+                0x0080016c                Trigger
+                0x0080016d                Toggle
+ COMMON         0x0080016e        0x1 Appl/main.o
+                0x0080016e                Slot
+ COMMON         0x0080016f        0x2 Appl/OvenTempControl.o
+                0x0080016f                Current_Level
+                0x00800170                Oven_TempControl_State
+ COMMON         0x00800171        0xf Driver/Adc.o
+                0x00800171                ADC_Buffer
+                0x0080017d                Adc_Step
+                0x0080017e                Sampling_Time
+                0x0080017f                Adc_Channel
+ COMMON         0x00800180       0x31 Hal/Hal.o
+                0x00800180                AD_Channel
+                0x00800181                Hal_Leds_Buffer
+                0x00800185                AD_Sample
+                0x00800191                Hal_Analog_Inputs
+                0x0080019d                AD_Mux_State
+                0x0080019e                AD_Counter
+                0x008001a4                Hal_Keys_Buffer
+                0x008001a5                AD_Accumulator
+ COMMON         0x008001b1        0x2 System/Display.o
+                0x008001b1                Display_Keys_Map
+                0x008001b2                Oven_Display_State
+ COMMON         0x008001b3        0x2 System/Sounds.o
+                0x008001b3                PlaySound
+                0x008001b4                power_on_sound_step
+ COMMON         0x008001b5        0x4 System/TempSensor.o
+                0x008001b5                Temperature
+                0x008001b9                PROVIDE (__bss_end, .)
+                0x00000cac                __data_load_start = LOADADDR (.data)
+                0x00000d16                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008001b9        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x008001b9                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 Appl/Appl.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000030       0x31 Appl/main.o
+ .comment       0x00000030       0x31 Appl/OvenTempControl.o
+ .comment       0x00000030       0x31 Driver/Adc.o
+ .comment       0x00000030       0x31 Driver/Pwm.o
+ .comment       0x00000030       0x31 Driver/Gpio.o
+ .comment       0x00000030       0x31 Hal/Hal.o
+ .comment       0x00000030       0x31 Hal/SevenSeg.o
+ .comment       0x00000030       0x31 System/Display.o
+ .comment       0x00000030       0x31 System/Sounds.o
+ .comment       0x00000030       0x31 System/TempSensor.o
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x280
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 Appl/Appl.o
+ .debug_aranges
+                0x00000028       0x20 Appl/main.o
+ .debug_aranges
+                0x00000048       0x38 Appl/OvenTempControl.o
+ .debug_aranges
+                0x00000080       0x38 Driver/Adc.o
+ .debug_aranges
+                0x000000b8       0x30 Driver/Pwm.o
+ .debug_aranges
+                0x000000e8       0x30 Driver/Gpio.o
+ .debug_aranges
+                0x00000118       0x80 Hal/Hal.o
+ .debug_aranges
+                0x00000198       0x20 Hal/SevenSeg.o
+ .debug_aranges
+                0x000001b8       0x50 System/Display.o
+ .debug_aranges
+                0x00000208       0x48 System/Sounds.o
+ .debug_aranges
+                0x00000250       0x30 System/TempSensor.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x319b
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x5f4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_info    0x000005f4      0x30f Appl/Appl.o
+ .debug_info    0x00000903      0x2cf Appl/main.o
+ .debug_info    0x00000bd2      0x26f Appl/OvenTempControl.o
+ .debug_info    0x00000e41      0x4e9 Driver/Adc.o
+ .debug_info    0x0000132a      0x5b4 Driver/Pwm.o
+ .debug_info    0x000018de      0x356 Driver/Gpio.o
+ .debug_info    0x00001c34      0x807 Hal/Hal.o
+ .debug_info    0x0000243b      0x142 Hal/SevenSeg.o
+ .debug_info    0x0000257d      0x6d0 System/Display.o
+ .debug_info    0x00002c4d      0x39c System/Sounds.o
+ .debug_info    0x00002fe9      0x1b2 System/TempSensor.o
+
+.debug_abbrev   0x00000000     0x1327
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x5a2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_abbrev  0x000005a2       0xbd Appl/Appl.o
+ .debug_abbrev  0x0000065f       0xbf Appl/main.o
+ .debug_abbrev  0x0000071e      0x146 Appl/OvenTempControl.o
+ .debug_abbrev  0x00000864      0x16f Driver/Adc.o
+ .debug_abbrev  0x000009d3      0x179 Driver/Pwm.o
+ .debug_abbrev  0x00000b4c      0x164 Driver/Gpio.o
+ .debug_abbrev  0x00000cb0      0x1db Hal/Hal.o
+ .debug_abbrev  0x00000e8b       0xc7 Hal/SevenSeg.o
+ .debug_abbrev  0x00000f52      0x14a System/Display.o
+ .debug_abbrev  0x0000109c      0x19e System/Sounds.o
+ .debug_abbrev  0x0000123a       0xed System/TempSensor.o
+
+.debug_line     0x00000000     0x14f3
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x133 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_line    0x00000133      0x154 Appl/Appl.o
+ .debug_line    0x00000287      0x106 Appl/main.o
+ .debug_line    0x0000038d      0x157 Appl/OvenTempControl.o
+ .debug_line    0x000004e4      0x267 Driver/Adc.o
+ .debug_line    0x0000074b      0x1b2 Driver/Pwm.o
+ .debug_line    0x000008fd      0x1b8 Driver/Gpio.o
+ .debug_line    0x00000ab5      0x3d4 Hal/Hal.o
+ .debug_line    0x00000e89      0x10d Hal/SevenSeg.o
+ .debug_line    0x00000f96      0x20f System/Display.o
+ .debug_line    0x000011a5      0x256 System/Sounds.o
+ .debug_line    0x000013fb       0xf8 System/TempSensor.o
+
+.debug_frame    0x00000000      0x484
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x34 Appl/Appl.o
+ .debug_frame   0x00000034       0x24 Appl/main.o
+ .debug_frame   0x00000058       0x74 Appl/OvenTempControl.o
+ .debug_frame   0x000000cc       0x60 Driver/Adc.o
+ .debug_frame   0x0000012c       0x44 Driver/Pwm.o
+ .debug_frame   0x00000170       0x44 Driver/Gpio.o
+ .debug_frame   0x000001b4      0x170 Hal/Hal.o
+ .debug_frame   0x00000324       0x24 Hal/SevenSeg.o
+ .debug_frame   0x00000348       0x84 System/Display.o
+ .debug_frame   0x000003cc       0x74 System/Sounds.o
+ .debug_frame   0x00000440       0x44 System/TempSensor.o
+
+.debug_str      0x00000000     0x1357
+ *(.debug_str)
+ .debug_str     0x00000000      0x208 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_str     0x00000208      0x31e Appl/Appl.o
+                                0x35b (size before relaxing)
+ .debug_str     0x00000526      0x166 Appl/main.o
+                                0x287 (size before relaxing)
+ .debug_str     0x0000068c      0x1a7 Appl/OvenTempControl.o
+                                0x34c (size before relaxing)
+ .debug_str     0x00000833      0x2d4 Driver/Adc.o
+                                0x46e (size before relaxing)
+ .debug_str     0x00000b07      0x1f6 Driver/Pwm.o
+                                0x3eb (size before relaxing)
+ .debug_str     0x00000cfd      0x116 Driver/Gpio.o
+                                0x2ea (size before relaxing)
+ .debug_str     0x00000e13      0x2ba Hal/Hal.o
+                                0x68d (size before relaxing)
+ .debug_str     0x000010cd       0x33 Hal/SevenSeg.o
+                                0x1cf (size before relaxing)
+ .debug_str     0x00001100       0xdf System/Display.o
+                                0x381 (size before relaxing)
+ .debug_str     0x000011df      0x112 System/Sounds.o
+                                0x313 (size before relaxing)
+ .debug_str     0x000012f1       0x66 System/TempSensor.o
+                                0x27c (size before relaxing)
+
+.debug_loc      0x00000000      0xde8
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xbb Appl/OvenTempControl.o
+ .debug_loc     0x000000bb      0x114 Driver/Adc.o
+ .debug_loc     0x000001cf      0x1be Driver/Pwm.o
+ .debug_loc     0x0000038d      0x130 Driver/Gpio.o
+ .debug_loc     0x000004bd      0x42f Hal/Hal.o
+ .debug_loc     0x000008ec       0x97 Hal/SevenSeg.o
+ .debug_loc     0x00000983      0x260 System/Display.o
+ .debug_loc     0x00000be3      0x13c System/Sounds.o
+ .debug_loc     0x00000d1f       0xc9 System/TempSensor.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x1d0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x18 Appl/Appl.o
+ .debug_ranges  0x00000018       0x10 Appl/main.o
+ .debug_ranges  0x00000028       0x28 Appl/OvenTempControl.o
+ .debug_ranges  0x00000050       0x28 Driver/Adc.o
+ .debug_ranges  0x00000078       0x20 Driver/Pwm.o
+ .debug_ranges  0x00000098       0x20 Driver/Gpio.o
+ .debug_ranges  0x000000b8       0x70 Hal/Hal.o
+ .debug_ranges  0x00000128       0x10 Hal/SevenSeg.o
+ .debug_ranges  0x00000138       0x40 System/Display.o
+ .debug_ranges  0x00000178       0x38 System/Sounds.o
+ .debug_ranges  0x000001b0       0x20 System/TempSensor.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(LAB3_PWM.elf elf32-avr)
+LOAD linker stubs
